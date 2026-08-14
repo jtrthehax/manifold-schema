@@ -2,7 +2,7 @@
 
 **Author:** Joel Robinson
 **Status:** Published
-**DOI:** {{DOI}}
+**DOI:** 10.5281/zenodo.21939440
 **License:** CC BY 4.0
 
 ## What This Paper Argues
@@ -49,4 +49,4 @@ standard HRV instrumentation.
 ## Cite As
 
 Robinson, J. (2026). *The Manifold Schema: A Unified Framework 
-for Consciousness, Cognition, and Collapse.* DOI: {{DOI}}
+for Consciousness, Cognition, and Collapse.* DOI: 10.5281/zenodo.21939440
