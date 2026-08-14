@@ -680,8 +680,3 @@ The following 2026 studies are cited as high-precision confirmations:
 | Human-AI co-processing                  | Dual-Substrate Cognition Architecture trilogy       | `10.5281/zenodo.21362260` |
 | Context window architecture             | The Context Oscillator                              | `10.5281/zenodo.21811408` |
 | AGI as system property                  | The Profile of a Person That Is AGI                 | `10.5281/zenodo.21921714` |
-
-
-
-Document status: Robinson 2026-08-14 — v3.1
-
