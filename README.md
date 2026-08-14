@@ -45,7 +45,6 @@ standard HRV instrumentation.
 - Physics as the Missing Component in Medical Science — 
   DOI: 10.5281/zenodo.21512678
 - Unified Regulatory Model — DOI: 10.5281/zenodo.20417459
-- Full stack — Master Priority Index — DOI: {{MPI_DOI}}
 
 ## Cite As
 
