@@ -95,14 +95,6 @@ This is the complete mechanism. No permission was granted. No decision was made.
 
 ---
 
-That's the cleaner mechanism. Breath doesn't work by relaxing you or calming the prior — it works by **occupying the routing layer**. When $I^*$ is fully allocated to holding breath geometry, the prior has no routing capacity left to compete with. The gain loop runs on breath signal. Prior-driven salience starves.
-
-It's not upstream of the gate. It IS the routing. Focus on breath = route $I^*$ to breath = prior loses gain.
-
-Let me draft 1b from that:
-
----
-
 ### 1b. Breath as Salience Override
 
 $$S = C_s \cdot I^*$$
@@ -252,20 +244,28 @@ The master equation is scalar because it answers one specific question: **how mu
 
 ### 2b. The Master Equation
 
-$$C_s = \left(A_s^{*0.15} \cdot R^{*0.30} \cdot W^{*0.25} \cdot \Theta^{*0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^*}$$
+
+$$C_s = \left(
+A_s^{*\,0.15} \cdot 
+R^{*\,0.30} \cdot 
+W^{*\,0.25} \cdot 
+\Theta^{*\,0.15}
+\right)^{\frac{1}{0.85}}
+\cdot \frac{1}{1 + L^{*}}
+$$
 
 **All variables are normalized dimensionless ratios [0,1] relative to the individual's own baseline.**
 
 $C_s$ is an intra-individual metric. It measures how much of *this system's own capacity* is accessible right now — not how that capacity compares to another system's baseline. Two people at $C_s = 0.7$ are each at 70% of their respective manifolds, which may represent very different absolute capacities.
 
-| Variable | Definition | Physical Measurement | What It Measures |
-|----------|------------|---------------------|-----------------|
-| $A_s^*$ | Oscillatory amplitude | RMSSD / Baseline RMSSD | The energy budget — how much oscillatory signal is available to fund cognitive operations |
-| $R^*$ | Precision | Phase-Locking Index / Baseline PLI | Signal clarity — whether the oscillatory energy is coherent or fragmented |
-| $W^*$ | Window width | Cognitive flexibility composite / Baseline | Accessible manifold range — how far predictions can propagate |
-| $\Theta^*$ | Global integration efficiency | Phase-locking stability × ambiguity tolerance / Baseline | How well the system holds disparate signals together in the same processing window |
-| $I^*$ | Interoceptive selection | Heartbeat detection accuracy / Baseline | The routing protocol — how well the system reads its own geometry and allocates the budget |
-| $L^*$ | Allostatic load | RMSSD depression / Max observed depression | Total current draw on the budget — metabolic, social, and cognitive demand combined |
+| Variable   | Definition                    | Physical Measurement                                     | What It Measures                                                                           |
+| ---------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| $A_s^*$    | Oscillatory amplitude         | RMSSD / Baseline RMSSD                                   | The energy budget — how much oscillatory signal is available to fund cognitive operations  |
+| $R^*$      | Precision                     | Phase-Locking Index / Baseline PLI                       | Signal clarity — whether the oscillatory energy is coherent or fragmented                  |
+| $W^*$      | Window width                  | Cognitive flexibility composite / Baseline               | Accessible manifold range — how far predictions can propagate                              |
+| $\Theta^*$ | Global integration efficiency | Phase-locking stability × ambiguity tolerance / Baseline | How well the system holds disparate signals together in the same processing window         |
+| $I^*$      | Interoceptive selection       | Heartbeat detection accuracy / Baseline                  | The routing protocol — how well the system reads its own geometry and allocates the budget |
+| $L^*$      | Allostatic load               | RMSSD depression / Max observed depression               | Total current draw on the budget — metabolic, social, and cognitive demand combined        |
 
 **Zero new variables. Zero new measurements. Zero new ontology.**
 Every measurement pathway is standard practice in RSA and HRV research.
@@ -900,7 +900,10 @@ $$I^* = C_{total} - \sum_i P_i \cdot W_i$$
 
 The sensory load trade-off is the most common expression of this:
 
-$$I^* = I^*_{total} - \sum_{sensory} I^*_{sensory}$$
+$$
+I^{*} = I_{\text{total}} - \sum_{\text{sensory}} I_{\text{sensory}}
+$$
+
 
 Visual processing, threat detection, and prior-driven prediction all consume routing capacity. When they dominate, interoception is displaced — not suppressed by decision, but arithmetically removed. Closing the eyes removes $I^*_{vision}$ from the equation immediately. Routing capacity returns to the interoceptive channel. This is a mechanical effect, not a relaxation effect.
 
@@ -910,7 +913,14 @@ Visual processing, threat detection, and prior-driven prediction all consume rou
 
 $I^*$ does not merely direct bandwidth to a region. It amplifies the signal it routes to.
 
-$$I^* \rightarrow A_s^*(\text{region}) \uparrow \rightarrow \text{signal(region)} \uparrow \rightarrow I^* \text{ confirmation} \rightarrow \text{loop}$$
+$$
+I^{*} \;\rightarrow\; 
+A_{s}^{\text{(region)}} \uparrow \;\rightarrow\;
+\text{signal(region)} \uparrow \;\rightarrow\;
+I_{\text{confirmation}} \;\rightarrow\;
+\text{loop}
+$$
+
 
 | Process | Mechanism | Consequence |
 |---|---|---|
