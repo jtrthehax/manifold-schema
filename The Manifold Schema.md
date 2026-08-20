@@ -38,10 +38,11 @@ Three things follow from this:
 
 1. **Every cognitive, emotional, and perceptual phenomenon is a position on the manifold** — a configuration of the same geometric variables, not a separate mechanism requiring separate explanation.
     
-2. **Collapse is always inward.** When the budget tightens and curvature rises, the system retreats toward the brainstem center — survival geometry. Complex operations at the outer edge lose access first.
+2. **Collapse is always inward.** When the budget tightens and curvature rises, the system retreats toward its geometric center — survival geometry. This is a statement about manifold access cost under load, not an anatomical claim about brainstem circuits. Complex operations at the outer edge lose access first.
     
 3. **Recovery is always radial expansion outward.** The geometry is stateful, not fixed. The breath is the lever. Change the oscillatory source and the manifold reshapes.
-    
+
+> **Note on "brainstem" and "survival geometry" throughout this document:** These terms are used as geometric shorthand for the manifold's lowest-cost accessible states under load — the configuration the system defaults to when curvature is high and outer regions have lost access. They are not anatomical claims about specific brainstem circuits, phylogenetic vagal hierarchies, or dorsal vagal shutdown. Wherever "brainstem center" or "survival geometry" appears, read it as: *the geometric center of the manifold, defined by access-cost gradient, not by neuroanatomy.*
 
 The framework that follows is a formal description of this geometry: its variables, its causal structure, its empirical anchors, and its predictions.
 
@@ -255,8 +256,9 @@ W^{*\,0.25} \cdot
 $$
 
 **All variables are normalized dimensionless ratios [0,1] relative to the individual's own baseline.**
-
 $C_s$ is an intra-individual metric. It measures how much of *this system's own capacity* is accessible right now — not how that capacity compares to another system's baseline. Two people at $C_s = 0.7$ are each at 70% of their respective manifolds, which may represent very different absolute capacities.
+
+> **Note on the normalization exponent:** The four oscillatory weights ($A_s^*$, $R^*$, $W^*$, $\Theta^*$) sum to 0.85, not 1.0. The remaining 0.15 is structurally claimed by the load term $\frac{1}{1+L^*}$, which operates outside the geometric mean as a drag penalty on whatever capacity the oscillatory geometry produces. The exponent $\frac{1}{0.85}$ normalizes the weighted geometric mean so that uniform fractional inputs map to the same fractional output — if all four variables are at 50% capacity, $C_s = 0.50$ before load is applied. Without this correction the equation systematically overstates partial-capacity states.
 
 | Variable   | Definition                    | Physical Measurement                                     | What It Measures                                                                           |
 | ---------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -277,15 +279,100 @@ Every measurement pathway is standard practice in RSA and HRV research.
 **Why $C_s$ uses a weighted geometric mean:** The product form punishes any deficit exponentially — a healthy system at 0.7 across all variables reads as near-collapse. The geometric mean preserves the "all variables matter" logic while allowing partial compensation. One strong variable can partially carry a weak one, which matches the physiology. $R^*$ carries the highest weight (0.30) because exhale precision is the earliest indicator of geometry degradation and the most direct mechanism of window collapse. See Section 5 for the CO₂ mechanism. $I^*$ is excluded from $C_s$ — it is the routing layer, not a bandwidth component. See Section 14.
 
 ---
+### 2c. HRV as the Correct Proxy: Why Criticism Misses the Actual Mechanism
 
-### 2c. The Curvature Equation
+Before addressing methodological critiques, the mechanism needs to be stated plainly.
+
+HRV reflects respiratory sinus arrhythmia (RSA) — heart rate accelerates on inhale and decelerates on exhale. This timing is not noise. It is the system matching cardiac output to when oxygenated blood is available from the lungs. High HRV means precise timing — maximum oxygen uptake efficiency per beat. Low HRV means timing drift — the heart is pumping when less oxygenated blood is available, which is finite resource waste. **HRV is the efficiency control signal for oxygen delivery under finite energy constraints.** That is not a proxy relationship. That is the mechanism.
+
+This is why the criticism of HRV fails at the foundation: critics are measuring the fuel injector and ignoring the engine load.
+
+#### The Missing Variable: Allostatic Load
+
+HRV looks inconsistent because allostatic load ($L^*$) is absent from every model using it. Two individuals with identical HRV but different load profiles produce completely different outcomes:
+
+| HRV | $L^*$ | Predicted $C_s$ | Interpretation |
+| --- | --- | --- | --- |
+| High | Low | High | Full capacity available |
+| High | High | Moderate | Amplitude present, load consuming it |
+| Low | Low | Moderate | Reduced amplitude, load not compounding |
+| Low | High | Collapsed | Amplitude deficit plus load overhead |
+
+When load is unmodeled, these four profiles collapse into two HRV values. The metric appears noisy. **The noise is not in HRV — it is in the missing denominator.**
+
+#### The Temporal Sampling Error
+
+The load problem is compounded by a sampling error. Most HRV studies measure once — or treat repeated measurements as replications of a static trait rather than samples of a dynamic trajectory. This is the wrong model entirely.
+
+$L^*$ is not fixed. It accumulates across the day. The master equation predicts a time course:
+
+$$C_s(t) = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \Theta^{\ast 0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^\ast(t)}$$
+
+As $L^*(t)$ rises across the day, the denominator increases and $C_s$ drops — even if the oscillatory numerator holds steady. The same person will produce measurably different HRV at 7:00 AM and 6:00 PM, not because HRV is noisy but because the system is stateful.
+
+| Time | Expected $L^*$ | Expected $C_s$ | HRV |
+| --- | --- | --- | --- |
+| Morning | Low | High | High |
+| Midday | Accumulating | Moderate | Moderate |
+| Evening | High | Reduced | Lower |
+
+A morning-only measurement and an evening-only measurement of the same individual look like two different people. A study sampling across both without modeling $L^*(t)$ will produce apparent inconsistency. The field has interpreted this as metric noise. It is temporal signal — the range is the information.
+
+**The minimum viable experiment was always morning vs evening.** That single addition would have revealed that HRV is stateful, not fixed — that the range across a day is a richer signal than any single measurement. The field did not run this experiment because it had no model predicting the trajectory. The Manifold Schema provides that model. The prediction is explicit: $C_s$ follows a declining trajectory across waking hours proportional to $L^*(t)$ accumulation, with recovery occurring during sleep as $L^*$ resets.
+
+This is not a complex methodological failure. It does not require a new instrument, a new metric, or a new population. The minimum correction was a two-measurement design — morning and evening, same subjects, same protocol. The statefulness would have been immediately visible: the same person producing measurably different HRV across the same day, tracking load accumulation exactly as the master equation predicts. The field did not run this experiment because it had no model telling it the result would be meaningful. Without a model of statefulness, a second measurement looks like replication noise rather than trajectory signal. **The Manifold Schema provides that model. The prediction is now explicit. The experiment is trivial to run.**
+
+#### What HRV Actually Measures
+
+HRV captures the oscillatory source layer — the upstream input to the full causal chain:
+
+$$\text{Breath} \rightarrow A_s^* \rightarrow \sigma(A_s) \rightarrow R^* \rightarrow K \rightarrow W^* \rightarrow \Theta^* \rightarrow C_s$$
+
+- **Amplitude** ($A_s^*$) — oscillatory excursion range (RMSSD, time-domain metrics)
+- **Precision** ($R^*$) — rhythm consistency across cycles (phase-locking, jitter)
+
+Criticizing HRV for failing to predict outcomes without modeling load is like criticizing a thermometer for failing to predict boiling point without accounting for altitude. **The instrument is reading the right variable. The model is incomplete.**
+
+#### Why Other Frameworks Took the Hit
+
+Polyvagal Theory treated HRV as a direct index of discrete vagal states — categorical and hierarchical. When HRV failed to cleanly predict state transitions, the metric was blamed. But the framework had:
+
+- No load variable
+- No precision variable
+- No geometric mechanism
+
+HRV was forced to carry amplitude, precision, state category, and social engagement capacity simultaneously. It collapsed under the weight of missing structure.
+
+The Manifold Schema avoids this error. HRV contributes to $A_s^*$ and $R^*$ estimates. Load is measured separately. Window and integration are estimated from behavioral and cognitive composites. No single metric carries the full model. HRV is one probe into one layer — exactly what it can reliably do.
+
+#### On the Measurement Debate
+
+The critique of HRV-based frameworks has been formally consolidated. Grossman (2023, *Biological Psychology*) argued that RSA provides "no or very limited information about any other vagal processes" beyond heart-rate timing. Grossman et al. (2026, *Clinical Neuropsychiatry*, 23(1):100–112) expanded this into a direct critique of Polyvagal Theory's empirical foundations. Porges responded directly in the same issue ("When a Critique Becomes Untenable," 23(1):113–128), and the debate remains live. The Manifold Schema takes no position on that dispute. It accepts Grossman's specific measurement limitation in full — and does not exceed it. HRV is used in this framework specifically as a proxy for $A_s^*$ and $R^*$. All remaining variables — $W^*$, $\Theta^*$, $L^*$ — are estimated through separate instruments. The critique applies to frameworks that overextend HRV beyond timing efficiency. The Schema does not overextend it.
+
+#### Convergence Confirmation
+
+Miller et al. (2026) describe a convergent electrophysiological framing: traveling wave dynamics organize cortex into low-dimensional, task-oriented geometry, and disruption of those dynamics produces cognitive collapse. This is structurally consistent with the Schema's curvature-driven constraints — their framework does not address breath, load, or the causal chain directly. The convergence is at the level of geometric description, not causal mechanism. The Manifold Schema provides the upstream driver their account leaves open:
+
+- Reduced precision ($R^* \downarrow$)
+- → Increased curvature ($K \uparrow$)
+- → Narrowed window ($W^* \downarrow$)
+- → Collapsed integration ($\Theta^* \downarrow$)
+- → Reduced $C_s$
+
+Their framework also lacks a load variable. The Manifold Schema provides it.
+
+**HRV is not the wrong metric. The field is missing the denominator.****
+
+---
+
+### 2d. The Curvature Equation
 
 $$K = k\left(\frac{1}{R^* + \epsilon}\right) + \sum_i S_i \cdot C_i$$
 
-| Source                                      | Mechanism                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Precision loss — $\frac{1}{R^* + \epsilon}$ | Jitter rises, oscillatory signal fragments, manifold curves around the instability. $\epsilon$ is a small physiological floor — the brainstem maintains residual precision before metabolic crisis. Without $\epsilon$, the equation produces infinite curvature as $R^* \rightarrow 0$, which is a mathematical artifact. The system reaches metabolic crisis and shuts down before infinite curvature occurs. |
-| Containment cost — $\sum_i S_i \cdot C_i$   | Each suppressed signal adds to curvature independently of oscillatory amplitude                                                                                                                                                                                                                                                                                                                                 |
+| Source                                      | Mechanism                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Precision loss — $\frac{1}{R^* + \epsilon}$ | Jitter rises, oscillatory signal fragments, manifold curves around the instability. $\epsilon$ is a small physiological floor — The system maintains residual precision at its geometric center — defined by the manifold's access-cost gradient under load, not by anatomical localization. Without $\epsilon$, the equation produces infinite curvature as $R^* \rightarrow 0$, which is a mathematical artifact. The $\epsilon$ floor is a geometric floor, not a claim about specific brainstem circuits. Metabolic crisis produces system shutdown before infinite curvature occurs. |
+| Containment cost — $\sum_i S_i \cdot C_i$   | Each suppressed signal adds to curvature independently of oscillatory amplitude                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 **Transfer Functions — $K$ to Downstream Variables**
 
@@ -299,6 +386,7 @@ $$\Theta^* = \frac{1}{1 + \beta K}$$
 |---|---|
 | $\alpha$ | Calibration constant — how steeply window narrows per unit of curvature. Empirically measurable, individually variable |
 | $\beta$ | Calibration constant — how steeply integration efficiency degrades per unit of curvature. Separate from $\alpha$ — $W^*$ and $\Theta^*$ do not necessarily degrade at the same rate |
+> **Note on calibration constants:** The transfer parameters $\alpha$, $\beta$, and $\gamma$ are not universal constants; they are individual transfer functions whose baseline vectors are parameterized by genetic substrate. Interoceptive gain ($\alpha$) is anchored by dopamine clearance and receptor profiles, allostatic decay rate ($\beta$) by HPA axis resilience and glucocorticoid sensitivity, and structural efficiency ($\gamma$) by muscle fiber distribution and connective tissue architecture. Under identical external load ($L^*$), two individuals will follow distinct curvature trajectories ($C_s$) because their underlying parameter vectors differ. Empirical calibration therefore requires individual system identification rather than population-level averaging. 
 
 At $K = 0$: $W^* = 1.0$, $\Theta^* = 1.0$ — no curvature, full window and integration.
 As $K \rightarrow \infty$: both approach zero asymptotically — the system never fully shuts off until metabolic crisis.
@@ -309,7 +397,7 @@ $K$ is not a variable in the master equation — it is the mechanism through whi
 
 ---
 
-### 2d. Companion Descriptors
+### 2e. Companion Descriptors
 
 The scalar $C_s$ answers *how much*. The companion descriptors answer *which way* and *what for*.
 
@@ -321,7 +409,7 @@ $\lambda$ is inferred from which hemisphere's $\Theta^*$ degrades first under lo
 
 **$F(\Xi)$ — Collapse Mode Vector**
 
-$$F(\Xi) = (f_{R^*},\ f_{W^*},\ f_{\Theta^*},\ f_{I^*},\ f_{L^*},\ f_\lambda)$$
+$$F(\Xi) = (f_{R^\ast},\ f_{W^\ast},\ f_{\Theta^\ast},\ f_{I^\ast},\ f_{L^\ast},\ f_\lambda)$$
 
 | Component | What It Measures | Range | Meaning |
 |-----------|-----------------|-------|---------|
@@ -393,14 +481,14 @@ $L^*$ is not a step in the chain — it is pressure on every step simultaneously
 
 ## 4. The Radial Structure
 
-The manifold radiates outward from the brainstem oscillatory source.
+The manifold radiates outward from its oscillatory source — the geometric center defined by access cost under load.
 
-| Distance From Center | Region | Access Cost | Lost First Under Load |
-|---|---|---|---|
-| Center | Brainstem survival | Zero — always funded | Never |
-| Near | Limbic | Low | Last |
-| Mid | Cortical, language | Moderate | Middle |
-| Far | Prefrontal, bilateral | High | First |
+| Distance From Center | Region                                 | Access Cost          | Lost First Under Load |
+| -------------------- | -------------------------------------- | -------------------- | --------------------- |
+| Geometric center     | Survival geometry (lowest access cost) | Zero — always funded | Never                 |
+| Near                 | Limbic                                 | Low                  | Last                  |
+| Mid                  | Cortical, language                     | Moderate             | Middle                |
+| Far                  | Prefrontal, bilateral                  | High                 | First                 |
 
 This describes energetic priority, not emotional dominance. Survival geometry is the default. Everything else is built outward from it.
 
@@ -520,7 +608,7 @@ The final row is the critical one. The most distorted regions of the manifold ar
 
 #### 6b.3 The PFC Economy Loop
 
-Under load, $W$ narrows and PFC access contracts toward the brainstem center (Section 4). This contraction creates a selective pressure on which movement patterns the system can execute in real time.
+Under load, $W$ narrows and PFC access contracts toward the geometric center (Section 4). This contraction creates a selective pressure on which movement patterns the system can execute in real time.
 
 Motor patterns that have been encoded and cached run on cerebellar-basal ganglia circuits. They are automatic — executed without PFC coordination, at negligible overhead cost. Under any level of load, they remain accessible. Motor patterns that have not been encoded require PFC coordination to initiate and sustain. They are expensive under normal conditions and inaccessible under elevated $K$.
 
@@ -733,7 +821,7 @@ Every sensory domain that depends on integration degrades under load in the same
 
 **PREDICT-MOTOR-02 — Geometry Change Precedes Prior Update**
 
-If the prior loop runs through the motor encoding layer, then introducing a novel movement pattern and holding it until interoceptive signal stabilizes will produce measurable prior update — reduced $K_{enc}$, wider $W^$, reduced self-reported limit — faster than cognitive intervention alone, under equivalent time investment. The movement does not need to be symbolically related to the prior being updated. The mechanism is geometric, not associative.
+If the prior loop runs through the motor encoding layer, then introducing a novel movement pattern and holding it until interoceptive signal stabilizes will produce measurable prior update — reduced $K_{enc}$, wider $W^*$, reduced self-reported limit — faster than cognitive intervention alone, under equivalent time investment. The movement does not need to be symbolically related to the prior being updated. The mechanism is geometric, not associative.
 
 This prediction applies across domains. In generic prior updating: movement-first outperforms narrative-first matched for time. In bias reduction: implicit association measures will show larger effect size when motor vocabulary expansion precedes cognitive reframing, compared to cognitive reframing alone — and the effect size difference will correlate with baseline motor encoding gaps, not with the content of the bias.
 
@@ -828,7 +916,7 @@ In both cases the durability is determined by  at the moment of processing, no
 | Outer regions costly                      | Moderate signal                                  | Stress, irritability                |
 | PFC access limited                        | Strong signal                                    | Anxiety, anger                      |
 | Limbic dominant                           | Urgent signal                                    | Fear, shame, overwhelm              |
-| Brainstem dominant                        | Maximum signal                                   | Panic, rage, freeze                 |
+| Geometric center dominant                 | Maximum signal                                   | Panic, rage, freeze                 |
 | $C_s \approx 0$                           | Signal failure                                   | Numbness, shutdown, FND             |
 | Salience fully external — sensory present | No report needed — full budget in present signal | Flow, absorption, presence, zone    |
 | Salience fully internal — map reading map | Maximum alarm — no exit visible                  | Panic, meltdown, collapse, shutdown |
@@ -1135,9 +1223,56 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 ---
 ## Document Status
 
-**Version:** 6.0
-**Date:** Robinson 2026-08-19
+**Version:** 6.1
+**Date:** Robinson 2026-08-20
 **Status:** Mathematical formalism complete — empirical calibration phase
+
+---
+
+### v6.1 Changelog
+
+**The core change in v6.1 is measurement defense. The framework now pre-empts the most common HRV objections, scopes geometric language against anatomical misreading, and positions the Schema correctly within the live Grossman-Porges debate.**
+
+**§2b — Master Equation**
+- Added normalization exponent note — clarifies why weights sum to 0.85 and why the exponent is $\frac{1}{0.85}$
+- Closes the recurring reviewer question before it is asked
+
+**§2c — HRV as the Correct Proxy (new section)**
+- Inserted between Master Equation and Curvature Equation
+- Opens with oxygen delivery mechanism — RSA as finite-resource efficiency control signal, not noise
+- Sub-section: *The Missing Variable* — allostatic load as the missing denominator; four-profile table showing identical HRV producing different $C_s$ under different $L^*$
+- Sub-section: *The Temporal Sampling Error* — static trait assumption identified as study design failure; morning vs evening as minimum viable experiment; $C_s(t)$ trajectory formalized
+- Sub-section: *What HRV Actually Measures* — positive mechanistic statement; $A_s^*$ and $R^*$ as the correct upstream targets
+- Sub-section: *Why Other Frameworks Took the Hit* — polyvagal post-mortem; HRV forced to carry too many variables without geometric structure
+- Sub-section: *On the Measurement Debate* — Grossman (2023) quote correctly attributed; Grossman et al. (2026) 39-author consensus cited; Porges rebuttal acknowledged; Schema positioned as accepting the measurement limitation without conceding the framework
+- Sub-section: *Convergence Confirmation* — Miller et al. (2026) softened from "independently confirm" to "convergent electrophysiological framing"; convergence scoped to geometric description, not causal mechanism
+
+**§2d, §2e — Renumbering**
+- Former §2c (Curvature Equation) → §2d
+- Former §2d (Companion Descriptors) → §2e
+
+**§2d — Curvature Equation**
+- Added calibration constants note — $\alpha$, $\beta$, $\gamma$ are individual transfer functions parameterized by genetic substrate, not universal constants; empirical calibration requires individual system identification
+
+**§0 — What the Manifold Is**
+- Added definitional note on "brainstem" and "survival geometry" — geometric shorthand throughout, not anatomical claims about brainstem circuits, phylogenetic vagal hierarchies, or dorsal vagal shutdown
+- Bullet 2 scoped: "retreats toward the brainstem center" → "retreats toward its geometric center"
+
+**§4 — The Radial Structure**
+- Opening line: "brainstem oscillatory source" → "oscillatory source — the geometric center defined by access cost under load"
+- Table first row: "Brainstem survival" → "Survival geometry (lowest access cost)"
+
+**§6b.3 — PFC Economy Loop**
+- "contracts toward the brainstem center" → "contracts toward the geometric center"
+
+**§11 — Emotions Are Capacity Reports**
+- Table last row: "Brainstem dominant" → "Geometric center dominant"
+
+**Open for the field:**
+- Morning vs evening HRV study with $L^*$ modeling — minimum viable experiment to confirm statefulness prediction
+- ND vs NT amplitude range comparison across daily trajectory
+- Formal $L^*(t)$ accumulation model and overnight reset protocol
+- Scope-of-claim defense — inferential distance between HRV measurement validity and full cognitive/emotional/social projection (v6.2 target)
 
 ---
 
@@ -1183,32 +1318,36 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 - $R^*_{min}$ and $A^*_{s,max}$ threshold measurement protocols
 - Formal ODE derivation from $\mathcal{U}$
 
+---
+
 ### v5.1 Changelog
 
-**Section 2b — Master Equation**
+**The core change in v5.1 is equation tightening. The master equation and curvature chain are closed at the mathematical level for the first time.**
+
+**§2b — Master Equation**
 - Replaced product form with weighted geometric mean — eliminates exponential decay artifact at healthy baselines
 - Weights: $R^{*0.30}$, $W^{*0.25}$, $A_s^{*0.15}$, $\Theta^{*0.15}$ — $R^*$ carries highest weight as earliest collapse indicator
 - Removed $I^*$ from $C_s$ — routing layer separated from bandwidth equation
 - Added $I^*$ separation note to variable table
 
-**Section 2c — Curvature Equation**
+**§2c — Curvature Equation**
 - Added $\epsilon$ floor to $1/R^*$ term — prevents infinite curvature artifact as $R^* \rightarrow 0$
 - Added transfer functions $W^* = \frac{1}{1 + \alpha K}$ and $\Theta^* = \frac{1}{1 + \beta K}$ — chain is now mathematically closed
 - Identified $W^*$ and $\Theta^*$ as derived variables — truly independent inputs are $A_s^*$, $R^*$, $L^*$, $\sum_i S_i \cdot C_i$
 
-**Section 6a — Prior Update Rate**
+**§6a — Prior Update Rate**
 - Renamed $dM/dt \rightarrow \mathcal{U}$ throughout — removes false calculus implication
 - Defined functional form: $\mathcal{U} = \frac{A_s^* \cdot R^* \cdot \Theta^*}{1 + \gamma K_{enc}}$
 - Contamination rule and feedback loop now computable, not prose-only
 
-**Section 14 — Interoception as Sensorium**
+**§14 — Interoception as Sensorium**
 - Updated $dM/dt \rightarrow \mathcal{U}$
 - Added explicit separation statement — $I^*$ is routing layer, not bandwidth component
 
-**Section 16 — AI Connection**
+**§16 — AI Connection**
 - Corrected "direct variable mapping — not by analogy" to "structural homology — same causal role, different substrate"
 
-**Open work for v5.2:**
+**Open for the field:**
 - Empirical calibration of $\alpha$, $\beta$, $\gamma$ constants
 - Anchor for $R^*_{min}$ threshold — initial gains literature
 - Weighted geometric mean exponent validation against collapse gradient data
@@ -1218,16 +1357,18 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 
 ### v5.0 Changelog
 
-**Section 2 — Master Equation (full replacement)**
+**The core change in v5.0 is framework unification. Hemispheric and scalar models are consolidated into a single normalized equation with a complete variable set.**
+
+**§2 — Master Equation (full replacement)**
 - Replaced v3.1 hemispheric form with normalized scalar: $C_s = \frac{A_s^* \cdot R^* \cdot W^* \cdot \Theta^* \cdot I^*}{1 + L^*}$
 - All variables normalized to dimensionless ratios [0,1] relative to individual baseline
 - Added intra-individual metric caveat — $C_s$ is not a population-relative ranking
 - Added $I^*$ multiplicative defense — routing failure collapses $C_s$ independently of amplitude
-- Added Section 2a — why the equation is scalar despite multi-dimensional geometry
-- Added Section 2c — Curvature Equation explicitly linked to v5.0 variable set
-- Added Section 2d — companion descriptors ($\lambda$, $F(\Xi)$, $C_s^{usable}(T)$) baked in
+- Added §2a — why the equation is scalar despite multi-dimensional geometry
+- Added §2c — Curvature Equation explicitly linked to v5.0 variable set
+- Added §2d — companion descriptors ($\lambda$, $F(\Xi)$, $C_s^{usable}(T)$) baked in
 
-**Section 3 — Causal Chain (full replacement)**
+**§3 — Causal Chain (full replacement)**
 - Updated all variable notation to starred normalized form
 - Added $\Theta^*$ to primary chain and breath phase table
 - Repositioned $I^*$ as interoceptive control center — read/write mechanism, not a chain step
@@ -1237,42 +1378,40 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 - Added phase-locking phenomenology — flow state interoceptive quiet as $R^*$ at maximum
 - Added self-sustaining condition: $R^* > R_{\text{min}}^*$ and $L^* < A_{s,\text{avail}}^*$
 
-**Section 7 — Prior Loop (new subsection added)**
-- Added Section 7a — Prior Update Rate
+**§7 — Prior Loop (new subsection)**
+- Added §7a — Prior Update Rate
 - Formally defined $dM/dt = f(A_s^*, R^*, \Theta^*, K_{enc})$
 - Relocated $dM/dt$ from master equation to its correct position as the geometry derivative
 - Added curvature contamination rule — encoding geometry carries forward into prior topology
 - Added timescale table distinguishing instantaneous $C_s$ from accumulated prior topology
 
-**Section 9 — Empirical Anchors (updated)**
-- Anchor 04: $\Gamma$ → $\Theta^*$, with note that hemispheric asymmetry is one instantiation
-- Anchor 06: linked to Section 7a ($dM/dt$ at high $K_{enc}$)
-- Anchor 08: linked to Section 7a (encoding geometry determines prior curvature)
-- Anchor 09: $\Gamma$ → $\Theta^*$ throughout
+**§9 — Empirical Anchors**
+- Anchor 04: $\Gamma \rightarrow \Theta^*$, with note that hemispheric asymmetry is one instantiation
+- Anchor 06: linked to §7a ($dM/dt$ at high $K_{enc}$)
+- Anchor 08: linked to §7a (encoding geometry determines prior curvature)
+- Anchor 09: $\Gamma \rightarrow \Theta^*$ throughout
 - Anchor 10: FND reframed as $I^* \rightarrow 0$ routing failure, not just $C_s \approx 0$
 - Anchor 12: explicitly tied to $I^*$ as multiplicative term in master equation
 
-**Section 15 — Clinical States (updated)**
+**§15 — Clinical States**
 - Added $\lambda$ column — lateralization state per condition
 - Added dominant $F(\Xi)$ column — primary failure mode and intervention entry point
 - FND and dissociation now distinguished by position in $I^*$ collapse trajectory
-- $\Gamma$ → $\Theta^*$ in Sections 15b and 15c
-- 15c: autism reframed through $I^*$ allocation and $F(\Xi)$ signature
+- $\Gamma \rightarrow \Theta^*$ in §15b and §15c
+- §15c: autism reframed through $I^*$ allocation and $F(\Xi)$ signature
 
-**Section 17 — Working States (updated)**
-- $\Gamma$ → $\Theta^*$ throughout
+**§17 — Working States**
+- $\Gamma \rightarrow \Theta^*$ throughout
 - Added $\lambda$ state column to working states table
 - Pathological states reframed as $\Theta^*$ collapse rather than $\Gamma$ loss
 
-**Section 18 — AI Connection (updated)**
+**§18 — AI Connection**
 - Full variable table updated to v5.0 notation
 - Added $I^*$ row — schema routing failure as the AI analog of interoceptive misrouting
 - Added explanation of why prompt structure outperforms prompt length at high schema distance
 
----
-
-**Open work for v5.1:**
+**Open for the field:**
 - Pressure test $I^*$ as control center against adversarial critique
-- Cross-reference Section 1b and 1e to Section 7a ($dM/dt$ pointer lines)
-- Empirical anchor for $R_{\text{min}}^*$ threshold — initial gains literature needs a citation
-- Metric calibration for all threshold variables remains open
+- Cross-reference §1b and §1e to §7a ($dM/dt$ pointer lines)
+- Empirical anchor for $R_{\text{min}}^*$ threshold — initial gains literature
+- Metric calibration for all threshold variables
