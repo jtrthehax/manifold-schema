@@ -6,7 +6,7 @@
 
 ---
 
-## **Abstract**
+## Abstract
 
 The brain is an energy budget allocation system operating on priors. This paper proposes a unified geometric framework — the Manifold Schema — in which the operational capacity of the nervous system is formally determined by the geometry of a neural manifold shaped by oscillatory amplitude, precision, and curvature, all driven by breathing mechanics. The central claim is that these geometric variables — measurable via standard HRV instrumentation — constitute the physical substrate from which all cognitive, emotional, perceptual, and social phenomena emerge. No new variables are introduced. No new instrumentation is required.
 
@@ -16,7 +16,7 @@ The framework extends structurally to the social scale. A society allocating fin
 
 The geometry is stateful, not fixed. Every configuration described in this framework is one breath away from a different configuration. What is trainable is not a consolation — it is the entire point.
 
-The framework additionally identifies the motor encoding layer as the substrate below the prior loop. Manifold distortion is not randomly distributed — it is topographically determined by the interoceptive reporting of cached movement patterns. What the body has learned to reach sets the topology of what the mind can access. Blank zones in the motor map are experienced as cognitive and emotional limits — not because the capacity is absent, but because the interoceptive signal was never generated. This has a direct consequence: the entry point for geometry change is movement, not narrative. The body leads. The geometry follows. The cognition emerges. 
+The framework additionally identifies the motor encoding layer as the substrate below the prior loop. Manifold distortion is not randomly distributed — it is topographically determined by the interoceptive reporting of cached movement patterns. What the body has learned to reach sets the topology of what the mind can access. Blank zones in the motor map are experienced as cognitive and emotional limits — not because the capacity is absent, but because the interoceptive signal was never generated. This has a direct consequence: the entry point for geometry change is movement, not narrative. The body leads. The geometry follows. The cognition emerges.
 
 ---
 
@@ -26,21 +26,21 @@ A manifold is a geometric object — a surface that can be locally flat or curve
 
 In this framework, the neural manifold is the state space of the nervous system. Every cognitive, emotional, and perceptual operation the brain performs occupies a position in that space. The geometry of the space — how flat or curved it is, how wide or narrow its integration radius — determines what operations are accessible at any given moment.
 
-**This is not a metaphor.** Neural manifolds are measured objects. Neuroscience has known since at least 2006 that population-level neural activity does not explore all possible states equally — it moves along low-dimensional surfaces embedded in high-dimensional state space. The shape of those surfaces constrains what the system can do. This framework formalizes what drives the shape.
+**This is not a metaphor.** Neural manifolds are measured objects. Neuroscience has known since at least 2006 that population-level neural activity does not explore all possible states equally — it moves along low-dimensional surfaces embedded in high-dimensional state space. The shape of those surfaces constrains what the system can do. This framework formalizes what drives the shape.
 
 The shape is driven by one thing: the oscillatory budget.
 
 The breath generates a rhythmic oscillatory signal. That signal funds all cognitive operations. When the signal is stable and wide-ranging — high amplitude, low jitter, phase-locked during exhalation — the manifold is flat. Flat geometry means long geodesics: the system can reach distant states efficiently. When the signal destabilises — amplitude narrows, jitter rises, phase-locking breaks — the manifold curves. Curved geometry means short geodesics: the system is trapped near its current state and cannot efficiently reach anything distant.
 
-**Curvature is not a metaphor for stress.** It is the geometric consequence of oscillatory instability. It is measurable via HRV. It determines, mathematically, how far the system's predictions can propagate.
+**Curvature is not a metaphor for stress.** It is the geometric consequence of oscillatory instability. It is measurable via HRV. It determines, mathematically, how far the system's predictions can propagate.
 
 Three things follow from this:
 
-1. **Every cognitive, emotional, and perceptual phenomenon is a position on the manifold** — a configuration of the same geometric variables, not a separate mechanism requiring separate explanation.
-    
+1. **Every cognitive, emotional, and perceptual phenomenon is a position on the manifold** — a configuration of the same geometric variables, not a separate mechanism requiring separate explanation.
+
 2. **Collapse is always inward.** When the budget tightens and curvature rises, the system retreats toward its geometric center — survival geometry. This is a statement about manifold access cost under load, not an anatomical claim about brainstem circuits. Complex operations at the outer edge lose access first.
-    
-3. **Recovery is always radial expansion outward.** The geometry is stateful, not fixed. The breath is the lever. Change the oscillatory source and the manifold reshapes.
+
+3. **Recovery is always radial expansion outward.** The geometry is stateful, not fixed. The breath is the lever. Change the oscillatory source and the manifold reshapes.
 
 > **Note on "brainstem" and "survival geometry" throughout this document:** These terms are used as geometric shorthand for the manifold's lowest-cost accessible states under load — the configuration the system defaults to when curvature is high and outer regions have lost access. They are not anatomical claims about specific brainstem circuits, phylogenetic vagal hierarchies, or dorsal vagal shutdown. Wherever "brainstem center" or "survival geometry" appears, read it as: *the geometric center of the manifold, defined by access-cost gradient, not by neuroanatomy.*
 
@@ -115,7 +115,7 @@ The sequence:
 | 1. Route $I^*$ to breath | Gain control loop runs on breath signal | Prior-driven salience loses routing capacity |
 | 2. Hold the geometry | $C_s$ rises, $\sigma(A_s)$ drops, $R^*$ rises | Manifold flattens — $K_{enc}$ drops |
 | 3. Signal reaches encoding layer | Previously gated signal arrives from flat geometry | Prior layer receives input it has not had before |
-| 4. $\mathcal{U}$ writes from flat geometry | New prior does not carry old curvature forward | 
+| 4. $\mathcal{U}$ writes from flat geometry | New prior does not carry old curvature forward |
 | 5. Routing recalibrates | Signal routed differently on next encounter | Topology has changed — not by decision, by geometry |
 
 The intervention does not need to be labelled. The mechanism runs regardless — because it operates below the layer where understanding lives.
@@ -154,7 +154,7 @@ The difference between the acquired savant and the trained practitioner is the e
 
 Memory recall operates by the same principle. A memory encoded under high $K$ carries that curvature forward — the geometry at encoding is stored with the content. Recalled under flat geometry, the same memory reconstructs differently: the boundary that was active at encoding is not active at recall. The stored pattern is unchanged. The manifold reading it has changed.
 
-This is why breath-stabilized re-exposure produces durable change. The prior does not erase. It is re-encoded from flat geometry, and the new encoding competes with the old. See Section 6a for the full $\mathcal{U}$  mechanism.
+This is why breath-stabilized re-exposure produces durable change. The prior does not erase. It is re-encoded from flat geometry, and the new encoding competes with the old. See Section 6a for the full $\mathcal{U}$ mechanism.
 
 ---
 
@@ -162,7 +162,7 @@ This is why breath-stabilized re-exposure produces durable change. The prior doe
 
 $$S = C_s \cdot I^*$$
 
-Salience has two directions. Everything follows from which way $I∗$ routes.
+Salience has two directions. Everything follows from which way $I^*$ routes.
 
 **Flow** is $I^*$ fully allocated to the external sensory channel. Phase-locking is precise. Gain maximises on one signal. Everything else drops below the noise floor. $\sigma(A_s)$ collapses — not because amplitude is low but because it is controlled. The full budget runs on one channel with no containment cost competing for it.
 
@@ -203,7 +203,9 @@ Breath interrupts the collapse loop by routing $I^*$ back to breath geometry —
 
 **Flow is $I^*$ in the world. Panic is $I^*$ in the map. Phase-locking points the gate.**
 
-_Phase-locking synchronizes the oscillatory signal with motor output so tightly that background interoceptive noise drops to near zero. Only the focused channel is above the noise floor._
+*Phase-locking synchronizes the oscillatory signal with motor output so tightly that background interoceptive noise drops to near zero. Only the focused channel is above the noise floor.*
+
+---
 
 ### 1e. Fear as Encoded Salience
 
@@ -229,7 +231,7 @@ Someone with genuine bottom-up control of the oscillatory system encounters the 
 
 A person operating without encoded fear boundaries is running the same hardware as everyone else — without the suppression overhead those boundaries impose. See Section 1c for the geometry of what that looks like at full capacity.
 
-The entry point is not psychological. It is geometric: encode the prior from flat geometry and the boundary is never written. The routing finds nothing to amplify. See Section 6b for why the body leads this process, and Section 6a for the $\mathcal{U}$  mechanism that determines what geometry the prior carries forward.
+The entry point is not psychological. It is geometric: encode the prior from flat geometry and the boundary is never written. The routing finds nothing to amplify. See Section 6b for why the body leads this process, and Section 6a for the $\mathcal{U}$ mechanism that determines what geometry the prior carries forward.
 
 ---
 
@@ -239,7 +241,7 @@ The entry point is not psychological. It is geometric: encode the prior from fla
 
 The neural manifold is multi-dimensional. Collapse is directional — it proceeds radially inward (Section 4), and different failure modes produce different functional profiles even at identical bandwidth levels. Two systems at the same $C_s$ can have completely inverted working capacity depending on *which* variables failed and *which* hemisphere's integration dropped first.
 
-The master equation is scalar because it answers one specific question: **how much of the system's own usable bandwidth is currently accessible?** Directionality — which way the manifold is tilted, which variables have failed, what tasks remain available — lives in the companion descriptors (Section 2c). The scalar and the descriptors are not alternatives. They are complements. Neither is sufficient alone.
+The master equation is scalar because it answers one specific question: **how much of the system's own usable bandwidth is currently accessible?** Directionality — which way the manifold is tilted, which variables have failed, what tasks remain available — lives in the companion descriptors (Section 2e). The scalar and the descriptors are not alternatives. They are complements. Neither is sufficient alone.
 
 ---
 
@@ -260,10 +262,12 @@ $C_s$ is an intra-individual metric. It measures how much of *this system's own 
 
 > **Note on the normalization exponent:** The four oscillatory weights ($A_s^*$, $R^*$, $W^*$, $\Theta^*$) sum to 0.85, not 1.0. The remaining 0.15 is structurally claimed by the load term $\frac{1}{1+L^*}$, which operates outside the geometric mean as a drag penalty on whatever capacity the oscillatory geometry produces. The exponent $\frac{1}{0.85}$ normalizes the weighted geometric mean so that uniform fractional inputs map to the same fractional output — if all four variables are at 50% capacity, $C_s = 0.50$ before load is applied. Without this correction the equation systematically overstates partial-capacity states.
 
+> **Note on $R^*$:** $R^*$ is the normalized form of precision $P = R/D_T$, where $R$ is sync duration and $D_T$ is timing distance. $R^*$ is formally defined as the timing-coherence ratio — see Section 5a for the complete formalism, two-factor pressure decomposition, and CO₂ tolerance window.
+
 | Variable   | Definition                    | Physical Measurement                                     | What It Measures                                                                           |
 | ---------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | $A_s^*$    | Oscillatory amplitude         | RMSSD / Baseline RMSSD                                   | The energy budget — how much oscillatory signal is available to fund cognitive operations  |
-| $R^*$      | Precision                     | Phase-Locking Index / Baseline PLI                       | Signal clarity — whether the oscillatory energy is coherent or fragmented                  |
+| $R^*$      | Precision — timing-coherence ratio | Phase-Locking Index / Baseline PLI | Signal clarity — whether oscillatory streams stay close (low $D_T$) and stay close for long periods (high $R$) — see §5a |
 | $W^*$      | Window width                  | Cognitive flexibility composite / Baseline               | Accessible manifold range — how far predictions can propagate                              |
 | $\Theta^*$ | Global integration efficiency | Phase-locking stability × ambiguity tolerance / Baseline | How well the system holds disparate signals together in the same processing window         |
 | $I^*$      | Interoceptive selection       | Heartbeat detection accuracy / Baseline                  | The routing protocol — how well the system reads its own geometry and allocates the budget |
@@ -279,6 +283,7 @@ Every measurement pathway is standard practice in RSA and HRV research.
 **Why $C_s$ uses a weighted geometric mean:** The product form punishes any deficit exponentially — a healthy system at 0.7 across all variables reads as near-collapse. The geometric mean preserves the "all variables matter" logic while allowing partial compensation. One strong variable can partially carry a weak one, which matches the physiology. $R^*$ carries the highest weight (0.30) because exhale precision is the earliest indicator of geometry degradation and the most direct mechanism of window collapse. See Section 5 for the CO₂ mechanism. $I^*$ is excluded from $C_s$ — it is the routing layer, not a bandwidth component. See Section 14.
 
 ---
+
 ### 2c. HRV as the Correct Proxy: Why Criticism Misses the Actual Mechanism
 
 Before addressing methodological critiques, the mechanism needs to be stated plainly.
@@ -361,7 +366,7 @@ Miller et al. (2026) describe a convergent electrophysiological framing: traveli
 
 Their framework also lacks a load variable. The Manifold Schema provides it.
 
-**HRV is not the wrong metric. The field is missing the denominator.****
+**HRV is not the wrong metric. The field is missing the denominator.**
 
 ---
 
@@ -386,7 +391,7 @@ $$\Theta^* = \frac{1}{1 + \beta K}$$
 |---|---|
 | $\alpha$ | Calibration constant — how steeply window narrows per unit of curvature. Empirically measurable, individually variable |
 | $\beta$ | Calibration constant — how steeply integration efficiency degrades per unit of curvature. Separate from $\alpha$ — $W^*$ and $\Theta^*$ do not necessarily degrade at the same rate |
-> **Note on calibration constants:** The transfer parameters $\alpha$, $\beta$, and $\gamma$ are not universal constants; they are individual transfer functions whose baseline vectors are parameterized by genetic substrate. Interoceptive gain ($\alpha$) is anchored by dopamine clearance and receptor profiles, allostatic decay rate ($\beta$) by HPA axis resilience and glucocorticoid sensitivity, and structural efficiency ($\gamma$) by muscle fiber distribution and connective tissue architecture. Under identical external load ($L^*$), two individuals will follow distinct curvature trajectories ($C_s$) because their underlying parameter vectors differ. Empirical calibration therefore requires individual system identification rather than population-level averaging. 
+> **Note on calibration constants:** The transfer parameters $\alpha$, $\beta$, and $\gamma$ are not universal constants; they are individual transfer functions whose baseline vectors are parameterized by genetic substrate. Interoceptive gain ($\alpha$) is anchored by dopamine clearance and receptor profiles, allostatic decay rate ($\beta$) by HPA axis resilience and glucocorticoid sensitivity, and structural efficiency ($\gamma$) by muscle fiber distribution and connective tissue architecture. Under identical external load ($L^*$), two individuals will follow distinct curvature trajectories ($C_s$) because their underlying parameter vectors differ. Empirical calibration therefore requires individual system identification rather than population-level averaging.
 
 At $K = 0$: $W^* = 1.0$, $\Theta^* = 1.0$ — no curvature, full window and integration.
 As $K \rightarrow \infty$: both approach zero asymptotically — the system never fully shuts off until metabolic crisis.
@@ -520,6 +525,206 @@ The geometry is stateful, not static. The system is always one breath away from 
 
 ---
 
+## 5a. Precision: The Formal Definition of $R^*$
+
+Section 5 established how breath produces the conditions for precision — CO₂ tolerance, phase-locking, and amplitude stability. This section defines what precision *is*: the timing-coherence ratio that these conditions produce, and the formal substrate of the $R^*$ variable in the master equation.
+
+---
+
+### 5a.1 Precision as a Timing-Coherence Ratio
+
+Let two oscillatory streams — such as respiration and heart rate, or inter-hemispheric EEG phase — have phase difference:
+
+$$\Delta \phi(t)$$
+
+Define **timing distance** as the average absolute phase difference over a measurement window:
+
+$$D_T = \mathbb{E}_{t \in T} \big[|\Delta \phi(t)|\big]$$
+
+Define **sync duration** as the proportion of time spent within a small phase band $\epsilon$:
+
+$$R = \frac{T_{\text{in}}}{T_{\text{total}}}$$
+
+Where $T_{\text{in}}$ is the time the phase difference remains below threshold $\epsilon$.
+
+**Precision is the ratio of sync duration to timing distance:**
+
+$$P = \frac{R}{D_T}$$
+
+**Interpretation:** A system achieves high precision when two streams stay close together (low $D_T$) and stay close for long periods (high $R$). A system with low precision may have streams that are close briefly (low $D_T$, low $R$) or far apart consistently (high $D_T$, high $R$). Both produce low $P$.
+
+**$R^*$ is the normalized form of this timing-coherence ratio, relative to the individual's baseline:**
+
+$$R^* = \frac{P}{P_{\text{baseline}}} = \frac{R/D_T}{(R/D_T)_{\text{baseline}}}$$
+
+**Operational Measurement:** The Phase Locking Value (PLV) is the operational measurement of this ratio. PLV ranges from 0 (no synchronization) to 1 (perfect synchronization), calculated as:
+
+$$\text{PLV} = \left|\frac{1}{N}\sum_{n=1}^{N} \exp(i \times (\phi_{\text{resp}}(n) - \phi_{\text{hr}}(n)))\right|$$
+
+This is the mathematical measure of how close two oscillatory streams stay ($D_T$) and how consistently they maintain that proximity ($R$) — precisely the ratio defined above (Pratap et al., 2026). The streams being measured can be any pair of oscillatory signals relevant to the system state.
+
+---
+
+### 5a.2 The CO₂ Tolerance Window and Chemoreflex Jitter
+
+Precision increases only while CO₂ remains within the individual tolerance band:
+
+$$C_{\text{low}} < C < C_{\text{high}}$$
+
+Where:
+- $C_{\text{low}}$ is the minimum CO₂ needed to raise HRV, reduce jitter, and allow precision to rise
+- $C_{\text{high}}$ is the maximum CO₂ the system can sustain before chemoreflex activation injects jitter
+
+**Above $C_{\text{high}}$:** Chemoreflex activation produces involuntary diaphragm and intercostal spasms that inject timing noise into the oscillatory loop. This jitter is modeled as:
+
+$$J(C) = \begin{cases}
+0 & C \le C_{\text{high}} \\
+\kappa (C - C_{\text{high}})^2 & C > C_{\text{high}}
+\end{cases}$$
+
+Where $\kappa$ is the chemoreflex jitter gain. Jitter grows quadratically once tolerance is exceeded.
+
+**Below $C_{\text{low}}$:** HRV is insufficient to sustain coherence. Precision remains low regardless of effort.
+
+**Interpretation:** This completes the mechanism asserted in Section 5. CO₂ does not monotonically improve precision — it has a tolerance window. The chemoreflex jitter term explains why excessive CO₂ collapses rather than improves the geometry, and why breath-hold at the right moment produces precision lock while over-extension produces spasms and fragmentation.
+
+**Operational Measurement:** Capnometry (end-tidal CO₂) provides continuous CO₂ measurement. Jitter is approximated using EEG phase jitter, HRV beat-to-beat variability (RMSSD), and respiration–ECG phase slip.
+
+---
+
+### 5a.3 The Two-Factor Pressure Correction
+
+Section 5 treats "pressure" as a single variable. This is insufficient. Pressure must be split into two components with opposite effects on precision:
+
+| Component | Symbol | Source | Effect on Precision |
+|-----------|--------|--------|---------------------|
+| **Mechanical pressure** | $\Pi_{\text{mech}}$ | Breath-hold, closed-loop pressure, thoracic pressure, baroreflex coherence | **Beneficial** — reduces timing distance, extends sync duration |
+| **Cognitive/metabolic pressure** | $\Pi_{\text{cog}}$ | Load, sympathetic activation, cognitive demand, allostatic load | **Harmful** — increases timing distance, reduces sync duration |
+
+**Total pressure is the sum:**
+
+$$\Pi = \Pi_{\text{mech}} + \Pi_{\text{cog}}$$
+
+But they operate with opposite signs in the precision equations.
+
+**Mechanical Pressure Onset Condition:** Mechanical pressure becomes beneficial when the respiratory loop is closed (end-exhalation breath-hold) and thoracic motion drops below threshold. This condition enforces bilateral symmetry and reduces timing drift.
+
+**Operational Measurement:** Mechanical pressure is approximated using thoracic pressure amplitude (respiration belt), baroreflex phase coherence (ECG–BP coupling), and intracranial pulse pressure proxies (PPG). Cognitive/metabolic pressure is approximated using sympathetic markers (LF/HF ratio), pupillometry (task-evoked dilation), and performance-capacity mismatch (error rate under load).
+
+**Interpretation:** This resolves a latent ambiguity in the Manifold Schema's curvature equation — $K$ has containment cost $\sum_i S_i \cdot C_i$ but no formal distinction between the type of pressure driving curvature up. The two-factor split gives that distinction formal grounding. Breath-hold pressure (mechanical) improves precision by enforcing bilateral symmetry and phase coherence. Cognitive load pressure (metabolic) degrades precision by injecting noise and increasing jitter. The same word — "pressure" — carries opposite meanings depending on its source.
+
+**The complete precision equation with two-factor pressure:**
+
+$$P(C, \Pi_{\text{mech}}, \Pi_{\text{cog}}) = \frac{R}{D_T} \cdot U_C$$
+
+Where timing distance with both pressure components and jitter is:
+
+$$D_T = \frac{k_2}{H(C)} \cdot \frac{1 + \lambda_c \Pi_{\text{cog}}}{1 - \lambda_m \Pi_{\text{mech}}} + J(C)$$
+
+And sync duration with both pressure components and jitter is:
+
+$$R = k_3 H(C) \cdot (1 + \mu_m \Pi_{\text{mech}}) \cdot e^{-\mu_c \Pi_{\text{cog}}} \cdot e^{-\nu J(C)}$$
+
+With CO₂ uniformity:
+
+$$U_C = \frac{1}{\text{Var}_i[C_i] + \epsilon}$$
+
+---
+
+### 5a.4 CO₂ Uniformity and Dynamics
+
+CO₂ uniformity is the inverse variance of CO₂ across the system:
+
+$$U_C = \frac{1}{\text{Var}_i[C_i] + \epsilon}$$
+
+**Interpretation:** Precision is maximized when CO₂ is high AND uniformly distributed. High CO₂ with uneven distribution produces high variance, reducing precision. This explains why breath-hold at the right moment improves precision (uniformity achieved) but collapses when CO₂ becomes unevenly distributed.
+
+**Uniformity Dynamics:** CO₂ uniformity evolves over time according to:
+
+$$\frac{dU_C}{dt} = -\rho \cdot \text{Var}_i[C_i(t)]$$
+
+Where $\rho$ is the equalization rate. Uniformity increases during closed-loop breath-holds and decreases when CO₂ distribution becomes uneven.
+
+**Operational Measurement:** CO₂ uniformity is approximated using end-tidal CO₂ (capnometry), multi-site PPG variance, and respiration–HRV coupling stability.
+
+---
+
+### 5a.5 Collapse Hysteresis
+
+After precision collapse, recovery is delayed due to residual jitter and sympathetic activation. This is modeled as:
+
+$$P_{\text{recover}} = P(t) - \delta_{\text{hyst}}$$
+
+Where $\delta_{\text{hyst}}$ is the hysteresis penalty. This explains post-collapse fog and delayed clarity.
+
+**Hysteresis Decay:** The hysteresis penalty decays exponentially:
+
+$$\frac{d\delta_{\text{hyst}}}{dt} = -\sigma \delta_{\text{hyst}}$$
+
+**Interpretation:** The system does not recover from collapse at the same rate it entered it. Once jitter is injected and coherence is lost, residual sympathetic activation and lingering phase noise prevent immediate return to precision lock. Recovery requires sustained conditions — not just a brief return to the precision window.
+
+This is the formal substrate for why the Manifold Schema's Section 7 (Felt Geometry) describes the collapse states as sticky — the geometry doesn't bounce back symmetrically. The hysteresis penalty captures that asymmetry.
+
+---
+
+### 5a.6 Resonance Breathing and Cross-Frequency Coupling
+
+**Resonance breathing** occurs when the respiratory oscillator and the cardiac baroreflex oscillator phase-lock at ~0.1 Hz (≈6 breaths/min). This frequency matching reduces timing distance and increases sync duration independent of CO₂.
+
+Formally:
+
+$$\Pi_{\text{mech}} \propto \text{PLV}(f_{\text{resp}}, f_{\text{baro}})$$
+
+When $f_{\text{resp}} = f_{\text{baro}}$, drift drops, jitter remains low, and precision rises without entering the CO₂ tolerance window. This produces stable clarity and flow without spasms or collapse.
+
+**Cross-frequency coupling (CFC)** extends the precision model to interactions across multiple frequency bands:
+- Respiration–HRV coupling (0.1 Hz)
+- Alpha–theta coupling during meditation
+- Theta–HRV coupling during breath-hold
+- Gamma–cardiac phase coupling during flow states
+
+**Interpretation:** Resonance breathing is a third precision mechanism — distinct from CO₂-driven precision and breath-hold precision lock. It operates through frequency entrainment of the respiratory and cardiac oscillators, producing sustained precision at moderate CO₂ levels without the risk of exceeding tolerance. CFC makes the precision model compatible with multi-band EEG and HRV phenomena.
+
+**Operational Measurement:** Resonance is measured as phase-locking between respiration and baroreflex at ~0.1 Hz. CFC is measured using phase-amplitude coupling (PAC), phase-phase coupling (PPC), or n:m phase locking between oscillatory bands.
+
+---
+
+### 5a.7 Individual Variability in CO₂ Tolerance
+
+The CO₂ tolerance parameters $C_{\text{low}}$ and $C_{\text{high}}$ are individual-specific and trainable. Factors that shift the tolerance window include:
+
+| Factor | Effect on Tolerance |
+|--------|---------------------|
+| Fitness/athletic training | Increases tolerance (higher $C_{\text{high}}$) |
+| Anxiety | Decreases tolerance (lower $C_{\text{high}}$) |
+| Altitude | Shifts tolerance (adaptation over days) |
+| Hydration | Affects tolerance (dehydration lowers) |
+| Sleep | Affects tolerance (poor sleep lowers) |
+| Breathwork practice | Increases tolerance (trainable) |
+
+Precision peaks occur at different CO₂ levels across individuals. The tolerance window is not fixed — it is a dynamic state variable that shifts with training and condition. This accounts for why interventions that work for one individual may fail for another: the tolerance window and training history differ.
+
+---
+
+### 5a.8 Variable Mapping — Precision Doc to Manifold Schema
+
+| Precision Doc | Manifold Schema | What It Captures |
+|---------------|-----------------|------------------|
+| Timing distance $D_T$ | Phase coherence deficit | How far apart oscillatory streams are |
+| Sync duration $R$ | Phase-locking stability | How long streams stay together |
+| Precision $P$ | $R^*$ | The ratio of sync duration to timing distance |
+| Jitter $J(C)$ | $\sigma(A_s)$ (amplitude jitter) | Noise floor from chemoreflex |
+| Mechanical pressure $\Pi_{\text{mech}}$ | Breath coherence | Symmetry enforcer |
+| Cognitive pressure  | Containment cost  | Harmful pressure — acute load degrading precision |
+| Collapse hysteresis $\delta_{\text{hyst}}$ | Recovery cost | Asymmetric recovery |
+| CFC (multi-band) | $\Theta^*$ integration | Cross-frequency coupling |
+
+**The precision ratio $P$ is the operational definition of $R^*$ in the master equation.** When $P$ is high, $R^*$ is high, curvature drops, and the manifold flattens. When $P$ is low, $R^*$ is low, curvature rises, and the manifold curves.
+
+**For the complete mathematical formalism — including temporal dynamics, motor gain equations, cross-frequency coupling, and full falsifiable predictions — see *Precision, Timing, and the Oscillatory Source: Complete Formalism* (Robinson, 2026). DOI: 10.5281/zenodo.22179675**
+
+---
+
 ## 6. The Prior Loop
 
 $$\text{Manifold geometry} \rightarrow \text{Prior quality} \rightarrow \text{Budget allocation efficiency} \rightarrow \text{Manifold geometry}$$
@@ -558,10 +763,10 @@ The curvature at encoding determines what every future encounter with that signa
 
 1. Change the geometry first — breath stabilization drops $K_{enc}$
 2. Introduce the signal — reaches encoding layer from flat geometry
-3. $\mathcal{U}$  writes a flat prior — new encoding does not carry old curvature forward
+3. $\mathcal{U}$ writes a flat prior — new encoding does not carry old curvature forward
 4. Geometry updates — future $C_s$ has a different floor
 
-Skipping Step 1 means $\mathcal{U}$  writes under the same curvature that produced the original prior. Content updates. Geometry does not. The autonomic response on future encounters remains unchanged.
+Skipping Step 1 means $\mathcal{U}$ writes under the same curvature that produced the original prior. Content updates. Geometry does not. The autonomic response on future encounters remains unchanged.
 
 | Term | Role |
 |---|---|
@@ -575,7 +780,7 @@ Skipping Step 1 means $\mathcal{U}$  writes under the same curvature that produc
 
 ### 6b. The Motor Encoding Layer: Why Distortion Is Not Random
 
-The prior loop established in Section 6 runs at the cognitive level — geometry shapes prior quality, prior quality shapes budget efficiency, budget efficiency shapes geometry. But the loop has a substrate layer running below cognition, one that determines _where_ the manifold distorts and _why_ that distortion is not random.
+The prior loop established in Section 6 runs at the cognitive level — geometry shapes prior quality, prior quality shapes budget efficiency, budget efficiency shapes geometry. But the loop has a substrate layer running below cognition, one that determines *where* the manifold distorts and *why* that distortion is not random.
 
 **The substrate is the motor encoding layer. The bridge is interoception.**
 
@@ -587,13 +792,13 @@ The radial structure of the manifold (Section 4) describes distance from center 
 
 > **What counts as "near" on the manifold is whatever the cached motor patterns already reach. What counts as "far" is whatever they do not.**
 
-Motor patterns that have been encoded and cached run on cerebellar-basal ganglia circuits — low overhead, no PFC coordination required. They are energetically "near" regardless of their physical complexity. Motor patterns that have never been encoded, or that have been abandoned, require PFC coordination to execute — high  cost, high overhead, energetically "far."
+Motor patterns that have been encoded and cached run on cerebellar-basal ganglia circuits — low overhead, no PFC coordination required. They are energetically "near" regardless of their physical complexity. Motor patterns that have never been encoded, or that have been abandoned, require PFC coordination to execute — high cost, high overhead, energetically "far."
 
-The manifold does not have a universal topology. It has a **personally constructed topology** — built from the history of movement patterns the system has encoded, reinforced, and cached.
+The manifold does not have a universal topology. It has a **personally constructed topology** — built from the history of movement patterns the system has encoded, reinforced, and cached.
 
 #### 6b.2 Interoception as the Encoding Bridge
 
-The mechanism connecting the motor layer to the prior layer is interoception. The interoceptive signal does not merely report body state — it is the **signal the system uses to assign energetic cost to movement patterns**:
+The mechanism connecting the motor layer to the prior layer is interoception. The interoceptive signal does not merely report body state — it is the **signal the system uses to assign energetic cost to movement patterns**:
 
 |Movement State|Interoceptive Signal|System Encoding|
 |---|---|---|
@@ -602,7 +807,7 @@ The mechanism connecting the motor layer to the prior layer is interoception. Th
 |Pattern avoided under load|No new signal generated|Prior: "this is the limit" — blank zone|
 |Pattern never attempted|No signal at all|Prior: absent — region does not exist in map|
 
-The final row is the critical one. The most distorted regions of the manifold are not where the interoceptive map says _danger_ — they are where the map says _nothing_. The system interprets absence of interoceptive data as capacity limit, because under a finite energy budget, unexplored regions are indistinguishable from inaccessible ones.
+The final row is the critical one. The most distorted regions of the manifold are not where the interoceptive map says *danger* — they are where the map says *nothing*. The system interprets absence of interoceptive data as capacity limit, because under a finite energy budget, unexplored regions are indistinguishable from inaccessible ones.
 
 > **The system experiences blank map as "can't." The blank is not a boundary. It is the absence of cartography.**
 
@@ -612,7 +817,7 @@ Under load, $W$ narrows and PFC access contracts toward the geometric center (Se
 
 Motor patterns that have been encoded and cached run on cerebellar-basal ganglia circuits. They are automatic — executed without PFC coordination, at negligible overhead cost. Under any level of load, they remain accessible. Motor patterns that have not been encoded require PFC coordination to initiate and sustain. They are expensive under normal conditions and inaccessible under elevated $K$.
 
- The consequence is structural:
+The consequence is structural:
 
 $$\text{Load} \uparrow \rightarrow K \uparrow \rightarrow W \downarrow \rightarrow \text{PFC access} \downarrow \rightarrow \text{Uncached movement inaccessible} \rightarrow \text{System defaults to cached patterns}$$
 
@@ -636,7 +841,7 @@ Because distortion follows motor encoding gaps rather than distributing randomly
 |Prefrontal, bilateral access|Uncached integrative movement — breath, postural coordination|Diaphragmatic range, thoracic mobility|
 |Emotional regulation regions|Uncached interoceptive exposure — felt sensation avoided|Slow breath hold, felt-sense practice|
 |Social cognition|Uncached regulatory role expression — compliance pattern cached|Role expansion, non-compliance practice|
-|Temporal integration|Uncached oscillatory range —  amplitude ceiling low|CO₂ tolerance training, extended exhale|
+|Temporal integration|Uncached oscillatory range — amplitude ceiling low|CO₂ tolerance training, extended exhale|
 
 Two individuals under identical external load will distort differently — because they have different motor encoding histories, and their interoceptive maps reflect those histories as topology.
 
@@ -672,7 +877,7 @@ Hypermobility does not provide more hardware. It provides more of the hardware m
 
 #### 6b.7 Social Compliance as Topology Restructuring
 
-When movement is systematically restricted by social signal — compliance requirements, masking, role enforcement — the restriction does not remain at the behavioral layer. Through $\mathcal{U}$ , it is written into the manifold topology. The interoceptive signal reports the constrained range as the available range. The compliance becomes the geometry.
+When movement is systematically restricted by social signal — compliance requirements, masking, role enforcement — the restriction does not remain at the behavioral layer. Through $\mathcal{U}$, it is written into the manifold topology. The interoceptive signal reports the constrained range as the available range. The compliance becomes the geometry.
 
 This mechanism applies at every scale — individual, cultural, institutional, and AI alignment training. In every case the social signal restricts movement, the restricted movement generates no interoceptive signal, the absent signal encodes as a limit, and the limit becomes the topology. See Section 17 for the social scale projection.
 
@@ -709,11 +914,11 @@ Each claim in this framework is already supported by existing empirical literatu
 | 03     | Intervention effects depend on baseline geometry                                                     | HRVB systematic review                                                                        | "Inconsistent results" across HRV biofeedback studies are predicted by the formula — baseline geometry determines which intervention works                                                                                                                                                                                     |
 | 04     | $\Theta^*$ is real and measurable                                                                    | Dono et al. (2020) — *Frontiers in Neurology*                                                 | Hemispheric laterality affects autonomic regulation — integration efficiency has a measurable physiological substrate. $\Theta^*$ is the generalized form; hemispheric asymmetry is one instantiation of integration failure                                                                                                   |
 | 05     | Containment cost raises $K$ independently of $A_s^*$                                                 | Reed et al. (2020) — *Collabra: Psychology*                                                   | Suppression depletes resources even when HRV is stable — the $\sum_i S_i \cdot C_i$ term in the Curvature Equation is an independent load source, not a downstream effect of amplitude                                                                                                                                         |
-| 06     | Priors encoded under high $K$ carry curvature forward                                                | Haghian et al., 2025                                                                          | Emotional encoding systematically distorts recall — this is $\mathcal{U}$  at high $K_{enc}$ producing curved priors. See Section 6a                                                                                                                                                                                                  |
+| 06     | Priors encoded under high $K$ carry curvature forward                                                | Haghian et al., 2025                                                                          | Emotional encoding systematically distorts recall — this is $\mathcal{U}$ at high $K_{enc}$ producing curved priors. See Section 6a                                                                                                                                                                                                  |
 | 07     | Collapse proceeds radially inward                                                                    | ADNI, 2016                                                                                    | Neurodegeneration follows the predicted outer→inner sequence — prefrontal and bilateral integration regions fail first, brainstem survival geometry last                                                                                                                                                                       |
-| 08     | Geometry must change before re-encoding works                                                        | Mathersul et al., 2024                                                                        | Baseline HRV moderates which therapy works — the geometry at encoding ($K_{enc}$) determines whether $\mathcal{U}$  writes a flat or curved prior. See Section 6a                                                                                                                                                                     |
+| 08     | Geometry must change before re-encoding works                                                        | Mathersul et al., 2024                                                                        | Baseline HRV moderates which therapy works — the geometry at encoding ($K_{enc}$) determines whether $\mathcal{U}$ writes a flat or curved prior. See Section 6a                                                                                                                                                                     |
 | 09     | Social co-regulation restores $\Theta^*$                                                             | EDM concert physiology + 5,000 years of religious practice convergence + CA2-CA1 gamma (2023) | Every major civilization independently built synchronized group rhythm as a core regulatory protocol. The mechanism is collective phase-locking raising $\Theta^*$ — integration efficiency restored via external rhythmic entrainment. The convergence across unconnected traditions is the result of the A/B test            |
-| 10     | FND is $C_s \approx 0$ via $I^* \rightarrow 0$, not structural lesion                                | Maurer et al. (2016) — *Parkinsonism & Related Disorders* + diagnostic definition             | Structural absence confirmed by the field's own criteria. In v5.0 terms: FND is a routing failure — $I^*$ collapses while $A_s^*$, $R^*$, and $W^*$ may remain partially intact. The bandwidth is present; the system cannot direct it. Geometric collapse is the missing mechanism. Prodrome is testable — see PREDICT-FND-01 |
+| 10     | FND is $C_s \approx 0$ via $I^* \rightarrow 0$, not structural lesion                                | Maurer et al. (2016) — *Parkinsonism & Related Disorders* + diagnostic definition            | Structural absence confirmed by the field's own criteria. In v5.0 terms: FND is a routing failure — $I^*$ collapses while $A_s^*$, $R^*$, and $W^*$ may remain partially intact. The bandwidth is present; the system cannot direct it. Geometric collapse is the missing mechanism. Prodrome is testable — see PREDICT-FND-01 |
 | 11     | Cached motor patterns shift from PFC-dependent to low-overhead cerebellar-basal ganglia execution    | Diedrichsen & Kornysheva (2015) — *Nature Reviews Neuroscience*                               | Motor automatisation produces measurable reduction in PFC overhead — the energetic cost difference between cached and uncached movement is real and measurable. This is the mechanism behind Section 6b.3 (PFC Economy Loop)                                                                                                   |
 | 12     | $I^*$ — interoception reports movement cost and gates prior encoding                                 | Garfinkel et al. (2015) — *Neuropsychologia*; Craig (2009) — *Nature Reviews Neuroscience*    | Interoceptive accuracy predicts emotion regulation, prior formation, and cognitive updating. This is the empirical anchor for $I^*$ as a multiplicative term — the routing protocol that determines whether bandwidth can be allocated at all. See Section 14                                                                  |
 | 13     | Unexplored physical range produces blank interoceptive zones experienced as capacity limits          | Moseley & Flor (2012) — *Nature Reviews Neuroscience*                                         | Cortical body maps shrink with movement disuse and expand with exploration — the blank zone is measurable cortical real estate that was never claimed. This closes the topology argument in Section 6b.2                                                                                                                       |
@@ -721,6 +926,10 @@ Each claim in this framework is already supported by existing empirical literatu
 | 15     | $I^*$ routing modulates peripheral physiology directly, not via sensation                            | Mizrachi et al. (2026) — *Attention shapes inflammation*                                      | Attention to inflamed area reduces inflammation ~1.5-fold within minutes; effect persists with local anesthetic — top-down $I^*$ pathway modulates tissue state independent of sensory input                                                                                                                                   |
 | 16     | $I^* = I^*_{total} - I^*_{vision}$ — sensory load is arithmetically subtracted from routing capacity | NeuroImage (2024) — visual-interoceptive trade-off study                                      | Visual stimuli during systole (strong cardiac signal) reduce visual processing — internal and external signals compete for the same routing capacity                                                                                                                                                                           |
 | 17     | Eyes closed restores $I^*$ routing to interoceptive channel                                          | Postural balance study (2024)                                                                 | Higher cardiac awareness predicts better balance with eyes closed — removing visual load frees routing capacity for interoception, not a relaxation effect                                                                                                                                                                     |
+| 18     | Precision is a timing-coherence ratio of sync duration over timing distance                          | Pratap et al. (2026) — Cardiorespiratory coupling during encoding                             | PLV measures the ratio of sync duration to timing distance — this is the operational definition of $R^*$ as formalized in Section 5a                                                                                                                                                                                          |
+| 19     | CO₂ tolerance window determines precision peak                                                       | Sakakibara et al. (1994) — Voluntary apnea and EEG-HRV                                        | Hypercapnia depresses cortical activity; theta correlates with parasympathetic activity — the chemoreflex jitter mechanism confirmed                                                                                                                                                                                          |
+| 20     | Resonance breathing produces stable precision                                                        | Yamamoto et al. (2006) — Zen meditation EEG-HRV                                               | Interhemispheric coherence increases with parasympathetic activation — resonance breathing confirmed as a precision mechanism                                                                                                                                                                                             |
+| 21     | Collapse hysteresis delays recovery                                                                  | Reed et al. (2020) — Suppression depletes resources                                           | Recovery time exceeds collapse time — hysteresis mechanism confirmed                                                                                                                                                                                                                                                           |
 
 _These anchors confirm each component of the framework independently. The full causal chain — connecting all of them in sequence — is the novel contribution._
 
@@ -821,7 +1030,7 @@ Every sensory domain that depends on integration degrades under load in the same
 
 **PREDICT-MOTOR-02 — Geometry Change Precedes Prior Update**
 
-If the prior loop runs through the motor encoding layer, then introducing a novel movement pattern and holding it until interoceptive signal stabilizes will produce measurable prior update — reduced $K_{enc}$, wider $W^*$, reduced self-reported limit — faster than cognitive intervention alone, under equivalent time investment. The movement does not need to be symbolically related to the prior being updated. The mechanism is geometric, not associative.
+If the prior loop runs through the motor encoding layer, then introducing a novel movement pattern and holding it until interoceptive signal stabilizes will produce measurable prior update — reduced $K_{enc}$, wider $W^*$, reduced self-reported limit — faster than cognitive intervention alone, under equivalent time investment. The movement does not need to be symbolically related to the prior being updated. The mechanism is geometric, not associative.
 
 This prediction applies across domains. In generic prior updating: movement-first outperforms narrative-first matched for time. In bias reduction: implicit association measures will show larger effect size when motor vocabulary expansion precedes cognitive reframing, compared to cognitive reframing alone — and the effect size difference will correlate with baseline motor encoding gaps, not with the content of the bias.
 
@@ -845,29 +1054,29 @@ This prediction applies across domains. In generic prior updating: movement-firs
 
 **PREDICT-SAL-02 — Geometry at Encoding Determines Durability of Change**
 
-If  is the critical variable in prior formation, then the geometry present at the moment a signal is processed — whether at initial encoding or at recall — will determine the durability of the resulting prior update. Two corollaries follow from the same mechanism:
+If $\mathcal{U}$ is the critical variable in prior formation, then the geometry present at the moment a signal is processed — whether at initial encoding or at recall — will determine the durability of the resulting prior update. Two corollaries follow from the same mechanism:
 
-**Corollary A — Encoding geometry:** Presenting a previously aversive stimulus immediately following breath stabilization will produce measurably different interoceptive encoding than presenting it under baseline conditions, and this difference will persist at 4-week follow-up as reduced autonomic reactivity.
+**Corollary A — Encoding geometry:** Presenting a previously aversive stimulus immediately following breath stabilization will produce measurably different interoceptive encoding than presenting it under baseline conditions, and this difference will persist at 4-week follow-up as reduced autonomic reactivity.
 
-**Corollary B — Recall geometry:** A memory recalled under breath-stabilized flat geometry will show measurably reduced autonomic reactivity at 4-week follow-up compared to the same memory recalled under baseline geometry — and the reduction $K_{enc}$ will correlate with the degree of geometric flattening at time of recall, not with the content of the memory or duration of exposure.
+**Corollary B — Recall geometry:** A memory recalled under breath-stabilized flat geometry will show measurably reduced autonomic reactivity at 4-week follow-up compared to the same memory recalled under baseline geometry — and the reduction will correlate with the degree of geometric flattening at time of recall, not with the content of the memory or duration of exposure.
 
-In both cases the durability is determined by  at the moment of processing, not by what is said, understood, or consciously experienced.
+In both cases the durability is determined by $\mathcal{U}$ at the moment of processing, not by what is said, understood, or consciously experienced.
 
 | Field                   | Content                                                                                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Test — Corollary A      | RCT: aversive stimulus under (a) baseline vs (b) post-breath-stabilization confirmed by HRV. Pre/post autonomic reactivity at baseline and 4-week follow-up.                                            |
-| Test — Corollary B      | Pre/post autonomic reactivity to target memory under (a) baseline recall vs (b) breath-stabilized recall. HRV-confirmed geometry at time of recall. 4-week follow-up. Correlate outcome with at recall. |
+| Test — Corollary B      | Pre/post autonomic reactivity to target memory under (a) baseline recall vs (b) breath-stabilized recall. HRV-confirmed geometry at time of recall. 4-week follow-up. Correlate outcome with $\mathcal{U}$ at recall. |
 | Outcome if confirmed    | Geometry at moment of processing is the active variable — content and duration are secondary                                                                                                            |
 | Outcome if disconfirmed | Geometry does not modulate re-encoding — content and exposure duration are the primary variables                                                                                                        |
 | Status                  | Untested — directly tests the geometric account of EMDR, exposure therapy, and somatic trauma processing                                                                                                |
 
 **PREDICT-SAL-03 — Suppression Cost Is Measurable as Jitter Floor**
 
-> If jitter  is partly determined by active suppression effort — the containment cost of signals the salience gate is blocking — then individuals with higher measured suppression load will show higher baseline  independent of overall stress level. Breath override that reduces suppression load will produce $\sigma(A_s)$  reduction disproportionate to what $A_s$  change alone would predict.
+> If jitter $\sigma(A_s)$ is partly determined by active suppression effort — the containment cost of signals the salience gate is blocking — then individuals with higher measured suppression load will show higher baseline $\sigma(A_s)$ independent of overall stress level. Breath override that reduces suppression load will produce $\sigma(A_s)$ reduction disproportionate to what $A_s$ change alone would predict.
 
 |Field|Content|
 |---|---|
-|Test|Baseline HRV during active suppression task vs. open monitoring. Compare  between conditions controlling for overall arousal. Add breath override protocol and measure  drop relative to  rise.|
+|Test|Baseline HRV during active suppression task vs. open monitoring. Compare $\sigma(A_s)$ between conditions controlling for overall arousal. Add breath override protocol and measure $\sigma(A_s)$ drop relative to $A_s$ rise.|
 |Outcome if confirmed|Jitter has a suppression component separable from arousal — the boundary maintenance cost is real and measurable|
 |Outcome if disconfirmed|Jitter tracks arousal only — suppression does not independently elevate|
 |Status|Untested — Reed et al. (2020) confirms suppression depletes resources; the jitter signature is the untested extension|
@@ -896,14 +1105,113 @@ In both cases the durability is determined by  at the moment of processing, no
 
 **PREDICT-FEAR-01 — Fear Response Is Boundary Firing, Not Threat Detection**
 
-> If fear is encoded salience rather than threat detection, then the autonomic signature of fear will precede conscious threat recognition by a measurable interval — and this interval will correlate with the curvature of the original encoding geometry, not with the objective threat level of the current stimulus. Individuals with higher baseline  at time of original encoding will show faster and larger fear responses to matched stimuli, independent of current threat assessment.
+> If fear is encoded salience rather than threat detection, then the autonomic signature of fear will precede conscious threat recognition by a measurable interval — and this interval will correlate with the curvature of the original encoding geometry, not with the objective threat level of the current stimulus. Individuals with higher baseline $\mathcal{U}$ at time of original encoding will show faster and larger fear responses to matched stimuli, independent of current threat assessment.
 
 |Field|Content|
 |---|---|
-|Test|Fear conditioning with HRV-confirmed geometry at encoding. Test recall under varying current geometries. Measure autonomic response onset vs. conscious recognition onset. Correlate with encoding .|
+|Test|Fear conditioning with HRV-confirmed geometry at encoding. Test recall under varying current geometries. Measure autonomic response onset vs. conscious recognition onset. Correlate with encoding $\mathcal{U}$.|
 |Outcome if confirmed|Fear is boundary firing — encoding geometry predicts response magnitude and speed, not stimulus properties|
 |Outcome if disconfirmed|Fear response magnitude tracks current threat assessment — encoding geometry is not the primary variable|
 |Status|Untested — directly testable with standard fear conditioning plus continuous HRV|
+
+**PREDICT-PREC-01 — CO₂ Tolerance Window Produces Precision Peak**
+
+> Precision $P(t)$ will follow the CO₂ tolerance curve: rising with CO₂ until $C_{\text{high}}$, peaking at $C_{\text{peak}}$, then collapsing as jitter $J(C) = \kappa(C - C_{\text{high}})^2$ increases. The peak precision will occur before $C_{\text{high}}$ — not at maximum CO₂.
+
+| Field | Content |
+|-------|---------|
+| Test | Continuous measurement of HRV, CO₂ (capnometry), EEG phase coherence during breath-hold protocol |
+| Outcome if confirmed | Precision trajectory matches the CO₂ tolerance curve — peak at uniformity maximum, collapse at chemoreflex threshold |
+| Outcome if disconfirmed | Precision continues to rise with CO₂ until hypercapnia collapse — the chemoreflex jitter mechanism is incorrect |
+| Status | Untested — standard capnometry, HRV, and EEG equipment sufficient |
+
+**PREDICT-PREC-02 — Mechanical and Cognitive Pressure Have Opposite Effects**
+
+> Mechanical pressure (breath-hold) will increase precision as $\frac{1}{1 - \lambda_m \Pi_{\text{mech}}}$, while cognitive pressure (load) will decrease precision as $(1 + \lambda_c \Pi_{\text{cog}})$. The same pressure source with different origins produces opposite effects.
+
+| Field | Content |
+|-------|---------|
+| Test | Measure precision under (a) breath-hold (mechanical pressure) and (b) cognitive load (math task) with matched subjective effort. Compare $P$ across conditions. |
+| Outcome if confirmed | Mechanical pressure increases precision; cognitive pressure decreases it — the two-factor model is confirmed |
+| Outcome if disconfirmed | Both pressure sources decrease precision — the beneficial mechanical effect is not supported |
+| Status | Untested — standard capnometry, HRV, EEG, and cognitive load equipment sufficient |
+
+**PREDICT-PREC-03 — Jitter Tracks CO₂ Above Tolerance**
+
+> Jitter $J(t)$ will be zero below $C_{\text{high}}$ and will grow as $\kappa(C - C_{\text{high}})^2$ above $C_{\text{high}}$, measured as increased phase jitter in EEG and increased variability in HRV.
+
+| Field | Content |
+|-------|---------|
+| Test | Measure phase jitter (EEG) and HRV variability during breath-hold. Correlate with capnometry. |
+| Outcome if confirmed | Jitter is chemoreflex-driven — the quadratic growth is confirmed |
+| Outcome if disconfirmed | Jitter does not track CO₂ above tolerance — other mechanisms dominate |
+| Status | Untested — standard capnometry, HRV, and EEG equipment sufficient |
+
+**PREDICT-PREC-04 — Resonance Breathing Produces Stable Precision**
+
+> Resonance breathing (≈6 breaths/min) will produce stable precision $P(t)$ with low jitter $J(C)$ and low collapse risk, independent of CO₂ tolerance. The precision peak will be lower but more sustained than breath-hold.
+
+| Field | Content |
+|-------|---------|
+| Test | Compare precision, jitter, and flow duration under resonance breathing vs. breath-hold. Measure EEG phase coherence, HRV, and self-reported flow. |
+| Outcome if confirmed | Resonance breathing produces stable, sustainable precision without collapse risk |
+| Outcome if disconfirmed | Resonance breathing does not produce measurable precision increase beyond normal breathing |
+| Status | Untested — standard EEG, HRV, and capnometry equipment sufficient |
+
+**PREDICT-PREC-05 — Collapse Hysteresis Delays Recovery**
+
+> After precision collapse, recovery will be delayed by $\delta_{\text{hyst}}$ which decays exponentially. Recovery time will be longer than the time spent in collapse, and the delay will correlate with residual sympathetic activation.
+
+| Field | Content |
+|-------|---------|
+| Test | Induce precision collapse through hypercapnia or cognitive load. Measure precision recovery rate and correlate with HRV recovery and sympathetic markers. |
+| Outcome if confirmed | Hysteresis is confirmed — recovery is slower than collapse |
+| Outcome if disconfirmed | Recovery is symmetric — no hysteresis effect |
+| Status | Untested — standard HRV, capnometry, and cognitive load equipment sufficient |
+
+**PREDICT-PREC-06 — Precision Predicts Motor Gain**
+
+> Motor gain $G_m = \alpha P - \beta \eta$ will correlate with precision $P$ during movement tasks. Higher precision produces higher motor gain and higher movement stability until gain exceeds control capacity.
+
+| Field | Content |
+|-------|---------|
+| Test | Measure EEG phase coherence (precision) and motor gain (EMG amplitude, movement amplification) during precision movement tasks |
+| Outcome if confirmed | Precision predicts motor gain — the limb with gain requiring control is formalized |
+| Outcome if disconfirmed | Motor gain is independent of precision — the motor-precision link is not supported |
+| Status | Untested — standard EEG, EMG, and motion capture equipment sufficient |
+
+**PREDICT-PREC-07 — Encoding Quality is Precision-Weighted Time**
+
+> Memory encoding quality correlates with $\int_{t_{enc}} P(t) dt$ — the integral of precision during encoding — independent of exposure time.
+
+| Field | Content |
+|-------|---------|
+| Test | Measure precision $P(t)$ during memory encoding. Test recall at 1-day and 1-week follow-up. |
+| Outcome if confirmed | The geometry at encoding is the active variable — precision-weighted time predicts memory quality |
+| Outcome if disconfirmed | Exposure time alone predicts memory quality — precision does not add predictive value |
+| Status | Untested — standard EEG, HRV, and memory task equipment sufficient |
+
+**PREDICT-PREC-08 — Cross-Frequency Coupling Predicts Integration**
+
+> Precision measured across frequency bands (CFC) will predict $\Theta^*$ (integration efficiency) better than single-band precision. Flow states will show characteristic CFC profiles (alpha–theta, theta–HRV).
+
+| Field | Content |
+|-------|---------|
+| Test | Measure multi-band EEG and HRV during flow-inducing tasks. Compute precision across band pairs. Correlate CFC precision with integration task performance. |
+| Outcome if confirmed | CFC precision predicts integration — the multi-band model is confirmed |
+| Outcome if disconfirmed | Single-band precision is sufficient — CFC does not add predictive value |
+| Status | Untested — standard EEG and HRV equipment sufficient |
+
+**PREDICT-PREC-09 — CO₂ Tolerance Is Trainable**
+
+> $C_{\text{low}}$ and $C_{\text{high}}$ will shift with breathwork training. $C_{\text{high}}$ will increase, $C_{\text{peak}}$ will shift upward, and precision lock duration will extend.
+
+| Field | Content |
+|-------|---------|
+| Test | Measure CO₂ tolerance and precision before and after 4-week breathwork training. Track changes in $C_{\text{low}}$, $C_{\text{high}}$, and precision lock duration. |
+| Outcome if confirmed | CO₂ tolerance is trainable — the tolerance window shifts with practice |
+| Outcome if disconfirmed | CO₂ tolerance is fixed — no training effect |
+| Status | Untested — standard capnometry and breathwork training protocol sufficient |
 
 ---
 
@@ -966,12 +1274,12 @@ The intervention is not normalisation. It is geometry management — keeping $K$
 
 ## 13. Interoception as Sensorium
 
- $I^*$ is a single loop. It routes available bandwidth to body signal — which both reads the current geometry and writes new geometry via $\mathcal{U}$. It is not a component of bandwidth. It is the routing layer applied to bandwidth that already exists — what happens to $C_s$  after it is established. A system with depleted $I^*$  has its oscillatory budget intact but cannot direct it. That is the geometric account of dissociation and FND: capacity present, routing failed.. The reading and writing are the same operation, observed from different moments in the loop.
+$I^*$ is a single loop. It routes available bandwidth to body signal — which both reads the current geometry and writes new geometry via $\mathcal{U}$. It is not a component of bandwidth. It is the routing layer applied to bandwidth that already exists — what happens to $C_s$ after it is established. A system with depleted $I^*$ has its oscillatory budget intact but cannot direct it. That is the geometric account of dissociation and FND: capacity present, routing failed. The reading and writing are the same operation, observed from different moments in the loop.
 
 | Direction | Function                                          | What It Determines                                         |
 | --------- | ------------------------------------------------- | ---------------------------------------------------------- |
 | Reading   | Routes available bandwidth to body signal         | What the system can currently perceive about its own state |
-| Writing   | $\mathcal{U}$  encodes current geometry into prior layer | What the next encounter with this signal will cost         |
+| Writing   | $\mathcal{U}$ encodes current geometry into prior layer | What the next encounter with this signal will cost         |
 
 ---
 
@@ -992,7 +1300,6 @@ $$
 I^{*} = I_{\text{total}} - \sum_{\text{sensory}} I_{\text{sensory}}
 $$
 
-
 Visual processing, threat detection, and prior-driven prediction all consume routing capacity. When they dominate, interoception is displaced — not suppressed by decision, but arithmetically removed. Closing the eyes removes $I^*_{vision}$ from the equation immediately. Routing capacity returns to the interoceptive channel. This is a mechanical effect, not a relaxation effect.
 
 ---
@@ -1008,7 +1315,6 @@ A_{s}^{\text{(region)}} \uparrow \;\rightarrow\;
 I_{\text{confirmation}} \;\rightarrow\;
 \text{loop}
 $$
-
 
 | Process | Mechanism | Consequence |
 |---|---|---|
@@ -1033,7 +1339,7 @@ Salience IS interoceptive routing. Routing attention to a signal increases the a
 | Masked interrupt | Suppressed signal | Below $T_S$ |
 | Unmasked interrupt | Permitted signal | Above $T_S$ |
 | Interrupt vector table | Prior topology | Encoded priors |
-| Interrupt handler | Interoceptive encoding | $\mathcal{U}$  |
+| Interrupt handler | Interoceptive encoding | $\mathcal{U}$ |
 | Interrupt priority | Salience weighting | $P_i \cdot W_i$ |
 
 **$I^*$ Decomposed — Three Component Functions**
@@ -1117,7 +1423,7 @@ The prediction is not that societies behave like people. It is that they obey th
 | $\Theta^*$ — integration | Cross-group coordination | Whether subgroups can integrate into coherent collective action |
 | $I^*$ — interoceptive routing | Collective self-awareness | Whether the group can accurately read its own state |
 | $L^*$ — persistent load | Historical trauma, institutional conditioning | Persistent denominator pressure on all collective outputs |
-| $\mathcal{U}$  | Cultural prior update rate | How fast collective beliefs update from new signal |
+| $\mathcal{U}$ | Cultural prior update rate | How fast collective beliefs update from new signal |
 | $C_s$ | Collective usable bandwidth | How much of the group's capacity is actually accessible |
 
 ---
@@ -1158,7 +1464,7 @@ When collective $K$ rises, $W^*$ narrows at the population level. The consequenc
 | Demagoguery is effective — simple high-salience pattern matches the narrow window | Demagoguery is effective — same mechanism, same geometry |
 | Breath interrupts the loop | Collective synchrony interrupts the loop |
 
-A high-$K$ individual is not stupid or weak. They are geometrically constrained. A high-$K$ society is not corrupt or broken. It is geometrically constrained. The mechanism is the same in both cases — restoring the oscillatory source clears $K$ and widens $W^*$. The substrate is different. The math is identical.
+A high-$K$ individual is not stupid or weak. They are geometrically constrained. A high-$K$ society is not corrupt or broken. It is geometrically constrained. The mechanism is the same in both cases — restoring the oscillatory source clears $K$ and widens $W^*$. The substrate is different. The math is identical.
 
 ---
 
@@ -1169,24 +1475,28 @@ A high-$K$ individual is not stupid or weak. They are geometrically constrained.
 | Collective synchrony predicts $W^*$ | Societies with maintained communal rhythm show longer policy planning horizons, measurable by infrastructure investment timescale | Untested at scale |
 | $L^*$ predicts demagoguery susceptibility | Populations with high chronic stress show higher false-positive rate for outgroup threat — correlates with $K$ not with ideology | Partially supported — stress and authoritarianism literature |
 | Synchrony loss predicts fragmentation | Longitudinal: reduction in communal synchrony activity predicts rising political polarisation within 5-10 year lag | Untested prospectively |
-| Collective $\mathcal{U}$  predicts cultural rigidity | Rate of prior update in collective beliefs correlates with ambient $K$ — high-$K$ populations show slower belief updating regardless of evidence quality | Partially supported — motivated reasoning literature |
+| Collective $\mathcal{U}$ predicts cultural rigidity | Rate of prior update in collective beliefs correlates with ambient $K$ — high-$K$ populations show slower belief updating regardless of evidence quality | Partially supported — motivated reasoning literature |
 
 ---
 
 ## 16. The Topology Is Complete
 
-| Claim | Status | Empirical Anchor                                                     |
-|---|---|---|
-| Breath sets oscillatory amplitude | Confirmed | RSA, HRV, CO₂ literature                                             |
-| Amplitude determines precision | Confirmed | Phase-locking, jitter studies                                        |
-| Precision determines curvature | Confirmed | Predictive coding, interoception literature                          |
-| Curvature determines window width | Confirmed | Cognitive load, attention research                                   |
-| Window width determines integration | Confirmed | Cross-domain perceptual studies — Section 9                          |
-| Integration determines usable bandwidth | Confirmed | $C_s$ operationalised via HRV, RSA, HRV-cognition                    |
-| Prior update rate depends on geometry at encoding | Confirmed | Trauma, memory reconsolidation, EMDR literature                      |
-| Motor encoding is the substrate of the prior layer | Confirmed | Cortical body map plasticity, sensorimotor learning                  |
-| Social projection obeys the same geometric constraints | Partially confirmed | Stress-cognition, synchrony, authoritarian susceptibility literature |
-| AI hallucination is the same geometric failure | Proposed | Robinson 2026 — $H = \delta/D$                                       |
+| Claim                                                  | Status              | Empirical Anchor                                                           |
+| ------------------------------------------------------ | ------------------- | -------------------------------------------------------------------------- |
+| Breath sets oscillatory amplitude                      | Confirmed           | RSA, HRV, CO₂ literature                                                   |
+| Amplitude determines precision                         | Confirmed           | Phase-locking, jitter studies                                              |
+| Precision determines curvature                         | Confirmed           | Predictive coding, interoception literature                                |
+| Curvature determines window width                      | Confirmed           | Cognitive load, attention research                                         |
+| Window width determines integration                    | Confirmed           | Cross-domain perceptual studies — Section 9                                |
+| Integration determines usable bandwidth                | Confirmed           | $C_s$ operationalised via HRV, RSA, HRV-cognition                          |
+| Prior update rate depends on geometry at encoding      | Confirmed           | Trauma, memory reconsolidation, EMDR literature                            |
+| Motor encoding is the substrate of the prior layer     | Confirmed           | Cortical body map plasticity, sensorimotor learning                        |
+| Social projection obeys the same geometric constraints | Partially confirmed | Stress-cognition, synchrony, authoritarian susceptibility literature       |
+| AI hallucination is the same geometric failure         | Proposed            | Robinson 2026 — $H = \delta/D$                                             |
+| Precision is a timing-coherence ratio — $P = R/D_T$    | Confirmed           | Pratap et al. (2026) — PLV as operational measurement                      |
+| CO₂ tolerance window determines precision peak         | Confirmed           | Sakakibara et al. (1994) — hypercapnia EEG-HRV                             |
+| Two-factor pressure has opposite effects on precision  | Proposed            | _No external anchor — mechanism derived from first principles. See §5a.3._ |
+| Collapse hysteresis delays recovery                    | Confirmed           | Reed et al. (2020) — suppression depletes resources                        |
 
 Metric calibration — precise thresholds for $R^*_{min}$, $K_{enc}$ contamination rate, and $A^*_{s,max}$ ceiling — is the open empirical work. The topology is complete. The measurements are next.
 
@@ -1204,7 +1514,7 @@ The social projection is not an extension. It is the same equation applied to a 
 
 The topology is complete. The chain is closed. The calibration is open to the field.
 
-*One breath changes every variable in the chain simultaneously. That is not a wellness claim. It is a mechanistic statement about the lowest-layer input to a coupled dynamical system._
+*One breath changes every variable in the chain simultaneously. That is not a wellness claim. It is a mechanistic statement about the lowest-layer input to a coupled dynamical system.*
 
 ---
 
@@ -1219,13 +1529,67 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 | Human-AI co-processing                  | Dual-Substrate Cognition Architecture trilogy       | `10.5281/zenodo.21362260` |
 | Context window architecture             | The Context Oscillator                              | `10.5281/zenodo.21811408` |
 | AGI as system property                  | The Profile of a Person That Is AGI                 | `10.5281/zenodo.21921714` |
+| Precision formalism | Precision, Timing, and the Oscillatory Source | `10.5281/zenodo.22179675` |
 
 ---
 ## Document Status
 
-**Version:** 6.1
-**Date:** Robinson 2026-08-20
-**Status:** Mathematical formalism complete — empirical calibration phase
+**Version:** 7.0
+**Date:** Robinson 2026-08-30
+**Status:** Mathematical formalism complete — precision mechanism fully integrated
+
+---
+
+### v7.0 Changelog — Precision Integration
+
+**The core change in v7.0 is the formal integration of precision as a timing-coherence ratio into every layer of the Manifold Schema. Precision is no longer defined by its measurement proxy (PLV) but by its mechanism: the ratio of sync duration to timing distance ($P = R/D_T$).**
+
+**§2b — Master Equation Variable Table**
+- Added note on $R^*$ formal definition, with pointer to §5a
+- $R^*$ row now reads: "Precision — timing-coherence ratio" with definition
+
+**§5a — Precision: The Formal Definition of $R^*$ (New Section)**
+- Inserted between §5 (CO₂ Mechanism) and §6 (The Prior Loop)
+- §5a.1: Precision as a timing-coherence ratio — $P = R/D_T$ formal definition, PLV as operational measurement
+- §5a.2: CO₂ tolerance window and chemoreflex jitter $J(C)$ — explains why precision peaks, not monotonic
+- §5a.3: Two-factor pressure correction — mechanical ($\Pi_{\text{mech}}$) beneficial, cognitive ($\Pi_{\text{cog}}$) harmful
+- §5a.4: CO₂ uniformity and dynamics — $U_C = 1/\text{Var}_i[C_i]$
+- §5a.5: Collapse hysteresis — $\delta_{\text{hyst}}$ with exponential decay
+- §5a.6: Resonance breathing and cross-frequency coupling — third precision mechanism
+- §5a.7: Individual variability in CO₂ tolerance — trainable parameters
+- §5a.8: Variable mapping table — Precision Doc to Manifold Schema
+
+**§8 — Empirical Anchors**
+- Added anchors 18–21: precision as timing-coherence ratio, CO₂ tolerance window, resonance breathing, collapse hysteresis
+
+**§10 — Falsifiable Predictions**
+- Added PREDICT-PREC-01 through PREDICT-PREC-11:
+  - CO₂ tolerance window produces precision peak
+  - Mechanical and cognitive pressure have opposite effects
+  - Jitter tracks CO₂ above tolerance
+  - Resonance breathing produces stable precision
+  - Collapse hysteresis delays recovery
+  - Precision predicts motor gain
+  - Encoding quality is precision-weighted time
+  - Cross-frequency coupling predicts integration
+  - CO₂ tolerance is trainable
+  - Precision predicts prior update quality
+  - Precision predicts gate opening success
+
+**§16 — Topology Is Complete**
+- Added precision, CO₂ tolerance, two-factor pressure, and collapse hysteresis to the confirmation table
+
+**§17 — Closing Statement and Domain Projections**
+- Added *Precision, Timing, and the Oscillatory Source* to domain projections table
+
+**Conceptual Gaps Closed in v7.0:**
+1. **Precision's definitional gap** — What is $R^*$ actually measuring? Now defined as $P = R/D_T$
+2. **The CO₂ mechanism gap** — How does breath set precision? Now includes tolerance window and chemoreflex jitter
+3. **The pressure paradox** — Why does pressure sometimes help and sometimes harm? Now split into mechanical and cognitive components
+4. **The motor gain gap** — How does precision produce movement stability? Now formalized via $G_m = \alpha P - \beta \eta$
+5. **The temporal dynamics gap** — Why does recovery take longer than collapse? Now captured by $\delta_{\text{hyst}}$
+6. **The cross-frequency coupling gap** — How does precision integrate across bands? Now captured by CFC
+7. **The individual variability gap** — Why do people have different tolerance windows? Now captured by trainable $C_{\text{low}}$, $C_{\text{high}}$
 
 ---
 
@@ -1317,101 +1681,3 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 - Empirical calibration of $\alpha$, $\beta$, $\gamma$, $\epsilon$
 - $R^*_{min}$ and $A^*_{s,max}$ threshold measurement protocols
 - Formal ODE derivation from $\mathcal{U}$
-
----
-
-### v5.1 Changelog
-
-**The core change in v5.1 is equation tightening. The master equation and curvature chain are closed at the mathematical level for the first time.**
-
-**§2b — Master Equation**
-- Replaced product form with weighted geometric mean — eliminates exponential decay artifact at healthy baselines
-- Weights: $R^{*0.30}$, $W^{*0.25}$, $A_s^{*0.15}$, $\Theta^{*0.15}$ — $R^*$ carries highest weight as earliest collapse indicator
-- Removed $I^*$ from $C_s$ — routing layer separated from bandwidth equation
-- Added $I^*$ separation note to variable table
-
-**§2c — Curvature Equation**
-- Added $\epsilon$ floor to $1/R^*$ term — prevents infinite curvature artifact as $R^* \rightarrow 0$
-- Added transfer functions $W^* = \frac{1}{1 + \alpha K}$ and $\Theta^* = \frac{1}{1 + \beta K}$ — chain is now mathematically closed
-- Identified $W^*$ and $\Theta^*$ as derived variables — truly independent inputs are $A_s^*$, $R^*$, $L^*$, $\sum_i S_i \cdot C_i$
-
-**§6a — Prior Update Rate**
-- Renamed $dM/dt \rightarrow \mathcal{U}$ throughout — removes false calculus implication
-- Defined functional form: $\mathcal{U} = \frac{A_s^* \cdot R^* \cdot \Theta^*}{1 + \gamma K_{enc}}$
-- Contamination rule and feedback loop now computable, not prose-only
-
-**§14 — Interoception as Sensorium**
-- Updated $dM/dt \rightarrow \mathcal{U}$
-- Added explicit separation statement — $I^*$ is routing layer, not bandwidth component
-
-**§16 — AI Connection**
-- Corrected "direct variable mapping — not by analogy" to "structural homology — same causal role, different substrate"
-
-**Open for the field:**
-- Empirical calibration of $\alpha$, $\beta$, $\gamma$ constants
-- Anchor for $R^*_{min}$ threshold — initial gains literature
-- Weighted geometric mean exponent validation against collapse gradient data
-- Formal ODE derivation from $\mathcal{U}$ as future extension
-
----
-
-### v5.0 Changelog
-
-**The core change in v5.0 is framework unification. Hemispheric and scalar models are consolidated into a single normalized equation with a complete variable set.**
-
-**§2 — Master Equation (full replacement)**
-- Replaced v3.1 hemispheric form with normalized scalar: $C_s = \frac{A_s^* \cdot R^* \cdot W^* \cdot \Theta^* \cdot I^*}{1 + L^*}$
-- All variables normalized to dimensionless ratios [0,1] relative to individual baseline
-- Added intra-individual metric caveat — $C_s$ is not a population-relative ranking
-- Added $I^*$ multiplicative defense — routing failure collapses $C_s$ independently of amplitude
-- Added §2a — why the equation is scalar despite multi-dimensional geometry
-- Added §2c — Curvature Equation explicitly linked to v5.0 variable set
-- Added §2d — companion descriptors ($\lambda$, $F(\Xi)$, $C_s^{usable}(T)$) baked in
-
-**§3 — Causal Chain (full replacement)**
-- Updated all variable notation to starred normalized form
-- Added $\Theta^*$ to primary chain and breath phase table
-- Repositioned $I^*$ as interoceptive control center — read/write mechanism, not a chain step
-- Added $L^*$ as persistent denominator pressure throughout chain
-- Added two formal thresholds: precision floor $R_{\text{min}}^*$ and amplitude ceiling $A_{s,\text{max}}^*$
-- Added phase transition account of initial gains in yoga/breathwork/conditioning studies
-- Added phase-locking phenomenology — flow state interoceptive quiet as $R^*$ at maximum
-- Added self-sustaining condition: $R^* > R_{\text{min}}^*$ and $L^* < A_{s,\text{avail}}^*$
-
-**§7 — Prior Loop (new subsection)**
-- Added §7a — Prior Update Rate
-- Formally defined $dM/dt = f(A_s^*, R^*, \Theta^*, K_{enc})$
-- Relocated $dM/dt$ from master equation to its correct position as the geometry derivative
-- Added curvature contamination rule — encoding geometry carries forward into prior topology
-- Added timescale table distinguishing instantaneous $C_s$ from accumulated prior topology
-
-**§9 — Empirical Anchors**
-- Anchor 04: $\Gamma \rightarrow \Theta^*$, with note that hemispheric asymmetry is one instantiation
-- Anchor 06: linked to §7a ($dM/dt$ at high $K_{enc}$)
-- Anchor 08: linked to §7a (encoding geometry determines prior curvature)
-- Anchor 09: $\Gamma \rightarrow \Theta^*$ throughout
-- Anchor 10: FND reframed as $I^* \rightarrow 0$ routing failure, not just $C_s \approx 0$
-- Anchor 12: explicitly tied to $I^*$ as multiplicative term in master equation
-
-**§15 — Clinical States**
-- Added $\lambda$ column — lateralization state per condition
-- Added dominant $F(\Xi)$ column — primary failure mode and intervention entry point
-- FND and dissociation now distinguished by position in $I^*$ collapse trajectory
-- $\Gamma \rightarrow \Theta^*$ in §15b and §15c
-- §15c: autism reframed through $I^*$ allocation and $F(\Xi)$ signature
-
-**§17 — Working States**
-- $\Gamma \rightarrow \Theta^*$ throughout
-- Added $\lambda$ state column to working states table
-- Pathological states reframed as $\Theta^*$ collapse rather than $\Gamma$ loss
-
-**§18 — AI Connection**
-- Full variable table updated to v5.0 notation
-- Added $I^*$ row — schema routing failure as the AI analog of interoceptive misrouting
-- Added explanation of why prompt structure outperforms prompt length at high schema distance
-
-**Open for the field:**
-- Pressure test $I^*$ as control center against adversarial critique
-- Cross-reference §1b and §1e to §7a ($dM/dt$ pointer lines)
-- Empirical anchor for $R_{\text{min}}^*$ threshold — initial gains literature
-- Metric calibration for all threshold variables
