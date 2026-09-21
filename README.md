@@ -218,7 +218,3 @@ Robinson, J. (2026). *The Manifold Schema: A Unified Framework for Consciousness
   doi = {10.5281/zenodo.21939440}
 }
 ```
-
----
-
-If you want, I can also generate a **Zenodo‑optimized abstract**, a **GitHub‑compressed front page**, or a **diagram‑only README**.
