@@ -24,16 +24,16 @@ $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \The
 
 ## The Variables
 
-Full derivations in [`/specification/`]
+Full derivations in [`/specification/`](specification/)
 
-| Variable                                                  | What It Measures                                                          |
-| --------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [**R\***](specification/precision.md)                     | Precision — timing coherence between oscillatory streams                  |
-| [**W\***]("specification/manifold_schema.md")             | Window width — how many nodes are held simultaneously                     |
-| [**A\***](specification/manifold_schema.md)               | Amplitude — oscillatory depth available for inference                     |
-| [**L\***](specification/allostatic_load.md)               | Load — accumulated regulatory debt constraining all other variables       |
-| [**Θ\***](specification/precision.md)                     | Integration efficiency — how cleanly outputs from one layer feed the next |
-| [**Λ**](specification/The_Loop_Is_In_the_Intelligence.md) | The gate — whether the loop is running at all                             |
+| Variable                                               | What It Measures                                                          |
+| ------------------------------------------------------ | ------------------------------------------------------------------------- |
+| [**R\***](specification/precision.md)                  | Precision — timing coherence between oscillatory streams                  |
+| [**W\***]("specification/manifold_schema.md")          | Window width — how many nodes are held simultaneously                     |
+| [**A\***](specification/manifold_schema.md)            | Amplitude — oscillatory depth available for inference                     |
+| [**L\***](specification/allostatic_load.md)            | Load — accumulated regulatory debt constraining all other variables       |
+| [**Θ\***](specification/precision.md)                  | Integration efficiency — how cleanly outputs from one layer feed the next |
+| [**Λ**](specification/the_loop_is_the_intelligence.md) | The gate — whether the loop is running at all                             |
 
 ---
 
@@ -59,27 +59,27 @@ These variables are upstream of every problem in the columns above. When a domai
 ### Specification
 *The derivation chain. Every variable, equation, and mechanism defined.*
 
-→ **[Central Reference]**
+→ **[Central Reference](specification/central_reference.md)**
 The single citation anchor for the full framework. Every variable defined. Every equation derived. Every mechanism specified. Future papers cite this alone.
 
-→ **[The Loop Is the Intelligence]**
+→ **[The Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)**
 Intelligence is the energy-expensive loop of error detection against sensory input, followed by iterative reinvestment toward structural convergence. Substrate-agnostic — applies identically to trees, insects, humans, institutions, and LLMs. Current LLMs satisfy zero of three requirements for non-zero product. Speed is high. The loop is not running.
 
-→ **[Manifold Schema]**
+→ **[Manifold Schema](specification/manifold_schema.md)**
 The neural manifold as an energy budget system. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions, not diagnostic categories.
 DOI: 10.5281/zenodo.21939440
 
-→ **[Precision, Timing, and the Oscillatory Source]**
+→ **[Precision, Timing, and the Oscillatory Source](specification/precision.md)**
 First substrate derivation of the precision variable. $P = R/D_T$. Physically measurable, directly predictive of gate behavior. The field uses precision as a weighting variable. Nobody had derived what it physically is.
 DOI: 10.5281/zenodo.22179675
 
-→ **[Allostatic Load as Accumulated Regulatory Debt]**
+→ **[Allostatic Load as Accumulated Regulatory Debt](specification/allostatic_load.md)**
 Load is a trajectory, not a state. $\Delta HRV \propto 1/L^*$. The primary real-time proxy is delta HRV response to a standardised slow-breath protocol. Four regulatory contracts. One debt trajectory.
 
-→ **[The Geometry of Inference]**
+→ **[The Geometry of Inference](specification/the_geometry_of_inference.md)**
 How precision gates manifold access. The LP-ACC circuit, four-layer cache hierarchy, two-factor gate, and breath phase timing — the biological implementation of the loop.
 
-→ **[Physics as the Missing Component]**
+→ **[Physics as the Missing Component](specification/physics_foundation.md)**
 Five physical variables govern regulatory behavior across all biological systems. Substrate variables outperform construct variables as diagnostic predictors. The variables were always there. The field was measuring downstream readouts.
 DOI: [10.5281/zenodo.xxxxx]
 
@@ -175,14 +175,14 @@ None of these have occurred. If you can produce any of them, that is the engagem
 
 ## Read These First
 
-| If you want                     | Start here                               |
-| ------------------------------- | ---------------------------------------- |
-| The argument                    | [Loop Is the Intelligence]               |
-| The full specification          | [Central Reference]                      |
-| The language case               | [Spoken Language Paper]                  |
-| The AI safety case              | [Earned Autonomy]                        |
-| The hallucination mechanism     | [Hallucination You Are Having Right Now] |
-| The full index and DOI registry | [Master Priority Index v3.3]             |
+| If you want                     | Start here                                                                |
+| ------------------------------- | ------------------------------------------------------------------------- |
+| The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) |
+| The full specification          | [Central Reference](specification/central_reference.md)                   |
+| The language case               | [Spoken Language Paper]                                                   |
+| The AI safety case              | [Earned Autonomy]                                                         |
+| The hallucination mechanism     | [Hallucination You Are Having Right Now]                                  |
+| The full index and DOI registry | [Master Priority Index v3.3]                                              |
 
 ---
 
@@ -220,7 +220,6 @@ Full stack and DOI registry: [Master Priority Index v3.3]
 
 **Joel Robinson**
 Network Engineer, Independent Researcher
-Charlotte, VT
 [email] · [Zenodo] · [GitHub]
 
 Collaboration inquiries, empirical testing partnerships, and institutional research access: welcome.
