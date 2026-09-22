@@ -29,7 +29,7 @@ Full derivations in [`/specification/`](specification/)
 | Variable                                               | What It Measures                                                          |
 | ------------------------------------------------------ | ------------------------------------------------------------------------- |
 | [**R\***](specification/precision.md)                  | Precision — timing coherence between oscillatory streams                  |
-| [**W\***]("specification/manifold_schema.md")          | Window width — how many nodes are held simultaneously                     |
+| [**W\***](specification/manifold_schema.md)          | Window width — how many nodes are held simultaneously                     |
 | [**A\***](specification/manifold_schema.md)            | Amplitude — oscillatory depth available for inference                     |
 | [**L\***](specification/allostatic_load.md)            | Load — accumulated regulatory debt constraining all other variables       |
 | [**Θ\***](specification/precision.md)                  | Integration efficiency — how cleanly outputs from one layer feed the next |
