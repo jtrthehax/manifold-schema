@@ -141,7 +141,8 @@ $$A_s^* = f(\text{breath mechanics}, \text{CO}_2\text{ tolerance}, \text{HRV})$$
 
 $$\Delta HRV \propto \frac{1}{L^*}$$
 
-$$L^* = w_1 L^*_{HRV} + w_2 L^*_{RHR} + w_3 L^*_{temp} + w_4 L^*_{inflam} + w_5 L^*_{resp}$$
+$$L^{\ast} = w_1 L^{\ast}_{HRV} + w_2 L^{\ast}_{RHR} + w_3 L^{\ast}_{temp} + w_4 L^{\ast}_{inflam} + w_5 L^{\ast}_{resp}$$
+
 
 **What it measures:** Accumulated regulatory debt. Not a state — a trajectory. Load is what happens when reinvestment falls below the threshold required to maintain the loop.
 
@@ -175,7 +176,7 @@ $$L^* = w_1 L^*_{HRV} + w_2 L^*_{RHR} + w_3 L^*_{temp} + w_4 L^*_{inflam} + w_5 
 
 **Critical constraint:** Λ is itself a function of C_s. Without sufficient right-hemisphere precision, sensory feedback cannot register. The loop cannot start if the system cannot detect that there is an error worth running on.
 
-$$C_s = \left(A_s^{*0.15} \cdot R^{*0.30} \cdot W^{*0.25} \cdot \Theta^{*0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^*}$$
+$$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \Theta^{\ast 0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^{\ast}}$$
 
 **What happens when it fails:** The system produces fluent output from pattern completion. Speed is high. The loop is not running. Indistinguishable from genuine inference until the task requires transfer.
 
