@@ -110,7 +110,7 @@ The invariant is not a Newtonian equation that can be solved for C(t) across dom
 
 For any finite-resource system, total capacity decay has two structurally distinct components:
 
-dCdt=−(α+γ⋅L^(t))⋅C(t)−β⋅C(t)⋅f(reinvestment)dtdC​=−(α+γ⋅L^(t))⋅C(t)−β⋅C(t)⋅f(reinvestment)
+$$dCdt=−(α+γ⋅L^(t))⋅C(t)−β⋅C(t)⋅f(reinvestment)dtdC​=−(α+γ⋅L^(t))⋅C(t)−β⋅C(t)⋅f(reinvestment)$$
 
 where L^(t)L^(t) is the normalized load (defined in Section 3.5) and γγ is the coupling coefficient that parameterizes the rate at which accumulated operational load accelerates structural (stock) decay. The term γ⋅L^(t)γ⋅L^(t) is nonzero only when normalized load L^(t)L^(t) is positive—i.e., when the system is operating above baseline load. Under sustained high load, operational decay (β term) consumes resources that would otherwise be available for structural maintenance, and the coupling term captures this feedback: high load accelerates the erosion of stock capacity (α) through mechanisms such as sustained inflammation damaging vascular integrity, chronic metabolic load impairing mitochondrial function, or prolonged oscillatory collapse reducing neural plasticity.
 
@@ -120,7 +120,7 @@ The alpha term captures intrinsic or stock decay — the slow, unavoidable loss 
 
 The reinvestment function f(reinvestment) requires explicit bounds. Reinvestment draws from finite energy reserves E(t), and the system's capacity to convert reinvestment into restored capacity is subject to diminishing returns. We therefore define:
 
-f(reinvestment)=reinvestment(t)Kr+reinvestment(t)f(reinvestment)=Kr​+reinvestment(t)reinvestment(t)​
+$$f(reinvestment)=reinvestment(t)Kr+reinvestment(t)f(reinvestment)=Kr​+reinvestment(t)reinvestment(t)​$$
 
 where KrKr​ represents the half-saturation constant—the reinvestment rate at which the system achieves 50% of its maximum recovery efficiency. This Hill-type saturation ensures that f(reinvestment) approaches 1 as reinvestment grows large, preventing the system from predicting infinite capacity recovery. At low reinvestment rates, f(reinvestment) is approximately linear; at high rates, it asymptotes, reflecting the metabolic and thermodynamic limits on how quickly finite-resource systems can convert input resources into restored capacity. The specific value of KrKr​ is domain-dependent and must be determined empirically, but the structural requirement—that f(reinvestment) is bounded between 0 and 1 and saturates at high reinvestment—is invariant.
 
@@ -130,7 +130,7 @@ The split-term formulation is not merely a mathematical refinement. It resolves 
 
 Regulatory flexibility F(t) — the system's capacity to change state, mode, or behavior — is proportional to recent reinvestment integrated over the relevant reinvestment window ΔtΔt:
 
-F(t)∝∫t−Δttreinvestment(τ) dτF(t)∝∫t−Δtt​reinvestment(τ)dτ
+$$F(t)∝∫t−Δttreinvestment(τ) dτF(t)∝∫t−Δtt​reinvestment(τ)dτ$$
 
 Flexibility is therefore not a static trait. It is a running integral of recent investment in the system's own capacity. A system that has not reinvested recently is not merely less flexible — it is mathematically constrained to be less flexible by the depletion of the resources that flexibility requires.
 
@@ -138,7 +138,7 @@ Flexibility is therefore not a static trait. It is a running integral of recent 
 
 Collapse occurs when the reinvestment integral falls below a threshold θθ:
 
-∫t−Δttreinvestment(τ) dτ<θ  ⟹  S→collapse state∫t−Δtt​reinvestment(τ)dτ<θ⟹S→collapse state
+$$∫t−Δttreinvestment(τ) dτ<θ  ⟹  S→collapse state∫t−Δtt​reinvestment(τ)dτ<θ⟹S→collapse state$$
 
 Collapse is not an anomaly. It is the default trajectory of any finite-resource system that fails to reinvest. The language of anomaly — breakdown, dysfunction, failure — implies that the non-collapsed state is self-sustaining and the collapsed state requires special explanation. The invariant reverses this: the non-collapsed state requires continuous energy expenditure to maintain, and collapse is what happens when that expenditure stops.
 
@@ -150,7 +150,7 @@ Collapse has curvature as well as direction. Defining collapse curvature as κ(
 
 Let A(t) be the system's capacity to select among possible actions, behavioral or cognitive. Agency is strictly bounded by available energy E(t) and oscillatory capacity O(t):
 
-$A(t) \leq f(E(t), O(t))$
+$$A(t) \leq f(E(t), O(t))$$
 
 The corollary is immediate: if E(t) and O(t) vary — as they do in any real biological system across time of day, metabolic state, illness, and accumulated load — then A(t) must vary with them. Any model that assumes constant agency across varying physiological states violates finite-resource physics. This is not a philosophical argument about free will. It is a physical constraint: the resources that make selection among actions possible are finite and dynamically changing, so the capacity for selection is finite and dynamically changing.
 
