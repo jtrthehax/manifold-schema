@@ -157,8 +157,11 @@ DOI: [10.5281/zenodo.xxxxx]
 *Build specs for systems that need the loop to run*
 
 → **[Semantic Deconstruction Engine v2.0]** — implements manifold inference decomposition
+
 → **[AI Observability Stack]** — instruments the loop at inference time
+
 → **[LLM State Specification]** — formal state model for LLM session behavior
+
 → **[The Context Oscillator](implementation/the_context_oscillator.md)** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811408
 
 ---
