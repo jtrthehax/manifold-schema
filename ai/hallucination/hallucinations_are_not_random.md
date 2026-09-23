@@ -1,5 +1,5 @@
 # Sentence Deconstruction Engine (SDE): A Mechanistic Framework for Understanding How Sentences Create Variables, Constraints, and Inference Paths in Humans and Language Models
-
+(I'm going to throw this out there, but the paper was retroactively renamed)
 # **Executive Summary
 
 If AI mirrors patterns of speech — a property 
