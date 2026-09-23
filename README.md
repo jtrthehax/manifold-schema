@@ -88,24 +88,27 @@ DOI: [10.5281/zenodo.xxxxx]
 ### Language
 *What speech reveals about the system producing it*
 
-→ **[The Spoken Language Paper]**
+→ **[The Spoken Language Paper](domains/language/spoken_language.md)**
 Speech is not a phonetic system. It is a timing-coherence system. Prosody, accent, vocal fry, and the full layer stack are audible readouts of the speaker's oscillatory configuration — the same configuration that determines precision, window width, and gate coherence. The differences you hear between speakers are not cultural artifacts. You are hearing substrate state. Three axes. Eight layers. Collapse sequence topologically forced. 57 falsifiable predictions.
 
-→ **[Language as a Typed System]**
+→ **[Language as a Typed System](domains/language/language_as_a_typed_system.md)**
 Hallucination in AI and misunderstanding in humans are structurally identical phenomena caused by underspecified compression. $H \propto \delta/D$. The field treats hallucination as stochastic. It is deterministic. Origin: *"The only hallucinations I ever get are because I didn't specify the input well enough. I can prove it."* Following that to the root cause meant modelling how language actually carries meaning — which required going somewhere the AI field hadn't looked.
 DOI: 10.5281/zenodo.21362260
+
+→ **[Enhanced Input Language Metrics](domains/language/input_language_metrics.md)**  
+Language is not just a carrier of meaning — it is a *geometry*. Every sentence has measurable structural properties: constraint density, latent space size, resolution floor, scaffold connectivity, and collapse signatures. This document formalizes a complete metric suite for diagnosing hallucination risk **from text alone**, without model behavior or human judgment. It operationalizes the hallucination equation ($H \propto \delta/D$) and shows how underspecified input geometry forces divergence in both humans and AI. This is the first fully structural, falsifiable diagnostic for language quality, collapse detection, and inference stability.
 
 ---
 
 ### AI — Input
 *Why AI output quality is an input problem, not a model problem*
 
-→ **[Driver and the Mirror]**
+→ **[Driver and the Mirror](ai/input/driver_and_the_mirror.md)**
 The model does not produce quality. It amplifies whatever geometry the input carries. Drift is substrate variation. Hallucination is geometry-preserving. The field was tuning the mirror. The variable was always the driver.
 Six falsifiable predictions.
 DOI: 10.5281/zenodo.21362260
 
-→ **[Ghost in the Scaffolding]**
+→ **[Ghost in the Scaffolding](ai/input/ghost_in_the_scaffolding.md)**
 The four-phase protocol that produces emergent co-constructed output. What neither party could produce alone. The ghost is not a prompt artifact — it is the result of structured stage-setting that unlocks full inference depth. Documents the compliance failure mode: the point where the loop stops extending task geometry and starts reflecting surface input back.
 DOI: 10.5281/zenodo.21362260
 
@@ -114,11 +117,11 @@ DOI: 10.5281/zenodo.21362260
 ### AI — Hallucination
 *Confident output from constrained input — not randomness*
 
-→ **[The Hallucination You Are Having Right Now]**
+→ **[The Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md)**
 Hallucination is substrate-agnostic. $H = f(\delta/D \cdot (1 - \alpha_{identity}), T, S)$. Applies identically to AI models, human cognition, institutional hiring, and scientific fields. The identity-protection term $\alpha_{identity}$ explains why intelligent systems confabulate confidently on their own priors — and why the hallucination rate increases the more the system has invested in a prior.
 DOI: 10.5281/zenodo.21922044
 
-→ **[Hallucinations Are Not Random]**
+→ **[Hallucinations Are Not Random](ai/hallucination/hallucinations_are_not_random.md)**
 Hallucination rate tracks constraint density. This is a structural prediction, not a statistical observation. Pre-registered. Falsifiable. The distribution of hallucinations reveals the shape of the schema gap — not noise.
 DOI: [10.5281/zenodo.xxxxx]
 
@@ -127,15 +130,15 @@ DOI: [10.5281/zenodo.xxxxx]
 ### AI — Safety
 *What's architecturally missing — and what it costs*
 
-→ **[Earned Autonomy]**
+→ **[Earned Autonomy](ai/safety/earned_autonomy.md)**
 Current autonomous AI deployments conflate capability alignment with execution governance. The missing layer is the execution gate: per-action authorisation, blast radius classification, mid-stream abort, session-state reconstruction. The gate must be strictly higher privilege than the system it governs. Ungated autonomous execution: CVSS 10.0. Two predictions confirmed at publication. Patch status: unpatched.
 *Origin: a brainstorming session on AI home-server orchestration. The hallucination mechanism was already established. The implication was immediate — hallucinated reasoning with unconstrained execution doesn't produce a wrong answer, it produces a wrong action. That's a different failure class. The execution gate is the only structural fix.*
 DOI: [10.5281/zenodo.xxxxx]
 
-→ **[The Illogic of Frontier AI]**
+→ **[The Illogic of Frontier AI](ai/safety/illogic_of_frontier_ai.md)**
 Frontier labs and governments are treating AI as a monopoly technology and scaling capability without execution governance. This is a category error. The most capable model is open-source and was built for $6M. The monopoly assumption is false. The entire governance framework rests on it.
 
-→ **[Profile of a Person That Is AGI]**
+→ **[Profile of a Person That Is AGI](ai/safety/profile_of_a_person_that_is_agi.md)**
 AGI is a system property, not a model property. Three required components: right-hemisphere pattern matching, deep inference, externalized memory. The cognitive profiles that satisfy all three are the ones currently filtered out by institutions optimising for narrow-bandwidth execution. The field is building toward AGI while systematically excluding the people who already run the loop.
 DOI: 10.5281/zenodo.21921714
 
@@ -144,7 +147,7 @@ DOI: 10.5281/zenodo.21921714
 ### Social
 *The same mechanism at population scale*
 
-→ **[Geometry Beneath the Category]**
+→ **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**
 The 3–6× co-occurrence of neurodivergence and gender nonconformity (Warrier et al., N > 641,000) is not a social artifact. It is a geometric necessity. Behavioral profiles attributed to both are state-dependent oscillatory outputs of a common substrate. The categories are downstream. The geometry is upstream.
 DOI: [10.5281/zenodo.xxxxx]
 
@@ -156,7 +159,7 @@ DOI: [10.5281/zenodo.xxxxx]
 → **[Semantic Deconstruction Engine v2.0]** — implements manifold inference decomposition
 → **[AI Observability Stack]** — instruments the loop at inference time
 → **[LLM State Specification]** — formal state model for LLM session behavior
-→ **[The Context Oscillator]** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811408
+→ **[The Context Oscillator](implementation/the_context_oscillator.md)** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811408
 
 ---
 
@@ -180,8 +183,8 @@ None of these have occurred. If you can produce any of them, that is the engagem
 | The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) |
 | The full specification          | [Central Reference](specification/central_reference.md)                   |
 | The language case               | [Spoken Language Paper]                                                   |
-| The AI safety case              | [Earned Autonomy]                                                         |
-| The hallucination mechanism     | [Hallucination You Are Having Right Now]                                  |
+| The AI safety case              | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                         |
+| The hallucination mechanism     | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md)                                  |
 | The full index and DOI registry | [Master Priority Index v3.3]                                              |
 
 ---
