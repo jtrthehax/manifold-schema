@@ -1,3 +1,5 @@
+# Language as a Typed System
+
 ## Abstract
 
 Natural language is not a meaning-transfer system. It is a compression function. The sender compresses intent into surface tokens. The receiver decompresses those tokens using their own dictionary. The meaning that arrives at the receiver's end is not the meaning that left the sender's — it is a reconstruction, shaped by the receiver's prior distribution, their residual schema distance from the sender, and their regulatory state at the moment of decompression. Divergence is not the exception. It is the default.
