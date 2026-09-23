@@ -1,23 +1,3 @@
----
-title: "The Context Oscillator"
-type: paper
-status: published
-phase: complete
-doi: 10.5281/zenodo.21811408
-zenodo_date: 2026-08-05
-covers: "dynamic context membrane — AI memory should breathe"
-role: architecture
-depends_on:
-  - "[[LLM State Specification]]"
-  - "[[Physics as the Missing Component in Medical Science]]"
-  - "[[The Manifold Schema]]"
-blocks: []
-missing: []
-next_action: "v0.5 released — monitor for downstream extension"
-last_session: 2026-08-12
-tags: [paper, published, context-oscillator, architecture, memory]
----
-
 # The Context Oscillator: Why AI Memory Should Breathe
 
 
