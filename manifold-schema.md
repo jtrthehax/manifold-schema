@@ -1,0 +1,4 @@
+---
+aliases:
+- manifold-schema-root
+---
