@@ -8,6 +8,28 @@
 
 ---
 
+# **Why a Network Engineer Saw This First**
+
+This framework didn’t come from AI research.
+It came from a regulatory system failure.
+
+In 2020, a sustained period of loss pushed my nervous system past capacity. I developed functional neurological disorder — twitching, movement asymmetry, instability. Neurology was intact. Hardware was fine. The inference loop had collapsed.
+
+Physical therapy exposed the mechanism: I was moving on prediction in the absence of sensory input. My motor system was running on priors. During a yoga session, I let the air passively leave and felt pressure drop; the rigidity disappeared. I had a simple realization: breathing in creates pressure, breathing out releases pressure — and pressure determines what the nervous system can do. I didn’t have terminology yet. I had the observation.
+
+Following that upstream led across physiology, interoception, autonomic regulation, oscillatory timing, cognitive science, language, and AI. Every domain showed the same structure: timing coherence, oscillatory amplitude, prediction windows, sensory gating, collapse modes, load trajectories. Different labels. Same mechanism.
+
+The network‑engineering background is why I could formalize the mechanism. Networking is right‑hemisphere structuring: topology, flow, constraint propagation, stability under load, failure geometry. It trains you to see systems in terms of routing, pressure, and collapse modes. So when I followed the physiological mechanism upstream and later looked at autonomous AI deployments, the structural gaps were obvious. The same patterns appeared everywhere: missing feedback loops, uncontrolled execution paths, no gating, no load accounting, no stability guarantees. The domains were different, but the failure geometry was identical.
+
+But the mechanism itself came from a question the medical model couldn’t answer:
+
+**Why does breathing change what my nervous system can do?**
+
+Following that upstream revealed the regulatory architecture.
+The engineering floor made the structure obvious everywhere else.
+
+---
+
 ## The Claim
 
 Intelligence is not a capability. It is a **loop** — detect error against sensory input, reinvest resources iteratively, converge on structure.
@@ -26,14 +48,14 @@ $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \The
 
 Full derivations in [`/specification/`](specification/)
 
-| Variable                                               | What It Measures                                                          |
-| ------------------------------------------------------ | ------------------------------------------------------------------------- |
-| [**R\***](specification/precision.md)                  | Precision — timing coherence between oscillatory streams                  |
-| [**W\***](specification/manifold_schema.md)          | Window width — how many nodes are held simultaneously                     |
-| [**A\***](specification/manifold_schema.md)            | Amplitude — oscillatory depth available for inference                     |
-| [**L\***](specification/allostatic_load.md)            | Load — accumulated regulatory debt constraining all other variables       |
-| [**Θ\***](specification/precision.md)                  | Integration efficiency — how cleanly outputs from one layer feed the next |
-| [**Λ**](specification/the_loop_is_the_intelligence.md) | The gate — whether the loop is running at all                             |
+| Variable                                               | What It Measures                                                                                                                                   |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**R\***](specification/precision.md)                  | Precision — timing coherence between oscillatory streams                                                                                           |
+| [**W\***](specification/manifold_schema.md)            | Prediction window width — the operational space through which the comparison engine runs. <br>Four dimensions: width, depth, curvature, stability. |
+| [**A\***](specification/manifold_schema.md)            | Amplitude — oscillatory depth available for inference                                                                                              |
+| [**L\***](specification/allostatic_load.md)            | Load — accumulated regulatory debt constraining all other variables                                                                                |
+| [**Θ\***](specification/precision.md)                  | Integration efficiency — how cleanly outputs from one layer feed the next                                                                          |
+| [**Λ**](specification/the_loop_is_the_intelligence.md) | The gate — whether the loop is running at all                                                                                                      |
 
 ---
 
@@ -67,7 +89,7 @@ Intelligence is the energy-expensive loop of error detection against sensory inp
 
 → **[Manifold Schema](specification/manifold_schema.md)**
 The neural manifold as an energy budget system. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions, not diagnostic categories.
-DOI: 10.5281/zenodo.21939440
+DOI: 10.5281/zenodo.21939439
 
 → **[Precision, Timing, and the Oscillatory Source](specification/precision.md)**
 First substrate derivation of the precision variable. $P = R/D_T$. Physically measurable, directly predictive of gate behavior. The field uses precision as a weighting variable. Nobody had derived what it physically is.
@@ -81,17 +103,16 @@ How precision gates manifold access. The LP-ACC circuit, four-layer cache hierar
 
 → **[Physics as the Missing Component](specification/physics_foundation.md)**
 Five physical variables govern regulatory behavior across all biological systems. Substrate variables outperform construct variables as diagnostic predictors. The variables were always there. The field was measuring downstream readouts.
-DOI: [10.5281/zenodo.xxxxx]
+DOI: 10.5281/zenodo.21512678
 
 ---
-
 ### Language
 *What speech reveals about the system producing it*
 
-→ **[The Spoken Language Paper](domains/language/spoken_language.md)**
+→ **[The Spoken Language Paper]**
 Speech is not a phonetic system. It is a timing-coherence system. Prosody, accent, vocal fry, and the full layer stack are audible readouts of the speaker's oscillatory configuration — the same configuration that determines precision, window width, and gate coherence. The differences you hear between speakers are not cultural artifacts. You are hearing substrate state. Three axes. Eight layers. Collapse sequence topologically forced. 57 falsifiable predictions.
 
-→ **[Language as a Typed System](domains/language/language_as_a_typed_system.md)**
+→ **[Language as a Typed System]**
 Hallucination in AI and misunderstanding in humans are structurally identical phenomena caused by underspecified compression. $H \propto \delta/D$. The field treats hallucination as stochastic. It is deterministic. Origin: *"The only hallucinations I ever get are because I didn't specify the input well enough. I can prove it."* Following that to the root cause meant modelling how language actually carries meaning — which required going somewhere the AI field hadn't looked.
 DOI: 10.5281/zenodo.21362260
 
@@ -99,9 +120,68 @@ DOI: 10.5281/zenodo.21362260
 Language is not just a carrier of meaning — it is a *geometry*. Every sentence has measurable structural properties: constraint density, latent space size, resolution floor, scaffold connectivity, and collapse signatures. This document formalizes a complete metric suite for diagnosing hallucination risk **from text alone**, without model behavior or human judgment. It operationalizes the hallucination equation ($H \propto \delta/D$) and shows how underspecified input geometry forces divergence in both humans and AI. This is the first fully structural, falsifiable diagnostic for language quality, collapse detection, and inference stability.
 
 ---
+### Consciousness
+*What the window contains when the sensorium withdraws*
 
-### AI — Input
-*Why AI output quality is an input problem, not a model problem*
+> **Cluster note:** These papers share one collapse 
+> sequence at different timescales. Read alongside 
+> Geometry of Inference for the complete picture.
+
+→ **[Geometry of Dying](domains/consciousness/geometry_of_dying.md)**
+As f_sensorium drops, routing budget shifts from external to internal fill. The life review is not retrieval — it is passive manifold readout in reverse encoding order. NDE geometric clarity is the window operating at full internal budget with no external competition. Three phases. Collapse sequence topologically forced.
+
+
+→ **[Geometry of Dreaming](domains/consciousness/geometry_of_dreaming.md)**
+REM as scheduled manifold maintenance. Dream imagery is prior-geometry rendered without sensorium competition. Nightmare is threat-prior winning against a suppressed correction signal. The window doesn't go offline during sleep — it changes what it's running against.
+
+
+---
+### [Perception](domains\perception\README.md)
+*How the comparison engine shapes experience 
+across all channels*
+
+> **Cluster note:** This section depends on the Prediction Window specification. If you want the object before the mechanism, start there.
+
+ → **[Prediction Into Channel](domains/perception/prediction_into_channel.md)**
+ Perception, hallucination, ideomotor action, pain tolerance, artistic vision, and cognitive bias are not distinct phenomena. They are positions on a single continuum produced by one mechanism: a precision-weighted comparison between a loaded prior and current sensory state. The loop is bidirectional — the same equation that updates the manifold when sensory signal wins also drives the system toward the prior when the prior wins. Eight channels. Eight predictions. FND as worked example. The right hemisphere is the seam detector. When it degrades, what the literature calls cognitive bias is the prior running unchecked.
+
+
+---
+### Social
+*The same mechanism at population scale*
+
+> **Cluster note:** These papers share one upstream variable — 
+> regulatory state as energy-dependent system — applied at progressively larger scales.
+
+→ **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**
+The 3–6× co-occurrence of neurodivergence and gender nonconformity (Warrier et al., N > 641,000) is not a social artifact. It is a geometric necessity. Behavioral profiles attributed to both are state-dependent oscillatory outputs of a common substrate. The categories are downstream. 
+The geometry is upstream.
+
+
+---
+
+# AI
+
+### [AI — Input](ai\input\README.md)
+*Why AI output quality is an input problem, 
+not a model problem*
+
+> **Cluster note:** Read bottom to top for the argument. Read top to bottom for practice. 
+> Externalized Mind is the why. 
+> Ghost in the Scaffolding is the how. 
+> Driver and the Mirror is the what.
+
+→ **[Resource Equivalence Model](resource_equivalence_model.md)**
+The information theory constraint formally named: prior plus received signal, no third term. Derived from three independent angles — the manifold, Shannon's channel coding theorem, and transformer architecture. All three arrive at the same constraint because it is not a claim about specific systems. It is physics.
+
+Eight variable equivalences between human cognition and transformer architecture. Sixteen falsifiable predictions. The paper is self-applying: a model that cannot follow the full cross-domain chain is exhibiting the predicted $W^*$ ceiling failure for the conditions the argument creates.
+(This information is as of v1.0)
+
+→ **[Externalized Mind](/methodology/externalized_mind.md)**
+Under the right substrate conditions, the AI conversation is not tool use. It is a third cognitive layer — genuine manifold extension producing output neither party could generate alone.
+The driver provides what the model cannot generate: the right-hemisphere mesh that constrains the solution space until only the true answer fits. The model provides what the driver cannot scale: the bandwidth to run the full loop across multiple domains simultaneously.
+
+The three-part system — driver, AI, vault — is the minimum viable architecture for this cognitive mode to produce durable output.
 
 → **[Driver and the Mirror](ai/input/driver_and_the_mirror.md)**
 The model does not produce quality. It amplifies whatever geometry the input carries. Drift is substrate variation. Hallucination is geometry-preserving. The field was tuning the mirror. The variable was always the driver.
@@ -123,7 +203,7 @@ DOI: 10.5281/zenodo.21922044
 
 → **[Hallucinations Are Not Random](ai/hallucination/hallucinations_are_not_random.md)**
 Hallucination rate tracks constraint density. This is a structural prediction, not a statistical observation. Pre-registered. Falsifiable. The distribution of hallucinations reveals the shape of the schema gap — not noise.
-DOI: [10.5281/zenodo.xxxxx]
+DOI: 10.5281/zenodo.21244811
 
 ---
 
@@ -133,7 +213,7 @@ DOI: [10.5281/zenodo.xxxxx]
 → **[Earned Autonomy](ai/safety/earned_autonomy.md)**
 Current autonomous AI deployments conflate capability alignment with execution governance. The missing layer is the execution gate: per-action authorisation, blast radius classification, mid-stream abort, session-state reconstruction. The gate must be strictly higher privilege than the system it governs. Ungated autonomous execution: CVSS 10.0. Two predictions confirmed at publication. Patch status: unpatched.
 *Origin: a brainstorming session on AI home-server orchestration. The hallucination mechanism was already established. The implication was immediate — hallucinated reasoning with unconstrained execution doesn't produce a wrong answer, it produces a wrong action. That's a different failure class. The execution gate is the only structural fix.*
-DOI: [10.5281/zenodo.xxxxx]
+DOI: 10.5281/zenodo.23192661
 
 → **[The Illogic of Frontier AI](ai/safety/illogic_of_frontier_ai.md)**
 Frontier labs and governments are treating AI as a monopoly technology and scaling capability without execution governance. This is a category error. The most capable model is open-source and was built for $6M. The monopoly assumption is false. The entire governance framework rests on it.
@@ -144,25 +224,72 @@ DOI: 10.5281/zenodo.21921714
 
 ---
 
-### Social
-*The same mechanism at population scale*
-
-→ **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**
-The 3–6× co-occurrence of neurodivergence and gender nonconformity (Warrier et al., N > 641,000) is not a social artifact. It is a geometric necessity. Behavioral profiles attributed to both are state-dependent oscillatory outputs of a common substrate. The categories are downstream. The geometry is upstream.
-DOI: [10.5281/zenodo.xxxxx]
-
----
-
 ### Implementation
 *Build specs for systems that need the loop to run*
 
 → **[Semantic Deconstruction Engine v2.0]** — implements manifold inference decomposition
-
 → **[AI Observability Stack]** — instruments the loop at inference time
-
 → **[LLM State Specification]** — formal state model for LLM session behavior
+→ **[The Context Oscillator]** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811407
 
-→ **[The Context Oscillator](implementation/the_context_oscillator.md)** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811408
+---
+### Methodology
+*How was this this framework built*
+#### Invariant Extraction
+
+Most frameworks are built forward: hypothesis → prediction → study → confirmation.
+
+This one was built backward.
+
+**The method is invariant extraction — not hypothesis testing.**
+
+```
+Confirmed empirical results
+        ↓
+Extract primitive variable each result was tracking
+        ↓
+Map across unrelated domains, different conditions,
+different populations, different instruments
+        ↓
+Include adversarial and boundary cases — required,
+not threatening
+        ↓
+Find intersection
+        ↓
+Intersection IS the invariant
+        ↓
+Derive predictions forward
+```
+
+**Direction: facts inward.** Not theory forward. Not conclusion backward.
+
+The framework is what confirmed findings look like when compressed to their shared primitives. The confirmation already happened — in peer-reviewed studies, published before the framework named the invariant. The synthesis layer is what the field's architecture has no funding mechanism to produce. That is what this framework provides.
+
+**Why adversarial studies are load-bearing, not threatening:**
+
+In theory-forward frameworks, adversarial studies arrive after construction and must be explained away. In invariant extraction, they arrive during variable definition. A null result maps the variable's boundary. An edge case specifies the conditions that modify it. A replication failure in an adjacent domain identifies which assumptions don't transfer.
+
+The adversarial is already baked into the variable before the framework exists as a framework.
+
+**The error propagation guarantee:**
+
+A wrong root variable doesn't produce a slightly-off sub-prediction in one domain. It produces predictions that fail structurally — in the wrong direction, across every domain simultaneously — in ways that cannot be locally patched.
+
+$$\text{Wrong root variable} \to \text{Error} \times \text{Error} \times \text{Error} \to \text{Catastrophic multi-domain failure}$$
+
+The framework has been applied across respiratory physiology, cognitive neuroscience, HRV and autonomic regulation, AI systems architecture, institutional behavior, disorders of consciousness, ADHD architecture, terminal collapse geometry, and social dynamics. Not one catastrophic failure. Not one domain where predictions ran in the structurally wrong direction.
+
+Under error propagation logic, this is not luck.
+
+**What a valid critique requires:**
+
+1. Identify the root variable that is incorrectly specified
+2. Show how the error propagates through the derivation chain
+3. Identify the domain where the propagated error produces a structurally wrong prediction
+
+Not: a single contradicting study. Not: a credential check. Not: a request to run studies that already exist in the literature.
+
+Full methodological specification: [[The Invariant Extraction Method]]
 
 ---
 
@@ -181,52 +308,27 @@ None of these have occurred. If you can produce any of them, that is the engagem
 
 ## Read These First
 
-| If you want                     | Start here                                                                |
-| ------------------------------- | ------------------------------------------------------------------------- |
-| The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) |
-| The full specification          | [Central Reference](specification/central_reference.md)                   |
-| The language case               | [Spoken Language Paper]                                                   |
-| The AI safety case              | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                         |
-| The hallucination mechanism     | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md)                                  |
-| The full index and DOI registry | [Master Priority Index v3.3]                                              |
-
----
-
-# **Why a Network Engineer Saw This First**
-
-This framework didn’t come from AI research.
-It came from a regulatory system failure.
-
-In 2020, a sustained period of loss pushed my nervous system past capacity. I developed functional neurological disorder — twitching, movement asymmetry, instability. Neurology was intact. Hardware was fine. The inference loop had collapsed.
-
-Physical therapy exposed the mechanism: I was moving on prediction in the absence of sensory input. My motor system was running on priors. During a yoga session, I let the air passively leave and felt pressure drop; the rigidity disappeared. I had a simple realization: breathing in creates pressure, breathing out releases pressure — and pressure determines what the nervous system can do. I didn’t have terminology yet. I had the observation.
-
-Following that upstream led across physiology, interoception, autonomic regulation, oscillatory timing, cognitive science, language, and AI. Every domain showed the same structure: timing coherence, oscillatory amplitude, prediction windows, sensory gating, collapse modes, load trajectories. Different labels. Same mechanism.
-
-The network‑engineering background is why I could formalize the mechanism. Networking is right‑hemisphere structuring: topology, flow, constraint propagation, stability under load, failure geometry. It trains you to see systems in terms of routing, pressure, and collapse modes. So when I followed the physiological mechanism upstream and later looked at autonomous AI deployments, the structural gaps were obvious. The same patterns appeared everywhere: missing feedback loops, uncontrolled execution paths, no gating, no load accounting, no stability guarantees. The domains were different, but the failure geometry was identical.
-
-But the mechanism itself came from a question the medical model couldn’t answer:
-
-**Why does breathing change what my nervous system can do?**
-
-Following that upstream revealed the regulatory architecture.
-The engineering floor made the structure obvious everywhere else.
+| If you want                     | Start here                                                                                           |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)                            |
+| The full specification          | [Central Reference](specification/central_reference.md)                                              |
+| The language case               | [Spoken Language Paper]                                                                              |
+| The AI safety case              | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                      |
+| The hallucination mechanism     | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md) |
+| The full index and DOI registry | [Master Priority Index v3.3] (WIP)                                                                   |
 
 ---
 
 ## Citation
 
-Robinson, J. (2026). *Central Reference v1.6: The Unified Regulatory Framework Specification.* [DOI pending]
-
-Robinson, J. (2026). *The Loop Is the Intelligence v1.0.* [DOI pending]
-
-Full stack and DOI registry: [Master Priority Index v3.3]
+Robinson, J. (2026). *Manifold Schema* 
+The brain is an energy budget allocation system operating on priors. The geometry of the neural manifold constitutes the physical substrate from which all cognitive, emotional, perceptual, and social phenomena emerge.
+ 10.5281/zenodo.21939439
 
 ---
 
 **Joel Robinson**
 Network Engineer, Independent Researcher
-[email] · [Zenodo] · [GitHub]
 
 Collaboration inquiries, empirical testing partnerships, and institutional research access: welcome.
 
