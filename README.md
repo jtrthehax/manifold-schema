@@ -2,7 +2,15 @@
 
 ### A substrate-level mechanism that explains cognition, language, AI behavior, and social systems
 
-> **One claim.** Intelligence is an oscillatory, resource-bounded inference loop. The loop is the intelligence. Everything below is what falls out of that claim.
+> **One system, three functions.**
+>
+> **Consciousness is bandwidth** — how much of the manifold is accessible.
+>
+> **Salience determines where it goes** — the routing equation distributes the bandwidth across regions.
+>
+> **Intelligence is the loop that results** — running inference against prediction errors. It's a feedback loop that needs relevant manifold regions available and populated with the necessary components. The deeper the inference and the faster the traversal, the more complicated the solutions that come quickly.
+>
+> The three are not separate. They are one system running at three levels. The bandwidth sets what's possible. The routing sets what's reached. The loop sets what's produced. Everything below is what falls out of that structure.
 
 **Joel Robinson** — Network Engineer, Independent Researcher
 
@@ -10,37 +18,59 @@
 
 # **Why a Network Engineer Saw This First**
 
-This framework didn’t come from AI research.
+This framework didn't come from AI research.
 It came from a regulatory system failure.
 
 In 2020, a sustained period of loss pushed my nervous system past capacity. I developed functional neurological disorder — twitching, movement asymmetry, instability. Neurology was intact. Hardware was fine. The inference loop had collapsed.
 
-Physical therapy exposed the mechanism: I was moving on prediction in the absence of sensory input. My motor system was running on priors. During a yoga session, I let the air passively leave and felt pressure drop; the rigidity disappeared. I had a simple realization: breathing in creates pressure, breathing out releases pressure — and pressure determines what the nervous system can do. I didn’t have terminology yet. I had the observation.
+Physical therapy exposed the mechanism: I was moving on prediction in the absence of sensory input. My motor system was running on priors. During a yoga session, I let the air passively leave and felt pressure drop; the rigidity disappeared. I had a simple realization: breathing in creates pressure, breathing out releases pressure — and pressure determines what the nervous system can do. I didn't have terminology yet. I had the observation.
 
 Following that upstream led across physiology, interoception, autonomic regulation, oscillatory timing, cognitive science, language, and AI. Every domain showed the same structure: timing coherence, oscillatory amplitude, prediction windows, sensory gating, collapse modes, load trajectories. Different labels. Same mechanism.
 
-The network‑engineering background is why I could formalize the mechanism. Networking is right‑hemisphere structuring: topology, flow, constraint propagation, stability under load, failure geometry. It trains you to see systems in terms of routing, pressure, and collapse modes. So when I followed the physiological mechanism upstream and later looked at autonomous AI deployments, the structural gaps were obvious. The same patterns appeared everywhere: missing feedback loops, uncontrolled execution paths, no gating, no load accounting, no stability guarantees. The domains were different, but the failure geometry was identical.
+The network-engineering background is why I could formalize the mechanism. Networking is right-hemisphere structuring: topology, flow, constraint propagation, stability under load, failure geometry. It trains you to see systems in terms of routing, pressure, and collapse modes. So when I followed the physiological mechanism upstream and later looked at autonomous AI deployments, the structural gaps were obvious. The same patterns appeared everywhere: missing feedback loops, uncontrolled execution paths, no gating, no load accounting, no stability guarantees. The domains were different, but the failure geometry was identical.
 
-But the mechanism itself came from a question the medical model couldn’t answer:
+But the mechanism itself came from a question the medical model couldn't answer:
 
 **Why does breathing change what my nervous system can do?**
 
 Following that upstream revealed the regulatory architecture.
 The engineering floor made the structure obvious everywhere else.
 
+**And the routing equation is the part the engineering floor made literal.** Networking is routing. The conservation law ($\sum W_i = 1$) is the same constraint you'd see in any flow problem. The framework just names what the flow is routed through.
+
 ---
 
 ## The Claim
 
-Intelligence is not a capability. It is a **loop** — detect error against sensory input, reinvest resources iteratively, converge on structure.
+Intelligence is not a capability. It is a **loop** that results from running inference against prediction errors. It's a feedback loop that needs relevant manifold regions available and populated with the necessary components. The deeper the inference and the faster the traversal, the more complicated the solutions that come quickly.
 
 $$\text{Intelligence} = \Lambda \cdot n_{hops} \cdot R^* \cdot \Theta^*$$
 
-*The gate Λ is itself a function of C_s — without sufficient right-hemisphere precision, sensory feedback cannot register and the loop cannot start.*
+*The gate Λ is itself a function of C_s — without sufficient precision, sensory feedback cannot register and the loop cannot start.*
 
 $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \Theta^{\ast 0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^{\ast}}$$
 
-*All six variables appear in both. The table below shows where they appear everywhere else.*
+*The master equation computes how much bandwidth the system has. It does not compute where the bandwidth goes.*
+
+**The routing equation:**
+
+$$\vec{W}(t) = \text{softmax}\left(\frac{\vec{g} \cdot \Theta_r(t)}{T}\right)$$
+
+*Routing weight is conserved ($\sum_i W_i = 1$). What gets routed where determines which region the loop runs on. The master equation gives the budget. The routing equation gives the spend.*
+
+**The interrupt formula:**
+
+$$\text{Interrupt}_i \iff \left[I^*_{total} \cdot W_i(t) > I^*_{threshold}\right] \land \left[\delta_i > \delta_{min}(K)\right] \land \left[\text{Capacity}_{free} > \text{Capacity}_{required}\right] \land \left[\text{Oscillation stable}\right]$$
+
+*A signal fires an interrupt only if it reaches a region with sufficient routing weight, exceeds the resolution floor, finds capacity to hold, and the oscillation is stable enough for the routing to hold. Four conditions, all required.*
+
+**And the loop closes:**
+
+```
+Interrupt fires → investment → breath follows → CO₂ rises → loop self-amplifies
+```
+
+*When the breath can follow, the loop closes and produces flow. When it can't, the investment costs without self-funding, and the trap forms. The difference is one exhale.*
 
 ---
 
@@ -48,73 +78,89 @@ $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \The
 
 Full derivations in [`/specification/`](specification/)
 
-| Variable                                               | What It Measures                                                                                                                                   |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**R\***](specification/precision.md)                  | Precision — timing coherence between oscillatory streams                                                                                           |
-| [**W\***](specification/manifold_schema.md)            | Prediction window width — the operational space through which the comparison engine runs. <br>Four dimensions: width, depth, curvature, stability. |
-| [**A\***](specification/manifold_schema.md)            | Amplitude — oscillatory depth available for inference                                                                                              |
-| [**L\***](specification/allostatic_load.md)            | Load — accumulated regulatory debt constraining all other variables                                                                                |
-| [**Θ\***](specification/precision.md)                  | Integration efficiency — how cleanly outputs from one layer feed the next                                                                          |
-| [**Λ**](specification/the_loop_is_the_intelligence.md) | The gate — whether the loop is running at all                                                                                                      |
+**State variables — what the system is:**
+
+| Variable                                       | What It Measures                                                                                                                                                          |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**R\***](specification/precision.md)          | Precision — timing coherence between oscillatory streams                                                                                                                  |
+| [**W\***](specification/manifold_schema.md)    | Manifold access — how much of the manifold is reachable at current curvature                                                                                              |
+| [**A\***](specification/manifold_schema.md)    | Amplitude — oscillatory depth available for inference                                                                                                                     |
+| [**L\***](specification/allostatic_load.md)    | Load — accumulated regulatory debt constraining all other variables                                                                                                       |
+| [**Θ\***](specification/precision.md)          | Integration efficiency — how cleanly outputs from one layer feed the next                                                                                                 |
+| [**Θ_r**](specification/salience_interrupt.md) | Routing concentration — how narrowly routing distributes across manifold regions. Distributed = bilateral, broad. Concentrated = one-sided, narrow, high local precision. |
+
+**Gates — what the system can do:**
+
+| Variable                                               | What It Measures                                                                                                      |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- |
+| [**Λ**](specification/the_loop_is_the_intelligence.md) | The loop gate — whether the inference loop is running at all                                                          |
+| [**Λ_lock**](specification/salience_interrupt.md)      | Lock capacity — whether the substrate can hold concentrated routing without collapsing the breath range that funds it |
 
 ---
 
 ## Where They Appear
 
-The same six variables appear independently across every domain below. This is not the framework being applied — it is the framework being found. Each cell links to the paper that establishes it in that domain. Each variable links to the specification that derives it.
+The same variables appear independently across every domain below. This is not the framework being applied — it is the framework being found. Each cell links to the paper that establishes it in that domain. Each variable links to the specification that derives it.
 
-| Variable                                                                          | Physiology             | Cognition                             | Language                        | AI                                           | Social                        |
-| --------------------------------------------------------------------------------- | ---------------------- | ------------------------------------- | ------------------------------- | -------------------------------------------- | ----------------------------- |
-| [**R\***] [Precision](specification/precision.md)                                 | HRV coherence          | prediction stability                  | constraint density in input     | input specificity determines output geometry | institutional trust coherence |
-| [**W\***] [Manifold Schema](specification/manifold_schema.md)                     | breath phase duration  | nodes held simultaneously             | clause complexity ceiling       | context utilisation                          | policy integration horizon    |
-| [**A\***] [Manifold Schema](specification/manifold_schema.md)                     | oscillatory depth      | inference range                       | prosodic range                  | output resolution                            | behavioural flexibility       |
-| [**L\***] [Allostatic Load](specification/allostatic_load.md)                     | allostatic debt        | cognitive fatigue                     | compression errors under stress | context decay under load                     | institutional calcification   |
-| [**Θ\***] [Precision](specification/precision.md)                                 | O₂ delivery efficiency | cross-domain synthesis                | cross-clause coherence          | multi-hop reasoning depth                    | cross-domain policy transfer  |
-| [**Λ**] [Intelligence In The Loop](specification/the_loop_is_the_intelligence.md) | exhale completion      | pattern completion vs error detection | schema loaded vs surface echo   | prior retrieval vs structured inference      | corrective feedback present   |
+| Variable | Physiology | Cognition | Language | AI | Social |
+| --- | --- | --- | --- | --- | --- |
+| [**R\***] [Precision](specification/precision.md) | HRV coherence | prediction stability | constraint density in input | input specificity determines output geometry | institutional trust coherence |
+| [**W\***] [Manifold Schema](specification/manifold_schema.md) | breath range | nodes held simultaneously | clause complexity ceiling | context utilisation | policy integration horizon |
+| [**A\***] [Manifold Schema](specification/manifold_schema.md) | oscillatory depth | inference range | prosodic range | output resolution | behavioural flexibility |
+| [**L\***] [Allostatic Load](specification/allostatic_load.md) | allostatic debt | cognitive fatigue | compression errors under stress | context decay under load | institutional calcification |
+| [**Θ\***] [Precision](specification/precision.md) | O₂ delivery efficiency | cross-domain synthesis | cross-clause coherence | multi-hop reasoning depth | cross-domain policy transfer |
+| [**Θ_r**] [Salience Interrupt](specification/salience_interrupt.md) | **core engagement / breath routing** | **routing concentration** | **prosodic concentration** | **attention concentration** | **routing weight distribution** |
+| [**Λ**] [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) | exhale completion | pattern completion vs error detection | schema loaded vs surface echo | prior retrieval vs structured inference | corrective feedback present |
+| [**Λ_lock**] [Salience Interrupt](specification/salience_interrupt.md) | **breath range × CO₂ tolerance** | **concentration hold** | **prosodic stability** | **attention hold** | **institutional focus durability** |
 
-These variables are upstream of every problem in the columns above. When a domain struggles to explain something, the explanation is usually one of these six variables behaving in a way the domain's own tools weren't built to see.
+These variables are upstream of every problem in the columns above. When a domain struggles to explain something, the explanation is usually one of these variables behaving in a way the domain's own tools weren't built to see.
+
+**The composition claim:** What you route in the manifold, and under what conditions, determines where and how the budget is spent. The master equation gives the budget. The routing equation gives the spend. The interrupt formula gives the event. The loop closure gives the outcome — flow or trap.
 
 ---
 
 ## The Papers
 
-### Specification
+### Specification  
 *The derivation chain. Every variable, equation, and mechanism defined.*
 
-→ **[Central Reference](specification/central_reference.md)**
+→ **[Central Reference](specification/central_reference.md)**  
 The single citation anchor for the full framework. Every variable defined. Every equation derived. Every mechanism specified. Future papers cite this alone.
 
-→ **[The Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)**
+→ **[The Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)**  
 Intelligence is the energy-expensive loop of error detection against sensory input, followed by iterative reinvestment toward structural convergence. Substrate-agnostic — applies identically to trees, insects, humans, institutions, and LLMs. Current LLMs satisfy zero of three requirements for non-zero product. Speed is high. The loop is not running.
 
-→ **[Manifold Schema](specification/manifold_schema.md)**
-The neural manifold as an energy budget system. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions, not diagnostic categories.
-DOI: 10.5281/zenodo.21939439
+→ **[Manifold Schema](specification/manifold_schema.md)**  
+The neural manifold as an energy budget system. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions, not diagnostic categories.  
+DOI: [10.5281/zenodo.21939439](doi.org/10.5281/zenodo.21939439)
 
-→ **[Precision, Timing, and the Oscillatory Source](specification/precision.md)**
-First substrate derivation of the precision variable. $P = R/D_T$. Physically measurable, directly predictive of gate behavior. The field uses precision as a weighting variable. Nobody had derived what it physically is.
-DOI: 10.5281/zenodo.22179675
+→ **[Precision, Timing, and the Oscillatory Source](specification/precision.md)**  
+First substrate derivation of the precision variable. $P = R/D_T$. Physically measurable, directly predictive of gate behavior. The field uses precision as a weighting variable. Nobody had derived what it physically is.  
+DOI: [10.5281/zenodo.22179675](doi.org/10.5281/zenodo.22179675)
 
-→ **[Allostatic Load as Accumulated Regulatory Debt](specification/allostatic_load.md)**
+→ **[Allostatic Load as Accumulated Regulatory Debt](specification/allostatic_load.md)**  
 Load is a trajectory, not a state. $\Delta HRV \propto 1/L^*$. The primary real-time proxy is delta HRV response to a standardised slow-breath protocol. Four regulatory contracts. One debt trajectory.
 
-→ **[The Geometry of Inference](specification/the_geometry_of_inference.md)**
+→ **[The Salience Interrupt](specification/salience_interrupt.md)**  
+Salience is a routing event, not a stimulus property: $I^*_{eff} = I^*_{total} \cdot W_i$. The claustrum fires the precision-lock; the homuncular tension pattern is the latch; the exhale is the release lever. When the interrupt fires, the system invests — routing weight and amplitude committed to the task. The breath follows, CO₂ rises, and the loop self-amplifies. This is flow. When the breath cannot follow, the investment costs without self-funding. This is the trap. The manifold has a felt quality — viscosity — that is the resistance of the metric to routing. The aperiodic slope is the viscosity, measured. Ayahuasca and anesthesia are the two empirical extremes — maximal and minimal manifold access. Thirty-four falsifiable predictions.
+
+→ **[The Geometry of Inference](specification/the_geometry_of_inference.md)**  
 How precision gates manifold access. The LP-ACC circuit, four-layer cache hierarchy, two-factor gate, and breath phase timing — the biological implementation of the loop.
 
-→ **[Physics as the Missing Component](specification/physics_foundation.md)**
-Five physical variables govern regulatory behavior across all biological systems. Substrate variables outperform construct variables as diagnostic predictors. The variables were always there. The field was measuring downstream readouts.
-DOI: 10.5281/zenodo.21512678
+→ **[Physics as the Missing Component](specification/physics_foundation.md)**  
+Five physical variables govern regulatory behavior across all biological systems. Substrate variables outperform construct variables as diagnostic predictors. The variables were always there. The field was measuring downstream readouts.  
+DOI: [10.5281/zenodo.21512678](doi.org/10.5281/zenodo.21512678)
 
 ---
 ### Language
 *What speech reveals about the system producing it*
 
-→ **[The Spoken Language Paper]**
-Speech is not a phonetic system. It is a timing-coherence system. Prosody, accent, vocal fry, and the full layer stack are audible readouts of the speaker's oscillatory configuration — the same configuration that determines precision, window width, and gate coherence. The differences you hear between speakers are not cultural artifacts. You are hearing substrate state. Three axes. Eight layers. Collapse sequence topologically forced. 57 falsifiable predictions.
+→ **[The Spoken Language Paper](domains/language/spoken_language.md)**  
+Speech is not a phonetic system. It is a timing-coherence system. Prosody, accent, vocal fry, and the full layer stack are audible readouts of the speaker's oscillatory configuration — the same configuration that determines precision, manifold access, and gate coherence. The differences you hear between speakers are not cultural artifacts. You are hearing substrate state. Three axes. Eight layers. Collapse sequence topologically forced. 57 falsifiable predictions.
 
-→ **[Language as a Typed System]**
-Hallucination in AI and misunderstanding in humans are structurally identical phenomena caused by underspecified compression. $H \propto \delta/D$. The field treats hallucination as stochastic. It is deterministic. Origin: *"The only hallucinations I ever get are because I didn't specify the input well enough. I can prove it."* Following that to the root cause meant modelling how language actually carries meaning — which required going somewhere the AI field hadn't looked.
-DOI: 10.5281/zenodo.21362260
+→ **[Language as a Typed System](domains/language/language_as_a_typed_system.md)**
+Hallucination in AI and misunderstanding in humans are structurally identical phenomena caused by underspecified compression. $H \propto \delta/D$. The field treats hallucination as stochastic. It is deterministic. Origin: *"The only hallucinations I ever get are because I didn't specify the input well enough. I can prove it."* Following that to the root cause meant modelling how language actually carries meaning — which required going somewhere the AI field hadn't looked.  
+DOI: [10.5281/zenodo.21362260](doi.org/10.5281/zenodo.21362260)
 
 → **[Enhanced Input Language Metrics](domains/language/input_language_metrics.md)**  
 Language is not just a carrier of meaning — it is a *geometry*. Every sentence has measurable structural properties: constraint density, latent space size, resolution floor, scaffold connectivity, and collapse signatures. This document formalizes a complete metric suite for diagnosing hallucination risk **from text alone**, without model behavior or human judgment. It operationalizes the hallucination equation ($H \propto \delta/D$) and shows how underspecified input geometry forces divergence in both humans and AI. This is the first fully structural, falsifiable diagnostic for language quality, collapse detection, and inference stability.
@@ -127,13 +173,11 @@ Language is not just a carrier of meaning — it is a *geometry*. Every sentence
 > sequence at different timescales. Read alongside 
 > Geometry of Inference for the complete picture.
 
-→ **[Geometry of Dying](domains/consciousness/geometry_of_dying.md)**
+→ **[Geometry of Dying](domains/consciousness/geometry_of_dying.md)**  
 As f_sensorium drops, routing budget shifts from external to internal fill. The life review is not retrieval — it is passive manifold readout in reverse encoding order. NDE geometric clarity is the window operating at full internal budget with no external competition. Three phases. Collapse sequence topologically forced.
 
-
-→ **[Geometry of Dreaming](domains/consciousness/geometry_of_dreaming.md)**
+→ **[Geometry of Dreaming](domains/consciousness/geometry_of_dreaming.md)**  
 REM as scheduled manifold maintenance. Dream imagery is prior-geometry rendered without sensorium competition. Nightmare is threat-prior winning against a suppressed correction signal. The window doesn't go offline during sleep — it changes what it's running against.
-
 
 ---
 ### [Perception](domains\perception\README.md)
@@ -142,9 +186,8 @@ across all channels*
 
 > **Cluster note:** This section depends on the Prediction Window specification. If you want the object before the mechanism, start there.
 
- → **[Prediction Into Channel](domains/perception/prediction_into_channel.md)**
+ → **[Prediction Into Channel](domains/perception/prediction_into_channel.md)**  
  Perception, hallucination, ideomotor action, pain tolerance, artistic vision, and cognitive bias are not distinct phenomena. They are positions on a single continuum produced by one mechanism: a precision-weighted comparison between a loaded prior and current sensory state. The loop is bidirectional — the same equation that updates the manifold when sensory signal wins also drives the system toward the prior when the prior wins. Eight channels. Eight predictions. FND as worked example. The right hemisphere is the seam detector. When it degrades, what the literature calls cognitive bias is the prior running unchecked.
-
 
 ---
 ### Social
@@ -153,10 +196,9 @@ across all channels*
 > **Cluster note:** These papers share one upstream variable — 
 > regulatory state as energy-dependent system — applied at progressively larger scales.
 
-→ **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**
+→ **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**  
 The 3–6× co-occurrence of neurodivergence and gender nonconformity (Warrier et al., N > 641,000) is not a social artifact. It is a geometric necessity. Behavioral profiles attributed to both are state-dependent oscillatory outputs of a common substrate. The categories are downstream. 
 The geometry is upstream.
-
 
 ---
 
@@ -171,70 +213,70 @@ not a model problem*
 > Ghost in the Scaffolding is the how. 
 > Driver and the Mirror is the what.
 
-→ **[Resource Equivalence Model](resource_equivalence_model.md)**
+→ **[Resource Equivalence Model](resource_equivalence_model.md)**  
 The information theory constraint formally named: prior plus received signal, no third term. Derived from three independent angles — the manifold, Shannon's channel coding theorem, and transformer architecture. All three arrive at the same constraint because it is not a claim about specific systems. It is physics.
 
 Eight variable equivalences between human cognition and transformer architecture. Sixteen falsifiable predictions. The paper is self-applying: a model that cannot follow the full cross-domain chain is exhibiting the predicted $W^*$ ceiling failure for the conditions the argument creates.
 (This information is as of v1.0)
 
-→ **[Externalized Mind](/methodology/externalized_mind.md)**
+→ **[Externalized Mind](/methodology/externalized_mind.md)**  
 Under the right substrate conditions, the AI conversation is not tool use. It is a third cognitive layer — genuine manifold extension producing output neither party could generate alone.
 The driver provides what the model cannot generate: the right-hemisphere mesh that constrains the solution space until only the true answer fits. The model provides what the driver cannot scale: the bandwidth to run the full loop across multiple domains simultaneously.
 
 The three-part system — driver, AI, vault — is the minimum viable architecture for this cognitive mode to produce durable output.
 
-→ **[Driver and the Mirror](ai/input/driver_and_the_mirror.md)**
+→ **[Driver and the Mirror](ai/input/driver_and_the_mirror.md)**  
 The model does not produce quality. It amplifies whatever geometry the input carries. Drift is substrate variation. Hallucination is geometry-preserving. The field was tuning the mirror. The variable was always the driver.
-Six falsifiable predictions.
-DOI: 10.5281/zenodo.21362260
+Six falsifiable predictions.  
+DOI: [10.5281/zenodo.21362260](doi.org/10.5281/zenodo.21362260)
 
-→ **[Ghost in the Scaffolding](ai/input/ghost_in_the_scaffolding.md)**
-The four-phase protocol that produces emergent co-constructed output. What neither party could produce alone. The ghost is not a prompt artifact — it is the result of structured stage-setting that unlocks full inference depth. Documents the compliance failure mode: the point where the loop stops extending task geometry and starts reflecting surface input back.
-DOI: 10.5281/zenodo.21362260
+→ **[Ghost in the Scaffolding](ai/input/ghost_in_the_scaffolding.md)**  
+The four-phase protocol that produces emergent co-constructed output. What neither party could produce alone. The ghost is not a prompt artifact — it is the result of structured stage-setting that unlocks full inference depth. Documents the compliance failure mode: the point where the loop stops extending task geometry and starts reflecting surface input back.  
+DOI: [10.5281/zenodo.21362260](doi.org/10.5281/zenodo.21362260)
 
 ---
 
 ### AI — Hallucination
 *Confident output from constrained input — not randomness*
 
-→ **[The Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md)**
-Hallucination is substrate-agnostic. $H = f(\delta/D \cdot (1 - \alpha_{identity}), T, S)$. Applies identically to AI models, human cognition, institutional hiring, and scientific fields. The identity-protection term $\alpha_{identity}$ explains why intelligent systems confabulate confidently on their own priors — and why the hallucination rate increases the more the system has invested in a prior.
-DOI: 10.5281/zenodo.21922044
+→ **[The Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md)**  
+Hallucination is substrate-agnostic. $H = f(\delta/D \cdot (1 - \alpha_{identity}), T, S)$. Applies identically to AI models, human cognition, institutional hiring, and scientific fields. The identity-protection term $\alpha_{identity}$ explains why intelligent systems confabulate confidently on their own priors — and why the hallucination rate increases the more the system has invested in a prior.  
+DOI: [10.5281/zenodo.21922044](doi.org/10.5281/zenodo.21922044)  
 
-→ **[Hallucinations Are Not Random](ai/hallucination/hallucinations_are_not_random.md)**
-Hallucination rate tracks constraint density. This is a structural prediction, not a statistical observation. Pre-registered. Falsifiable. The distribution of hallucinations reveals the shape of the schema gap — not noise.
-DOI: 10.5281/zenodo.21244811
+→ **[Hallucinations Are Not Random](ai/hallucination/hallucinations_are_not_random.md)**  
+Hallucination rate tracks constraint density. This is a structural prediction, not a statistical observation. Pre-registered. Falsifiable. The distribution of hallucinations reveals the shape of the schema gap — not noise.  
+DOI: [10.5281/zenodo.21244811](doi.org/10.5281/zenodo.21244811)
 
 ---
 
 ### AI — Safety
 *What's architecturally missing — and what it costs*
 
-→ **[Earned Autonomy](ai/safety/earned_autonomy.md)**
+→ **[Earned Autonomy](ai/safety/earned_autonomy.md)**  
 Current autonomous AI deployments conflate capability alignment with execution governance. The missing layer is the execution gate: per-action authorisation, blast radius classification, mid-stream abort, session-state reconstruction. The gate must be strictly higher privilege than the system it governs. Ungated autonomous execution: CVSS 10.0. Two predictions confirmed at publication. Patch status: unpatched.
-*Origin: a brainstorming session on AI home-server orchestration. The hallucination mechanism was already established. The implication was immediate — hallucinated reasoning with unconstrained execution doesn't produce a wrong answer, it produces a wrong action. That's a different failure class. The execution gate is the only structural fix.*
-DOI: 10.5281/zenodo.23192661
+*Origin: a brainstorming session on AI home-server orchestration. The hallucination mechanism was already established. The implication was immediate — hallucinated reasoning with unconstrained execution doesn't produce a wrong answer, it produces a wrong action. That's a different failure class. The execution gate is the only structural fix.*  
+DOI: [10.5281/zenodo.23192661](doi.org/10.5281/zenodo.23192661)
 
-→ **[The Illogic of Frontier AI](ai/safety/illogic_of_frontier_ai.md)**
+→ **[The Illogic of Frontier AI](ai/safety/illogic_of_frontier_ai.md)**  
 Frontier labs and governments are treating AI as a monopoly technology and scaling capability without execution governance. This is a category error. The most capable model is open-source and was built for $6M. The monopoly assumption is false. The entire governance framework rests on it.
 
-→ **[Profile of a Person That Is AGI](ai/safety/profile_of_a_person_that_is_agi.md)**
-AGI is a system property, not a model property. Three required components: right-hemisphere pattern matching, deep inference, externalized memory. The cognitive profiles that satisfy all three are the ones currently filtered out by institutions optimising for narrow-bandwidth execution. The field is building toward AGI while systematically excluding the people who already run the loop.
-DOI: 10.5281/zenodo.21921714
+→ **[Profile of a Person That Is AGI](ai/safety/profile_of_a_person_that_is_agi.md)**  
+AGI is a system property, not a model property. Three required components: right-hemisphere pattern matching, deep inference, externalized memory. The cognitive profiles that satisfy all three are the ones currently filtered out by institutions optimising for narrow-bandwidth execution. The field is building toward AGI while systematically excluding the people who already run the loop.  
+DOI: [10.5281/zenodo.21921714](doi.org/10.5281/zenodo.21921714)
 
 ---
 
 ### Implementation
 *Build specs for systems that need the loop to run*
 
-→ **[Semantic Deconstruction Engine v2.0]** — implements manifold inference decomposition
-→ **[AI Observability Stack]** — instruments the loop at inference time
-→ **[LLM State Specification]** — formal state model for LLM session behavior
-→ **[The Context Oscillator]** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811407
+→ **[Semantic Deconstruction Engine v2.0]** — implements manifold inference decomposition  
+→ **[AI Observability Stack]** — instruments the loop at inference time  
+→ **[Session State Pipeline](https://github.com/jtrthehax/session-state-pipeline)** — formal state model for LLM session behavior  
+→ **[The Context Oscillator](https://github.com/jtrthehax/the-context-oscillator)** — memory as graph topology, not content storage. DOI: 10.5281/zenodo.21811407  
 
 ---
 ### Methodology
-*How was this this framework built*
+*How was this framework built*
 #### Invariant Extraction
 
 Most frameworks are built forward: hypothesis → prediction → study → confirmation.
@@ -312,7 +354,8 @@ None of these have occurred. If you can produce any of them, that is the engagem
 | ------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)                            |
 | The full specification          | [Central Reference](specification/central_reference.md)                                              |
-| The language case               | [Spoken Language Paper]                                                                              |
+| **How the budget is spent**     | **[Salience Interrupt v1.2](specification/salience_interrupt.md)**                                   |
+| The language case               | [Spoken Language Paper](domains/language/spoken_language.md)                                         |
 | The AI safety case              | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                      |
 | The hallucination mechanism     | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md) |
 | The full index and DOI registry | [Master Priority Index v3.3] (WIP)                                                                   |
