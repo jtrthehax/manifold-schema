@@ -4,30 +4,37 @@
 
 *Canonical Reference. All subsequent work is a domain projection of this framework.*
 
-**Version:** 7.2
-**Date:** 2026-09-13
-**Status:** Converged with Central Reference v1.4, Precision v3.4, Allostatic Load v2.1, Geometry of Inference v1.0, and Loop Is the Intelligence v1.0
+**Version:** 7.3
+**Date:** 2026-10-09
+**Status:** Converged with Central Reference v1.8.2, Precision v3.4, Allostatic Load v2.1, Geometry of Inference v1.0, Loop Is the Intelligence v1.0, and Salience Interrupt v1.2
 
 ---
 
-## Changelog — v7.1 → v7.2
+## Changelog — v7.2 → v7.3
 
-This changelog exists so that any reader — human or AI — can see the convergence path. MS v7.1 was assembled against Central Reference v1.3. The v1.3 → v1.4 delta added $O_{pathway}$ (§2.8), $L^*_{critical,i}$ (§2.9), and the motor gain variables (§2.11). Additionally, GoI v1.0 introduced the four-layer cache hierarchy and circuit priming effect. MS v7.1 absorbed neither. v7.2 applies the seven specification fixes and absorbs the two GoI mechanisms.
+This changelog exists so that any reader — human or AI — can see the convergence path. MS v7.2 was assembled against Central Reference v1.4. Since then, three things changed the specification: the readout architecture (v1.8.1), the Category rebase (v1.8.2), and the Salience Interrupt v1.2 (which registered the routing equation, the interrupt formula, and the closed loop). MS v7.2 has the bandwidth equation and the geometry equation. It is missing the routing equation. v7.3 adds it.
 
-| Step | Change | Location | Reason | Central Reference anchor |
-|---|---|---|---|---|
-| 1 | Header updated to "Converged with Central Reference v1.4" | Header | Version drift | — |
-| 2 | Added $O_{pathway}$, $\Lambda$, $n_{hops}$, $\rho_{scaffold}$, $\delta_{hyst}$ to variable table | §2b | Central Reference v1.4 registers these | §2.2, §2.3, §2.6, §2.8 |
-| 3 | Registered $\delta_{hyst}$ with decay equation | §5a.5 | Variable was described but not registered | §2.3, §3.3 |
-| 4 | Added $L^*_{critical,i}$ with calibration note | §5a.14 | Component critical load variable | §2.9 |
-| 5 | Motor gain formalization (new §6b.8) | §6b.8 | Absorbed from Central Reference §2.11 and §3.11 | §2.11, §3.11 |
-| 6 | Four-layer cache hierarchy (new §6b.9) | §6b.9 | Absorbed from GoI v1.0 §1.1 | — |
-| 7 | Circuit priming (new §6b.10) | §6b.10 | Absorbed from GoI v1.0 §1.6 | — |
-| 8 | Added GoI v1.0 and Loop v1.0 to domain projections | §17 | Both are now part of the stack | — |
-| 9 | Changelog added at top | This section | Versioning track | — |
-| 10 | Version history updated | Document Status | — | — |
+| Step | Change | Location | Reason |
+|---|---|---|---|
+| 1 | Header updated to "Converged with Central Reference v1.8.2" | Header | Version drift |
+| 2 | **Routing equation added** | §1f (new) | The third pillar — where the bandwidth goes |
+| 3 | **Four-condition interrupt formula added** | §1g (new) | Replaces the single-threshold `T_S` |
+| 4 | **Closed loop added** | §1h (new) | Interrupt → investment → breath → self-amplification |
+| 5 | `Θ_r` (routing concentration) registered | §2b | Routing variable — parallel to `I^*` |
+| 6 | `Λ_lock` (lock capacity) registered | §2b | Structural gate — parallel to `Λ` |
+| 7 | **Viscosity added** | §5a.16 (new), §7 | Felt readout of `K`; spectral readout is the aperiodic slope |
+| 8 | **CO₂ → viscosity chain added** | §5a.16 | Breath sets the metric's resistance to routing |
+| 9 | **`Θ_r` column added** | §12 | Distinguishes configurations that look identical without it |
+| 10 | **`Θ_r` named in autism section** | §12c | Routing tendency is `Θ_r` tendency |
+| 11 | **Flow added to felt geometry table** | §7 | The positive case — the loop running cleanly |
+| 12 | **Readout architecture registered** | §2f (new) | Spectral, hemispheric, behavioral — all `Θ_r` readouts |
+| 13 | GoI v1.0, Loop v1.0, Salience v1.2 added to domain projections | §17 | Updated stack |
+| 14 | Topology table updated | §16 | Routing equation, interrupt formula, `Θ_r`, `Λ_lock`, viscosity added |
+| 15 | Version history updated | Document Status | — |
 
-**What did not change:** Every mechanism from v7.1. The master equation, the curvature equation, the precision integration, the motor encoding layer, the social projection, and the empirical anchors are unchanged. v7.2 is additive convergence.
+**What did not change:** Every mechanism from v7.2. The master equation, the curvature equation, the precision integration, the motor encoding layer, the social projection, and the empirical anchors are unchanged. v7.3 is additive convergence.
+
+**Why this is the third pillar.** v7.2 has the master equation (how much bandwidth) and the curvature equation (how the geometry is shaped). It does not have the routing equation (where the bandwidth goes). Without it, the paper describes a system with a budget and a geometry but no *spend*. The routing equation is the missing pillar. v7.3 adds it.
 
 ---
 
@@ -35,7 +42,9 @@ This changelog exists so that any reader — human or AI — can see the converg
 
 The brain is an energy budget allocation system operating on priors. This paper proposes a unified geometric framework — the Manifold Schema — in which the operational capacity of the nervous system is formally determined by the geometry of a neural manifold shaped by oscillatory amplitude, precision, and curvature, all driven by breathing mechanics. The central claim is that these geometric variables — measurable via standard HRV instrumentation — constitute the physical substrate from which all cognitive, emotional, perceptual, and social phenomena emerge. No new variables are introduced. No new instrumentation is required.
 
-The framework formalizes the causal chain from breath to consciousness in a single master equation, anchors every variable in existing empirical literature across independent research programs, and generates falsifiable predictions at the individual, perceptual, and social scales. Critically, the perceptual confirmation is cross-domain: every major sensory system — visual, auditory, semantic, interoceptive, social, motor, and mnemonic — degrades under load in the same geometric pattern, drawn from independent literatures that were not designed to test this framework. The convergence is the evidence.
+The framework formalizes the causal chain from breath to consciousness in a single master equation, states the routing equation that determines where the bandwidth is spent, and specifies the four-condition interrupt formula that determines when a signal fires. The manifold has a felt quality — viscosity — that is the resistance of the metric to routing; the aperiodic slope is the viscosity, measured.
+
+The framework anchors every variable in existing empirical literature across independent research programs, and generates falsifiable predictions at the individual, perceptual, and social scales. Critically, the perceptual confirmation is cross-domain: every major sensory system — visual, auditory, semantic, interoceptive, social, motor, and mnemonic — degrades under load in the same geometric pattern, drawn from independent literatures that were not designed to test this framework. The convergence is the evidence.
 
 The framework extends structurally to the social scale. A society allocating finite resources under compounding load exhibits the same collapse geometry as an individual nervous system: precision degrades, the prediction window narrows, outer regions lose access first, and the system retreats to survival geometry. The historical pattern of this collapse is already in the data. The framework is the map that reads it.
 
@@ -260,6 +269,116 @@ The entry point is not psychological. It is geometric: encode the prior from fla
 
 ---
 
+### 1f. The Routing Equation
+
+The master equation (§2b) computes how much bandwidth the system has. It does not compute where the bandwidth goes. The routing equation does.
+
+$$\vec{W}(t) = \text{softmax}\left(\frac{\vec{g} \cdot \Theta_r(t)}{T}\right)$$
+
+| Term | What It Means |
+|---|---|
+| $\vec{W}(t)$ | Routing weight vector across manifold regions (conserved: $\sum_i W_i = 1$) |
+| $\vec{g}$ | Gain vector — the salience/gain of each region |
+| $\Theta_r(t)$ | Routing concentration — how sharply routing concentrates on the highest-gain region |
+| $T$ | Temperature — how much noise is in the routing |
+
+**Three things this equation states:**
+
+**High `Θ_r(t)` concentrates.** Routing goes to the highest-gain region. The interrupt region dominates. Attention narrows.
+
+**Low `Θ_r(t)` distributes.** Routing spreads across regions. Many regions get partial weight. Attention broadens.
+
+**The gain vector $\vec{g}$ determines where concentration goes.** Non-uniform $\vec{g}$ means some regions are inherently more reachable than others. Uniform $\vec{g}$ means routing distributes evenly.
+
+**This is the equation the master equation was missing.** The master equation computes *how much* bandwidth the system has. The routing equation computes *where* the bandwidth is directed.
+
+**Routing weight is conserved.** $\sum_i W_i = 1$. Committing weight to one region reduces effective salience everywhere else. This is why attention feels exclusive — not because the other signals got quieter, but because the space where they could fire got narrower.
+
+**The interrupt reroutes, doesn't suppress.** When an interrupt fires in region $i$, routing weight redistributes toward region $i$. The energy that was in other regions is not lost — it is conserved and *moved*. This is why a strong interrupt feels like "everything goes there." Not because the signal suppressed the rest. Because the routing weight redistributed.
+
+---
+
+### 1g. The Interrupt Formula
+
+A signal fires an interrupt in region $i$ when four conditions are met:
+
+$$\text{Interrupt}_i \iff \left[I^*_{total} \cdot W_i(t) > I^*_{threshold}\right] \;\land\; \left[\delta_i > \delta_{min}(K)\right] \;\land\; \left[\text{Capacity}_{free} > \text{Capacity}_{required}(\delta_i)\right] \;\land\; \left[\text{Oscillation stable}\right]$$
+
+| Condition | What It Checks |
+|---|---|
+| **Routing reaches the region** | The signal has to reach a region with sufficient routing weight |
+| **Resolution floor permits detection** | The signal's deviation has to exceed the resolution floor. `δ_min` rises with $K$ |
+| **Capacity to hold** | The manifold must have room to hold the error while it is interpreted |
+| **Oscillation is stable** | The routing concentration must be able to hold |
+
+**All four are required.** A signal that meets conditions 1–3 but not 4 will not fire reliably, because the routing concentration will flicker.
+
+**The resolution floor.** `δ_min` is the minimum deviation required to interpret a signal. High $K$ stretches the metric. Errors become geometrically indistinct. The resolution floor rises. This is why breath focus can suppress interrupts in non-breath regions — concentrating routing on the breath raises local $K$, which raises the resolution floor in excluded regions, which means the interrupt events' deviations fall below the floor.
+
+**Manifold capacity.** The manifold can only hold a finite number of uncommitted prediction errors:
+
+$$\text{Capacity}_{free} = C_s - \sum_{j \in \text{held locks}} \text{cost}_j$$
+
+Every lock that hasn't released consumes capacity. When the sum approaches $C_s$, there is no room for new interrupts. This is the mechanism behind high-load collapse: `L^*` rises, capacity drops, `δ_min` effectively rises because the manifold can't hold the error long enough to interpret it, and interrupts stop firing. The system looks calm because there is no mechanism left for selection.
+
+**This replaces the single-threshold $T_S$ description.** The threshold is real, but the four conditions are what determine whether a signal crosses it. The single-threshold formulation was the surface. The four-condition formula is the mechanism.
+
+---
+
+### 1h. The Closed Loop
+
+The interrupt does not just fire and stop. It triggers a loop:
+
+```
+Salience threshold breached (gain makes this easy for high-`g` profiles)
+    ↓
+Investment: routing weight + amplitude committed to task
+    ↓
+Breath follows the investment (deeper, longer oscillation)
+    ↓
+CO₂ rises → substrate supports more amplitude
+    ↓
+Amplitude range kicks upward
+    ↓
+Routing flows (low viscosity) → traversal efficient
+    ↓
+Next interrupt fires more easily → more investment
+    ↓
+[loop continues, self-amplifying]
+```
+
+**The interrupt triggers investment.** The investment is not "effort" in the psychological sense. It is the allocation of unused capacity. When the interrupt fires, the system routes capacity that was previously idle to the task region.
+
+**The breath follows the investment.** As amplitude is committed, the breath deepens to fund it. The breath is *downstream* of the routing decision, not upstream of it. The routing demand changes the breath, which changes the substrate, which supports more routing.
+
+**And the loop closes.** If there is budget to follow, breathing variables change in a feedback loop to fund faster inference. The breath changes in response to the routing demand, which then changes the substrate that supports more routing.
+
+**This is flow.** The loop runs without obstruction. Each cycle funds the next. The system self-amplifies into the fluid state.
+
+**And the trap is the loop failing to close.** The interrupt fires, the investment happens, but the breath can't follow — `Λ_lock` is insufficient, or the exhale is incomplete, or the load is too high. The investment costs without self-funding. The system braces.
+
+**The difference is `Λ_lock`.** High `Λ_lock` → breath can follow → flow. Low `Λ_lock` → breath can't follow → trap. The difference is one exhale.
+
+---
+
+### 1i. Viscosity — The Felt Metric
+
+The manifold has a felt quality. **Viscosity** is the resistance of the metric to routing.
+
+**Low viscosity** (high CO₂): the metric is relaxed. Routing flows between regions without resistance. Traversal is fast and continuous.
+
+**High viscosity** (low CO₂): the metric is stiff. Routing has to push against resistance. Traversal is slow and fragmented.
+
+**The felt sense is direct.** Low viscosity feels like fluidity — ideas chain, solutions come quickly, thought is effortless. High viscosity feels like stuckness — ideas don't chain, solutions are effortful, thought fragments.
+
+**And the aperiodic slope is the viscosity, measured.** Flat slope = low viscosity. Steep slope = high viscosity. The first-person report and the third-person measurement are the same variable.
+
+**This is why the spectral readout works as a readout.** The person reports "fluid" or "stuck." The MEG shows flat or steep slope. They're the same measurement in two channels. The felt sense of viscosity is the phenomenological readout of the same variable.
+
+**And it is the thing contemplative traditions have been pointing at.** "Flow," "effortless awareness," "the mind settling" — all describing low viscosity. "Brain fog," "stuck," "can't think" — all describing high viscosity. The traditions had the phenomenology. The framework has the mechanism. Viscosity is the term that connects them.
+
+---
+
 ## 2. The Master Equation
 
 ### 2a. Why the Equation Is Scalar
@@ -294,12 +413,12 @@ $C_s$ is an intra-individual metric. It measures how much of *this system's own 
 | ---------- | ----------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | $A_s^*$    | Oscillatory amplitude         | RMSSD / Baseline RMSSD                                   | The energy budget — how much oscillatory signal is available to fund cognitive operations  |
 | $R^*$    | Precision — timing-coherence ratio | Phase-Locking Index / Baseline PLI | Signal clarity — whether oscillatory streams stay close (low $D_T$) and stay close for long periods (high $R$) — see §5a |
-| $W^*$    | Window width                  | Cognitive flexibility composite / Baseline               | Accessible manifold range — how far predictions can propagate                              |
+| $W^*$    | Window width — manifold access | Cognitive flexibility composite / Baseline               | Accessible manifold range — how far predictions can propagate                              |
 | $\Theta^*$ | Global integration efficiency | Phase-locking stability × ambiguity tolerance / Baseline | How well the system holds disparate signals together in the same processing window         |
 | $I^*$      | Interoceptive selection       | Heartbeat detection accuracy / Baseline                  | The routing protocol — how well the system reads its own geometry and allocates the budget |
 | $L^*$      | Allostatic load               | RMSSD depression / Max observed depression               | Total current draw on the budget — metabolic, social, and cognitive demand combined |
 
-**Additional variables (registered from Central Reference v1.4):**
+**Additional variables (registered from Central Reference v1.8.2 and Salience Interrupt v1.2):**
 
 | Variable | Definition | Where used |
 |---|---|---|
@@ -308,6 +427,8 @@ $C_s$ is an intra-individual metric. It measures how much of *this system's own 
 | $n_{hops}$ | Inference hops available — $\lfloor W^* \cdot \rho_{scaffold} \rfloor$ | Intelligence equation, Loop v1.0 §0 |
 | $\rho_{scaffold}$ | Scaffold density — density of long-range competitive connections (~0.30; Roy & Banerjee, 2026) | $n_{hops}$ derivation |
 | $\delta_{hyst}$ | Collapse hysteresis — recovery delay after precision collapse | Precision §1.7, §5a.5 below |
+| **$\Theta_r$** | **Routing concentration — how narrowly salience routes interoception into the manifold** | **Routing equation (§1f), Salience Interrupt v1.2 §2.5** |
+| **$\Lambda_{lock}$** | **Lock capacity — the substrate's ability to hold concentrated routing without collapsing the breath range that funds it** | **Structural gate (§1h), Salience Interrupt v1.2 §5.1** |
 
 **Zero new variables. Zero new measurements. Zero new ontology.**
 Every measurement pathway is standard practice in RSA and HRV research.
@@ -315,6 +436,10 @@ Every measurement pathway is standard practice in RSA and HRV research.
 > $I^*$ is not a component of $C_s$. It is the routing layer applied to $C_s$ — what happens to the bandwidth after it exists. $I^*$ appears in $S = C_s \cdot I^*$, not in the bandwidth equation. A system with low $I^*$ has its bandwidth intact but cannot direct it. See Section 13.
 
 **Why $I^*$ is multiplicative:** Interoception is the routing protocol. A system that cannot read its own geometry cannot allocate its bandwidth, regardless of how large that bandwidth is. If $I^* \rightarrow 0$, $C_s \rightarrow 0$ — not because amplitude, precision, or window have failed, but because the system cannot direct what it has. This is the geometric account of FND and dissociation: capacity is present, routing has failed. $I^*$ is multiplicative for the same reason a router with no routing table produces zero throughput regardless of link bandwidth. See Section 13 for the full mechanism.
+
+**Why `Θ_r` is a separate variable from `I^*`:** `I^*` is *how much* routing capacity is available. `Θ_r` is *how concentrated* the routing is. A system with high `I^*` and low `Θ_r` has wide routing that distributes across regions — broad, associative. A system with high `I^*` and high `Θ_r` has wide routing that concentrates on one region — focused, deep. Both are valid uses of the same routing capacity. The two variables answer different questions.
+
+**Why `Λ_lock` is a separate gate from `Λ`:** `Λ` is whether the inference loop runs at all. `Λ_lock` is whether concentrated routing is reachable for this substrate. A system can have `Λ > 0` (loop running) and `Λ_lock` low (cannot hold concentration) — it runs broad, associative inference but cannot focus. A system can have both high — it can run deep inference and hold the concentration. Different questions, different structural layers.
 
 **Why $C_s$ uses a weighted geometric mean:** The product form punishes any deficit exponentially — a healthy system at 0.7 across all variables reads as near-collapse. The geometric mean preserves the "all variables matter" logic while allowing partial compensation. One strong variable can partially carry a weak one, which matches the physiology. $R^*$ carries the highest weight (0.30) because exhale precision is the earliest indicator of geometry degradation and the most direct mechanism of window collapse. See Section 5 for the CO₂ mechanism. $I^*$ is excluded from $C_s$ — it is the routing layer, not a bandwidth component. See Section 13.
 
@@ -478,21 +603,68 @@ $$C_s^{usable}(T) \propto A_s^* \cdot R_{stable}^* \cdot W_T^* \cdot \Theta_T^*$
 
 Where $W_T^*$ is the window width required for task $T$ and $\Theta_T^*$ is the integration requirement for task $T$. A system may have substantial $C_s$ while having near-zero $C_s^{usable}$ for a specific task that demands the failed dimension. This is why a person in a precision-failure state can still perform emotionally attuned social tasks while being unable to execute structured logical work — the available bandwidth is real, but it is not in the right geometry for the task.
 
+**$C_s^{routed}(t)$ — Routed Bandwidth**
+
+The master equation gives $C_s$ — how much bandwidth. The routing equation (§1f) gives $\vec{W}(t)$ — where it goes. The task-relative usable bandwidth is what the routing actually delivers to the task region:
+
+$$C_s^{routed}(T) = C_s \cdot W_T$$
+
+Where $W_T$ is the routing weight in the task region. This is the quantity that determines what the task can actually use — the spend, not the budget.
+
+---
+
+### 2f. The Readout Architecture
+
+The manifold has one state and multiple readouts. The state is $(L^*, \Theta_r)$, with $\Lambda_{lock}$ gating reachability of the concentrated attractor.
+
+| Readout class | Measurement | Framework variable | What it reads out |
+|---|---|---|---|
+| **Spectral** | Aperiodic slope, peak frequency, peak power | $K$, $W^*$, $R^*$ | Manifold curvature, access, viscosity, precision-lock strength |
+| **Hemispheric** | Frontal alpha asymmetry | $\Theta_r$ | Routing concentration |
+| **Somatic** | Resting motor asymmetry | $\Theta_r$ | Routing concentration |
+| **Acoustic** | Speech asymmetry | $\Theta_r$ | Routing concentration |
+| **Behavioral** | Task-modulability | $\Theta_r$ | Routing concentration |
+| **Phenomenological** | Felt viscosity (fluid ↔ stuck) | $K$ | Manifold viscosity |
+
+**All readouts are set by the breath.** The breathing pattern is the control variable.
+
+**None of these literatures recognize that they are measuring the same thing.** The framework is the statement that the instruments agree because the manifold is real. See §2g for the routing concentration that the hemispheric, somatic, acoustic, and behavioral readouts all project.
+
+**The prediction:** The `Θ_r` readouts should co-vary. A participant with distributed routing should show bilateral `A_h`, symmetric posture, symmetric speech, high task-modulability, and a felt sense of fluidity simultaneously. This is P3 in Category v2.0 §6.1.
+
+---
+
+### 2g. Routing Concentration as the State Variable
+
+The manifold's routing is not a single number. It has two degrees of freedom:
+
+- **Concentration** (`Θ_r`) — how narrowly routing distributes across regions
+- **Location** ($\vec{g}$) — which region the concentration lands on
+
+These are orthogonal. Two `Θ_r` values equal but with different `$\vec{g}$` land the concentration in different places. The concentration tells you how focused; the gain vector tells you focused on what.
+
+**`Θ_r` is the state variable. `$\vec{g}$` is the map.**
+
+The framework does not enumerate regions. What determines the cognitive mode is what the region at the dominant routing weight contains — prior geometry, adversarial inference capacity, interoceptive map, etc. This is read out case by case; it is not a state variable.
+
+**The readout is co-variance.** All four `Θ_r` readouts — hemispheric, somatic, acoustic, behavioral — should move together if `Θ_r` is the real variable. If they don't, one of them is reading something else. This is the empirical test.
+
 ---
 
 ## 3. The Causal Chain
 
-$$\text{Breath} \rightarrow A_s^* \rightarrow \sigma(A_s) \rightarrow R^* \rightarrow K \rightarrow W^* \rightarrow \Theta^* \rightarrow C_s$$
+$$\text{Breath} \rightarrow A_s^* \rightarrow \sigma(A_s) \rightarrow R^* \rightarrow K \rightarrow W^* \rightarrow \Theta^* \rightarrow C_s \rightarrow \vec{W}(t) \rightarrow \text{Interrupt}$$
 
-This is not a descriptive chain. Each arrow is a mechanism. Three mechanisms make the chain operational rather than correlational:
+This is not a descriptive chain. Each arrow is a mechanism. Four mechanisms make the chain operational rather than correlational:
 
 | Mechanism | What It Does | Where It Operates In The Chain | Section |
 |---|---|---|---|
 | **IRQ routing** — $I^*$ | Routes gain to signals — determines which signals the chain runs on | $R^* \rightarrow K$ — precision sets the noise floor, $I^*$ sets the gain | §13 |
 | **Prior update rate** — $\mathcal{U}$ | Writes current geometry into the prior layer — determines what the next encounter costs | $C_s \rightarrow$ future $K$ — the output of the chain becomes the input of the next | §6a |
 | **Motor encoding** — topology mapping | The body is the prior substrate — movement history is the manifold | Prior layer → future $K$ — blank motor zones are blank geometry | §6b |
+| **Routing equation** — $\vec{W}(t)$ | Distributes $C_s$ across regions — determines where the interrupt fires | $C_s \rightarrow \text{Interrupt}$ — the bandwidth is spent, not just held | §1f |
 
-Without these three mechanisms the chain describes what happens. With them it explains why the geometry behaves the way it does — and why breath at the bottom of the chain reaches all the way up to prior topology.
+Without these four mechanisms the chain describes what happens. With them it explains why the geometry behaves the way it does — and why breath at the bottom of the chain reaches all the way up to prior topology.
 
 | Breath Phase | $\sigma(A_s)$ | $R^*$ | $K$ | $W^*$ | $\Theta^*$ | Budget State |
 |---|---|---|---|---|---|---|
@@ -547,6 +719,8 @@ This describes energetic priority, not emotional dominance. Survival geometry is
 The distances above describe the default sequence in which regions lose access as curvature rises. The topology of "near" and "far" for any individual is not universal — it is personally constructed from motor encoding history and maintained in real time by interoceptive reporting.
 
 Two people under identical external load will lose access in different regions first — not because their hardware differs, but because their motor vocabulary differs. See Section 6b for the full mechanism.
+
+**The routing concentration across the radial structure.** Under low $K$, routing distributes across the manifold — many regions reachable, `Θ_r(t)` low. Under high $K$, the metric stretches, regions become geometrically distant, and routing concentrates — `Θ_r(t)` rises involuntarily. The manifold doesn't just narrow. It fragments into regions that can't easily route between each other. This is why high-load states feel cognitively narrow *and* disorganized — not just fewer options, but the options that exist can't be combined.
 
 ---
 
@@ -978,6 +1152,52 @@ High load means a narrower CO₂ window. The same absolute CO₂ level produces 
 
 ---
 
+### 5a.16 Viscosity — The Felt Metric
+
+The CO₂ mechanism (§5) produces a metric whose resistance to routing is **viscosity**.
+
+**The chain:**
+
+```
+CO₂ retained → vasodilation → PV+ support → slow oscillations sustained
+    ↓
+Aperiodic slope flattens → K drops
+    ↓
+Metric relaxes → manifold viscosity drops
+    ↓
+Routing flows → traversal is fast and continuous
+    ↓
+Ideas chain → complicated solutions come quickly
+```
+
+**The reverse:**
+
+```
+CO₂ depleted → vasoconstriction → PV+ unsupported → slow oscillations lost
+    ↓
+Aperiodic slope steepens → K rises
+    ↓
+Metric stiffens → manifold viscosity rises
+    ↓
+Routing resists → traversal is slow and fragmented
+    ↓
+Ideas don't chain → solutions are narrow and effortful
+```
+
+**Viscosity is the resistance of the metric to routing.** Low viscosity (high CO₂) means the metric is relaxed and routing flows between regions without resistance. High viscosity (low CO₂) means the metric is stiff and routing has to push against resistance.
+
+**The felt sense is direct.** Low viscosity feels like fluidity — ideas chain, solutions come quickly, thought is effortless. High viscosity feels like stuckness — ideas don't chain, solutions are effortful, thought fragments.
+
+**And the aperiodic slope is the viscosity, measured.** Flat slope = low viscosity. Steep slope = high viscosity. The first-person report and the third-person measurement are the same variable.
+
+**This is the bridge between the first-person and third-person accounts.** The framework has been strong on the variables, equations, and readouts. Viscosity names the first-person quality that the spectral readout measures.
+
+**And it is the thing contemplative traditions have been pointing at.** "Flow," "effortless awareness," "the mind settling" — all describing low viscosity. "Brain fog," "stuck," "can't think" — all describing high viscosity. The traditions had the phenomenology. The framework has the mechanism.
+
+**Cross-reference:** Salience Interrupt v1.2 §2.8 specifies the full viscosity treatment.
+
+---
+
 ## 6. The Prior Loop
 
 $$\text{Manifold geometry} \rightarrow \text{Prior quality} \rightarrow \text{Budget allocation efficiency} \rightarrow \text{Manifold geometry}$$
@@ -1256,15 +1476,21 @@ The competitive scaffold that constitutes $W^*$ (§5.2) is not static. It is mai
 
 The geometry is not abstract. It is experienced directly:
 
-| Geometry State | Felt Experience | Self-Detectable Signal |
-|---|---|---|
-| Flat manifold | Clarity, presence, ease, fluid cognition | "I can think clearly. The world feels stable." |
-| Curvature increasing | Unease, tension, narrowing attention | "I feel off. Things feel tighter." |
-| $W^*$ narrowing | Tunnel vision, impatience, fragmented thought | "I can't think straight. Everything feels urgent." |
-| $K$ high | Overwhelm, reactivity, cognitive fatigue | "I'm running on empty. Everything is too much." |
-| $C_s \approx 0$ | Numbness, derealization, shutdown | "I'm not here. Nothing feels real." |
+| Geometry State | Felt Experience | Viscosity | Self-Detectable Signal |
+|---|---|---|---|
+| Flat manifold — flow | Clarity, presence, ease, fluid cognition | Low — routing flows | "I can think clearly. The world feels stable. Ideas chain." |
+| Curvature increasing | Unease, tension, narrowing attention | Rising — routing resists | "I feel off. Things feel tighter." |
+| $W^*$ narrowing | Tunnel vision, impatience, fragmented thought | Rising — traversal fragmenting | "I can't think straight. Everything feels urgent." |
+| $K$ high | Overwhelm, reactivity, cognitive fatigue | High — routing stuck | "I'm running on empty. Everything is too much." |
+| $C_s \approx 0$ | Numbness, derealization, shutdown | Maximal — routing absent | "I'm not here. Nothing feels real." |
 
 The shift you feel on a slow exhale is the geometry changing. The breath is the lever.
+
+**The flow state.** Flow is the geometry running cleanly. Interrupt fires → investment happens → breath follows → CO₂ rises → substrate supports more amplitude → routing flows → next interrupt fires more easily. The loop self-amplifies. The felt quality is fluidity. Ideas chain. Solutions come quickly.
+
+**The trap state.** The trap is the geometry failing to close the loop. Interrupt fires → investment happens → breath cannot follow (insufficient `Λ_lock`, incomplete exhale, high load) → investment costs without self-funding → system braces. The felt quality is stuckness. Ideas don't chain. Solutions are effortful.
+
+**The difference between flow and trap is one exhale.** Same mechanism, opposite outcomes.
 
 ---
 
@@ -1334,6 +1560,12 @@ Each claim in this framework is already supported by existing empirical literatu
 | 58 | HRV follows circadian rhythm with individual chronotype variation | Vitale et al. (2019); Li et al. (2024) | Time-of-day is a feature, not noise |
 | 59 | Glymphatic clearance drives interstitial solute clearance during slow wave sleep | Iliff et al. (2012); Grunewald et al. (2012) | Substrate for load recovery during sleep |
 | 60 | Chronic vagal tone and CAP share efferent pathway | Tracey (2002); Thayer et al. (2010) | HRV is a real-time indicator of anti-inflammatory brake integrity |
+| 61 | CLA encodes uncertainty and PE during active avoidance, dissociable from ACC | Hu et al. (2026) | CLA is the execution node — fires the precision-lock |
+| 62 | Aperiodic slope is a dissociable spectral parameter | Subramani et al. (2026) | The manifold's curvature has a non-invasive readout |
+| 63 | Frontal alpha asymmetry tracks routing concentration | Schmid & Schmid Mast (2013); Boksem et al. (2012) | `Θ_r` → `A_h` is measurable |
+| 64 | ND/gender co-occurrence is shared geometry | Warrier et al. (2020) | Same quadrant read through two measurement systems |
+| 65 | Ayahuasca produces sustained antidepressant effects without pathology | meta-analysis and longitudinal studies | Maximal manifold access anchor |
+| 66 | Anesthesia produces thalamocortical synchronization and alpha locking | Purdon et al.; sevoflurane studies | Minimal manifold access anchor |
 
 _These anchors confirm each component of the framework independently. The full causal chain — connecting all of them in sequence — is the novel contribution._
 
@@ -1379,6 +1611,7 @@ Every sensory domain that depends on integration degrades under load in the same
 | Villatte et al. — *Temporal dynamics of HRV reveal stressor-specific autonomic patterns* | Mental arithmetic, noise, and pain produce distinct HRV signatures | Different loads reshape $A_s^*$, $\sigma(A_s)$, and $R^*$ in stressor-specific ways |
 | Naghibi et al. — *Indoor environmental quality and the brain* | Thermal environment linked to neural and physiological changes | Temperature perception tied to autonomic state and $W^*$ |
 | *Neural dissociation of cognitive effort and physiological arousal* — Int. J. Psychophysiology | Cognitive load and arousal have separable autonomic signatures | Suppression cost and precision are geometrically distinct pressures |
+| Subramani et al. — *LSD flattens the aperiodic slope and shifts peak frequencies* | Two effects are dissociable — follow different functional hierarchies | $K$ and $W^*$ are separable spectral readouts |
 
 > _Every interpretation that reduces this framework to metaphor, correlate, cognitive load theory, or stress research fails at the anchor table above — each variable is operationally defined, independently measured, and already in the literature._
 
@@ -1630,6 +1863,105 @@ Every sensory domain that depends on integration degrades under load in the same
 | Outcome if disconfirmed | Baseline CO₂ tolerance does not predict salience dependence |
 | Status | Untested — standard capnometry and cognitive task sufficient |
 
+**PREDICT-ROUTE-01 — The Routing Equation Predicts Interrupt Location**
+
+> The softmax routing equation $\vec{W}(t) = \text{softmax}(\vec{g} \cdot \Theta_r(t) / T)$ will predict which region receives the interrupt, not just that an interrupt fires. The predicted region (highest $W_i$) will match the empirically measured region (fMRI, EEG topography) with accuracy above chance.
+
+| Field | Content |
+|---|---|
+| Test | Predict interrupt region from `Θ_r(t)` measurement + gain vector estimate. Compare against measured interrupt location using source-localized EEG or fMRI. |
+| Outcome if confirmed | The routing equation is the mechanism — the interrupt location is predictable from the state |
+| Outcome if disconfirmed | The routing equation is descriptive, not predictive — the interrupt location is determined by something else |
+| Status | Untested — standard EEG + behavioral protocol sufficient |
+
+**PREDICT-ROUTE-02 — Routing Weight Is Conserved**
+
+> The routing weight vector sums to 1 across regions. Committing weight to one region necessarily reduces available weight in all other regions. This is testable: simultaneous dual-channel tasks will show zero-sum competition for routing weight.
+
+| Field | Content |
+|---|---|
+| Test | Dual-channel ERP with two independently measurable target regions. Vary the routing demand in one region and measure the effective salience of the other. Predicted: exact negative correlation with conservation constraint. |
+| Outcome if confirmed | Routing weight is conserved — the attention-as-exclusive phenomenology is geometric, not metaphorical |
+| Outcome if disconfirmed | Routing weight is not conserved — regions can be independently activated |
+| Status | Partially supported by load theory — direct conservation test untested |
+
+**PREDICT-ROUTE-03 — The Interrupt Triggers Investment**
+
+> When an interrupt fires, the system commits routing weight AND amplitude to the target region within one breath cycle. The investment is measurable as a rise in amplitude in the target region and a corresponding drop in amplitude in non-target regions.
+
+| Field | Content |
+|---|---|
+| Test | Measure regional amplitude (MEG/EEG) before, during, and after an interrupt onset. Predict: target region amplitude rises; non-target regions drop. |
+| Outcome if confirmed | The interrupt is an investment event — the loop closes by funding the target |
+| Outcome if disconfirmed | The interrupt reroutes weight but does not commit amplitude — investment is not the mechanism |
+| Status | Untested — MEG or high-density EEG sufficient |
+
+**PREDICT-ROUTE-04 — The Closed Loop Produces Flow**
+
+> The closed loop — interrupt → investment → breath follows → CO₂ rises → routing flows → next interrupt fires more easily — produces the state the literature calls flow. Predictions: (a) flow states show measurable breath deepening following each interrupt, (b) the depth of breath follows the amplitude demand of the task, (c) blocking the breath following (via mechanical constraint) prevents the flow state.
+
+| Field | Content |
+|---|---|
+| Test | Continuous measurement of breath depth, CO₂, `Θ_r(t)` readouts, and self-reported flow during tasks that induce the state. Test breath-block condition as negative control. |
+| Outcome if confirmed | Flow is the closed loop — the breath follows the investment, and blocking the breath blocks the flow |
+| Outcome if disconfirmed | Flow can occur without breath following — the loop closure is not the mechanism |
+| Status | Untested — capnography + respiratory belt + EEG + flow scale sufficient |
+
+**PREDICT-VISC-01 — Felt Viscosity Correlates with Aperiodic Slope**
+
+> The felt sense of viscosity (fluidity ↔ stuckness, single Likert item) will correlate with the aperiodic slope of the MEG/EEG power spectrum at $r > 0.7$ in single-session within-subject designs.
+
+| Field | Content |
+|---|---|
+| Test | Single session, multiple time points. At each time point, participant rates felt viscosity on a 7-point scale; spectral parameterization measures the aperiodic slope. Within-subject correlation. |
+| Outcome if confirmed | Viscosity is the first-person readout of the metric — the first-person report and the third-person measurement are the same variable |
+| Outcome if disconfirmed | Felt viscosity and aperiodic slope are independent — the phenomenological channel does not track the spectral readout |
+| Status | Untested — MEG/EEG spectral parameterization + single-item rating sufficient |
+
+**PREDICT-Θr-01 — The Θ_r Readouts Co-Vary**
+
+> The four `Θ_r` readouts — hemispheric ($A_h$), somatic (resting motor asymmetry), acoustic (speech asymmetry), behavioral (task-modulability) — will co-vary in single sessions. If one is the real variable, all four should move together.
+
+| Field | Content |
+|---|---|
+| Test | Single session, multiple measures: frontal alpha asymmetry (EEG), resting motor asymmetry (EMG or posturography), speech asymmetry (acoustic analysis), task-modulability (behavioral battery). Compute pairwise correlations. |
+| Outcome if confirmed | The readouts converge on a single variable — `Θ_r` is real and measurable across channels |
+| Outcome if disconfirmed | The readouts diverge — one of them is reading something else |
+| Status | Untested — standard EEG + EMG + acoustic + behavioral battery sufficient |
+
+**PREDICT-Θr-02 — The Routing Concentration Recovery Function**
+
+> `Θ_r(t)` stability will be the strongest predictor of attention stability, better than mean `Θ_r`. A person with high mean `Θ_r` but unstable `Θ_r(t)` will show worse attention performance than a person with lower mean `Θ_r` but stable `Θ_r(t)`.
+
+| Field | Content |
+|---|---|
+| Test | Longitudinal measurement of `Θ_r(t)` via `A_h` variance + attention battery across multiple sessions. Compare predictive power of mean vs. variance. |
+| Outcome if confirmed | Stability, not level, is the state variable that matters for attention |
+| Outcome if disconfirmed | Mean level is the primary predictor — stability is secondary |
+| Status | Untested — repeated `A_h` measurement + attention battery sufficient |
+
+**PREDICT-Θr-03 — Hypermobile ADHD Stabilizes with Core Training**
+
+> Building core muscle in hypermobile ADHD profiles will raise `Λ_lock` and stabilize `Θ_r(t)`. Prediction: 8-week core training produces (a) increased `A_h` stability, (b) reduced attention flicker, (c) increased baseline CO₂ tolerance.
+
+| Field | Content |
+|---|---|
+| Test | Hypermobile ADHD cohort randomized to core-training vs. waitlist. Measure `A_h` stability, attention battery, CO₂ tolerance at baseline, 4 weeks, 8 weeks. |
+| Outcome if confirmed | The substrate change (core muscle) stabilizes the routing variable — `Λ_lock` is trainable |
+| Outcome if disconfirmed | Core training does not change `Θ_r(t)` stability — the substrate-to-routing link is not supported |
+| Status | Untested — standard intervention + measurement protocol |
+
+**PREDICT-Θr-04 — Movement Traversal Reduces Routing Concentration**
+
+> Movement across the homunculus (torso swivels, weight shifts, full-body movement) will reduce `Θ_r` concentration and increase traversal speed. Prediction: participants who move during a complex inference task show lower `A_h` lateralization and faster solution times than participants who hold static posture.
+
+| Field | Content |
+|---|---|
+| Test | Within-subject: complex inference task under (a) static seated posture, (b) allowed to move freely. Measure `A_h`, solution time, solution quality. |
+| Outcome if confirmed | Movement is a routing variable — moving distributes `Θ_r`, which broadens traversal |
+| Outcome if disconfirmed | Movement is epiphenomenal — `Θ_r` is set by other variables |
+| Status | Untested — EEG + behavioral task sufficient |
+
 ---
 
 ## 11. Emotions Are Capacity Reports
@@ -1650,18 +1982,21 @@ Every sensory domain that depends on integration degrades under load in the same
 
 ## 12. Clinical States as Geometric Configurations
 
-| Condition | $A_s^*$ | $\sigma(A_s)$ | $R^*$ | $K$ | $W^*$ | $\Theta^*$ | $I^*$ | $L^*$ |
-|---|---|---|---|---|---|---|---|---|
-| Baseline healthy | Mod-High | Low | High | Low | Wide | High | High | Low |
-| Anxiety | Mod | Mod | Mod | ↑ | Narrowing | Mod | Routing inward | Mod |
-| Depression | Low | Low | Low | High | Narrow | Low | Low | High |
-| PTSD | Variable | High | Low | High | Narrow | Low | Prior-driven | High |
-| ADHD | High | High | Low | Mod | Wide but noisy | Low | Switching rapidly | Mod |
-| Autism — high salience | High | Mod | High locally | High on mismatch | Narrow externally | High locally | Hard-routed to prediction error | Mod |
-| Autism — low salience | Mod | Low | Mod | Mod | Wide internally | Low externally | Routed inward | Mod |
-| FND | Variable | High | Low | High | Narrow | Collapsed | $\rightarrow 0$ | High |
-| Flow | High | Low | High | Low | Wide | High | Fully allocated | Low |
-| Burnout | Low | Low | Low | High | Narrow | Low | Depleted | High |
+| Condition | $A_s^*$ | $\sigma(A_s)$ | $R^*$ | $K$ | $W^*$ | $\Theta^*$ | $I^*$ | **$\Theta_r$** | $L^*$ |
+|---|---|---|---|---|---|---|---|---|---|
+| Baseline healthy | Mod-High | Low | High | Low | Wide | High | High | Moderate — flexible | Low |
+| Anxiety | Mod | Mod | Mod | ↑ | Narrowing | Mod | Routing inward | Rising | Mod |
+| Depression | Low | Low | Low | High | Narrow | Low | Low | High — fixed | High |
+| PTSD | Variable | High | Low | High | Narrow | Low | Prior-driven | High — locked | High |
+| ADHD | High | High | Low | Mod | Wide but noisy | Low | Switching rapidly | Unstable — flickering | Mod |
+| ADHD — core-trained | High | Low | High | Low | Wide | High | Stable | Stable — flexible | Low |
+| Autism — high salience | High | Mod | High locally | High on mismatch | Narrow externally | High locally | Hard-routed to prediction error | High — focused | Mod |
+| Autism — low salience | Mod | Low | Mod | Mod | Wide internally | Low externally | Routed inward | Low — distributed | Mod |
+| FND | Variable | High | Low | High | Narrow | Collapsed | $\rightarrow 0$ | Absent | High |
+| Flow | High | Low | High | Low | Wide | High | Fully allocated | Moderate — task-appropriate | Low |
+| Burnout | Low | Low | Low | High | Narrow | Low | Depleted | High — stuck | High |
+
+**The `Θ_r` column distinguishes configurations that look identical without it.** Autism high-salience and autism low-salience have the same rows in every other column. ADHD and flow both have high $A_s^*$ and wide $W^*$. The distinction is routing concentration. Without the `Θ_r` column, the table can't express it.
 
 ---
 
@@ -1675,15 +2010,15 @@ Handedness sets a tendency. Neurodivergence sets a default routing profile. Brea
 
 ### 12c. Autism as Salience Routing Profile
 
-Autism is not a single configuration. It is a routing tendency that can express at either pole of the salience spectrum.
+Autism is not a single configuration. It is a routing tendency — an `Θ_r` default — that can express at either pole of the salience spectrum.
 
-High-salience expression: $I^*$ routes hard to prediction error signals. When a mismatch fires — a factual error, a broken pattern, a violated expectation — the gain loop runs on it. The signal gets loud. The correction impulse is not behavioural dysregulation. It is the gain loop running exactly as designed, on a signal the system has classified as high priority.
+**High-salience expression:** `Θ_r` routes hard to prediction error signals. When a mismatch fires — a factual error, a broken pattern, a violated expectation — the gain loop runs on it. The signal gets loud. The correction impulse is not behavioural dysregulation. It is the gain loop running exactly as designed, on a signal the system has classified as high priority.
 
-Low-salience expression: $I^*$ routes inward or to a narrow internal channel. External social signals do not compete because they are not receiving gain. The world goes quiet — not because the system is disengaged but because $I^*$ is fully allocated elsewhere.
+**Low-salience expression:** `Θ_r` routes inward or to a narrow internal channel. External social signals do not compete because they are not receiving gain. The world goes quiet — not because the system is disengaged but because `Θ_r` is fully allocated elsewhere.
 
-Both are the same mechanism. Both are stateful. High-salience expression under flat geometry produces exceptional pattern detection and creative output. The same routing under high $K$ produces overwhelm and meltdown — the gain loop running on alarm signal instead of prediction error. The geometry determines the output. The routing tendency determines the profile.
+Both are the same mechanism. Both are stateful. High-salience expression under flat geometry produces exceptional pattern detection and creative output. The same routing under high $K$ produces overwhelm and meltdown — the gain loop running on alarm signal instead of prediction error. The geometry determines the output. The `Θ_r` tendency determines the profile.
 
-$$S = C_s \cdot I^* \text{ — same equation, different default allocation}$$
+$$S = C_s \cdot I^* \text{ — same equation, different default } \Theta_r \text{ allocation}$$
 
 The intervention is not normalisation. It is geometry management — keeping $K$ low enough that the routing tendency produces signal rather than alarm.
 
@@ -1834,16 +2169,20 @@ The prediction is not that societies behave like people. It is that they obey th
 | $L^*$ — persistent load | Historical trauma, institutional conditioning | Persistent denominator pressure on all collective outputs |
 | $\mathcal{U}$ | Cultural prior update rate | How fast collective beliefs update from new signal |
 | $C_s$ | Collective usable bandwidth | How much of the group's capacity is actually accessible |
+| **$\Theta_r$** | **Collective routing concentration** | **How narrowly collective attention concentrates on a single issue** |
+| **$\Lambda_{lock}$** | **Institutional capacity to hold concentration** | **Whether the collective can sustain focus on one priority** |
 
 ---
 
 ### 15b. The Social Causal Chain
 
-$$\text{Synchrony} \rightarrow A_s^* \rightarrow \sigma(A_s) \rightarrow R^* \rightarrow K \rightarrow W^* \rightarrow \Theta^* \rightarrow C_s^{collective}$$
+$$\text{Synchrony} \rightarrow A_s^* \rightarrow \sigma(A_s) \rightarrow R^* \rightarrow K \rightarrow W^* \rightarrow \Theta^* \rightarrow C_s^{collective} \rightarrow \vec{W}(t) \rightarrow \text{Collective interrupt}$$
 
 The chain is identical. The substrate is distributed rather than individual. The failure modes are identical — collective $K$ rises, $W^*$ narrows, temporal horizon shortens, $\Theta^*$ degrades, cross-group integration fails, the collective reads its own alarm signal in a loop.
 
 This is not a metaphor for social dysfunction. It is the mechanism of it.
+
+**And the routing concentration appears at the collective scale too.** A high-`Θ_r` society concentrates attention on a single issue — often a threat. A low-`Θ_r` society distributes attention across many issues — often without focus. The routing equation applies at scale. `Λ_lock` determines whether the concentration holds or flickers.
 
 ---
 
@@ -1885,48 +2224,64 @@ A high-$K$ individual is not stupid or weak. They are geometrically constrained.
 | $L^*$ predicts demagoguery susceptibility | Populations with high chronic stress show higher false-positive rate for outgroup threat — correlates with $K$ not with ideology | Partially supported — stress and authoritarianism literature |
 | Synchrony loss predicts fragmentation | Longitudinal: reduction in communal synchrony activity predicts rising political polarisation within 5-10 year lag | Untested prospectively |
 | Collective $\mathcal{U}$ predicts cultural rigidity | Rate of prior update in collective beliefs correlates with ambient $K$ — high-$K$ populations show slower belief updating regardless of evidence quality | Partially supported — motivated reasoning literature |
+| **Collective `Θ_r` predicts policy focus** | **Societies with stable collective `Θ_r` (sustained attention to one priority) show better outcomes on that priority than societies with flickering `Θ_r` (attention shifting rapidly)** | **Untested — historical policy analysis feasible** |
 
 ---
 
 ## 16. The Topology Is Complete
 
-| Claim | Status | Empirical Anchor |
-|---|---|---|
-| Breath sets oscillatory amplitude | Confirmed | RSA, HRV, CO₂ literature |
-| Amplitude determines precision | Confirmed | Phase-locking, jitter studies |
-| Precision determines curvature | Confirmed | Predictive coding, interoception literature |
-| Curvature determines window width | Confirmed | Cognitive load, attention research |
-| Window width determines integration | Confirmed | Cross-domain perceptual studies — Section 9 |
-| Integration determines usable bandwidth | Confirmed | $C_s$ operationalised via HRV, RSA, HRV-cognition |
-| Prior update rate depends on geometry at encoding | Confirmed | Trauma, memory reconsolidation, EMDR literature |
-| Motor encoding is the substrate of the prior layer | Confirmed | Cortical body map plasticity, sensorimotor learning |
-| Social projection obeys the same geometric constraints | Partially confirmed | Stress-cognition, synchrony, authoritarian susceptibility literature |
-| AI hallucination is the same geometric failure | Proposed | Robinson 2026 — $H = \delta/D$ |
-| Precision is a timing-coherence ratio — $P = R/D_T$ | Confirmed | Pratap et al. (2026) — PLV as operational measurement |
-| CO₂ tolerance window determines precision peak | Confirmed | Sakakibara et al. (1994) — hypercapnia EEG-HRV |
-| Two-factor pressure has opposite effects on precision | Proposed | _No external anchor — mechanism derived from first principles. See §5a.3._ |
-| Collapse hysteresis delays recovery | Confirmed | Reed et al. (2020) — suppression depletes resources |
-| Feature interference under load is $K$ rising | Confirmed | Xue et al. (2026) — non-orthogonality in V1 under uncertainty |
-| Baseline CO₂ tolerance determines loop availability | Proposed | _No external anchor — prediction derived from framework. See PREDICT-PREC-10._ |
-| $J(C)$ raises effective noise floor $\eta$ | Proposed | _No external anchor — mechanism derived from §2d and §5a.2._ |
-| REQT is the qualification threshold | Proposed | _No external anchor — composite formula derived from framework. See §5a.11._ |
-| Collapse sequence is topologically forced | Proposed | _No external anchor — order derived from variable dependency. See §5a.12._ |
-| Four-layer cache hierarchy is topological invariant | Confirmed | Clinical lesion literature (no right-hemisphere-only state observed) — see §6b.9 and GoI v1.0 §1.5 |
-| Circuit priming reduces access cost | Proposed | _Substrate mechanism for collapse hysteresis. See §6b.10 and GoI v1.0 §1.6._ |
-| Motor gain $G_m = \alpha P - \beta \eta$ predicts movement stability | Proposed | _Formalized in §6b.8; PREDICT-PREC-06 tests the prediction._ |
-| $M_{state}$ thresholds are individual calibration parameters | Proposed | _No current prediction calibrates them. See §6b.8 and Central Reference §2.11._ |
+| Claim                                                                | Status              | Empirical Anchor                                                                                                    |
+| -------------------------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Breath sets oscillatory amplitude                                    | Confirmed           | RSA, HRV, CO₂ literature                                                                                            |
+| Amplitude determines precision                                       | Confirmed           | Phase-locking, jitter studies                                                                                       |
+| Precision determines curvature                                       | Confirmed           | Predictive coding, interoception literature                                                                         |
+| Curvature determines window width                                    | Confirmed           | Cognitive load, attention research                                                                                  |
+| Window width determines integration                                  | Confirmed           | Cross-domain perceptual studies — Section 9                                                                         |
+| Integration determines usable bandwidth                              | Confirmed           | $C_s$ operationalised via HRV, RSA, HRV-cognition                                                                   |
+| Prior update rate depends on geometry at encoding                    | Confirmed           | Trauma, memory reconsolidation, EMDR literature                                                                     |
+| Motor encoding is the substrate of the prior layer                   | Confirmed           | Cortical body map plasticity, sensorimotor learning                                                                 |
+| Social projection obeys the same geometric constraints               | Partially confirmed | Stress-cognition, synchrony, authoritarian susceptibility literature                                                |
+| AI hallucination is the same geometric failure                       | Proposed            | Robinson 2026 — $H = \delta/D$                                                                                      |
+| Precision is a timing-coherence ratio — $P = R/D_T$                  | Confirmed           | Pratap et al. (2026) — PLV as operational measurement                                                               |
+| CO₂ tolerance window determines precision peak                       | Confirmed           | Sakakibara et al. (1994) — hypercapnia EEG-HRV                                                                      |
+| Two-factor pressure has opposite effects on precision                | Proposed            | _No external anchor — mechanism derived from first principles. See §5a.3._                                          |
+| Collapse hysteresis delays recovery                                  | Confirmed           | Reed et al. (2020) — suppression depletes resources                                                                 |
+| Feature interference under load is $K$ rising                        | Confirmed           | Xue et al. (2026) — non-orthogonality in V1 under uncertainty                                                       |
+| Baseline CO₂ tolerance determines loop availability                  | Proposed            | _No external anchor — prediction derived from framework. See PREDICT-PREC-10._                                      |
+| $J(C)$ raises effective noise floor $\eta$                           | Proposed            | _No external anchor — mechanism derived from §2d and §5a.2._                                                        |
+| REQT is the qualification threshold                                  | Proposed            | _No external anchor — composite formula derived from framework. See §5a.11._                                        |
+| Collapse sequence is topologically forced                            | Proposed            | _No external anchor — order derived from variable dependency. See §5a.12._                                          |
+| Four-layer cache hierarchy is topological invariant                  | Confirmed           | Clinical lesion literature (no right-hemisphere-only state observed) — see §6b.9 and GoI v1.0 §1.5                  |
+| Circuit priming reduces access cost                                  | Proposed            | _Substrate mechanism for collapse hysteresis. See §6b.10 and GoI v1.0 §1.6._                                        |
+| Motor gain $G_m = \alpha P - \beta \eta$ predicts movement stability | Proposed            | _Formalized in §6b.8; PREDICT-PREC-06 tests the prediction._                                                        |
+| $M_{state}$ thresholds are individual calibration parameters         | Proposed            | _No current prediction calibrates them. See §6b.8 and Central Reference §2.11._                                     |
+| **The routing equation distributes $C_s$ across regions**            | **Proposed**        | **_Derived from softmax structure; PREDICT-ROUTE-01 tests the prediction._**                                        |
+| **The interrupt formula has four conditions**                        | **Proposed**        | **_Derived from the routing equation and capacity constraints; PREDICT-ROUTE-01 through 04 test the predictions._** |
+| **Routing weight is conserved**                                      | **Proposed**        | **_Derived from conservation; PREDICT-ROUTE-02 tests the prediction._**                                             |
+| **The interrupt triggers investment**                                | **Proposed**        | **_Derived from the closed loop; PREDICT-ROUTE-03 tests the prediction._**                                          |
+| **The closed loop produces flow**                                    | **Proposed**        | **_Derived from Salience Interrupt v1.2; PREDICT-ROUTE-04 tests the prediction._**                                  |
+| **Viscosity is the felt readout of $K$**                             | **Proposed**        | **_Derived from the CO₂ → viscosity chain; PREDICT-VISC-01 tests the prediction._**                                 |
+| **`Θ_r` is the real routing variable**                               | **Proposed**        | **_Derived from Category v2.0; PREDICT-Θr-01 tests the prediction._**                                               |
 
-Metric calibration — precise thresholds for $R^*_{min}$, $K_{enc}$ contamination rate, $A^*_{s,max}$ ceiling, and $M_{state}$ thresholds — is the open empirical work. The topology is complete. The measurements are next.
+Metric calibration — precise thresholds for $R^*_{min}$, $K_{enc}$ contamination rate, $A^*_{s,max}$ ceiling, $M_{state}$ thresholds, and the routing equation temperature $T$ — is the open empirical work. The topology is complete. The measurements are next.
 
 ---
 
 ## 17. Closing Statement
 
-The brain is an energy budget allocation system operating on priors. The breath is the source. The geometry is the mechanism. The prior is the output.
+The brain is an energy budget allocation system operating on priors. The breath is the source. The geometry is the mechanism. The routing is where the budget goes. The prior is the output.
 
-Every phenomenon this paper addresses — flow, collapse, fear, trauma, savant capacity, clinical states, social fragmentation — is one variable changing in one equation. The variable is geometry. The equation is the master equation.
+Every phenomenon this paper addresses — flow, collapse, fear, trauma, savant capacity, clinical states, social fragmentation — is one variable changing in one equation. The variables are geometry and routing. The equations are the master equation and the routing equation.
 
-The framework makes no claim that was not already implicit in the existing literature. RSA confirmed the breath-precision link. Predictive coding confirmed the prior-geometry loop. Motor learning confirmed the body as prior substrate. Perceptual research confirmed the window-narrowing pattern across every sensory domain. The contribution is the chain connecting them — and the recognition that the chain is a single causal sequence, not independent findings in separate fields.
+Three pillars now define the system:
+
+1. **The master equation** computes how much bandwidth the system has.
+2. **The curvature equation** computes how the geometry is shaped.
+3. **The routing equation** computes where the bandwidth goes.
+
+The interrupt formula determines when a signal fires. The closed loop determines whether the system produces flow or trap. The felt sense of viscosity is the first-person readout of the metric that the aperiodic slope measures.
+
+The framework makes no claim that was not already implicit in the existing literature. RSA confirmed the breath-precision link. Predictive coding confirmed the prior-geometry loop. Motor learning confirmed the body as prior substrate. Perceptual research confirmed the window-narrowing pattern across every sensory domain. The routing equation was implicit in every attention study that showed zero-sum competition. The contribution is the chain connecting them — and the recognition that the chain is a single causal sequence, not independent findings in separate fields.
 
 The social projection is not an extension. It is the same equation applied to a distributed system. The historical record is the test. The predictions are in Section 15e.
 
@@ -1938,28 +2293,98 @@ The topology is complete. The chain is closed. The calibration is open to the fi
 
 **This document is the canonical reference for the following domain projections:**
 
-| Projection | Paper | DOI |
+| Projection | Paper | DOI                       |
 |---|---|---|
 | Physical substrate | Physics as the Missing Component in Medical Science | `10.5281/zenodo.21512678` |
 | Implementation architecture | Unified Regulatory Model | `10.5281/zenodo.20417459` |
 | AI hallucination mechanism | Hallucinations Are Not Random | `10.5281/zenodo.21244811` |
 | Substrate-agnostic hallucination theory | The Hallucination You Are Having Right Now | `10.5281/zenodo.21922044` |
 | Human-AI co-processing | Dual-Substrate Cognition Architecture trilogy | `10.5281/zenodo.21362260` |
-| Context window architecture | The Context Oscillator | `10.5281/zenodo.21811408` |
+| Context window architecture | The Context Oscillator | `10.5281/zenodo.21811407` |
 | AGI as system property | The Profile of a Person That Is AGI | `10.5281/zenodo.21921714` |
 | Precision formalism | Precision, Timing, and the Oscillatory Source (v3.4) | `10.5281/zenodo.22179675` |
-| Biological implementation | The Geometry of Inference (v1.0) | _(pending DOI)_ |
-| Intelligence as loop | The Loop Is the Intelligence (v1.0) | _(pending DOI)_ |
-| Load measurement | Allostatic Load as Accumulated Regulatory Debt (v2.1) | _(pending DOI)_ |
-| Complete specification | Central Reference (v1.4) | _(pending DOI)_ |
+| Biological implementation | The Geometry of Inference (v1.0) | _(pending DOI)_           |
+| Intelligence as loop | The Loop Is the Intelligence (v1.0) | _(pending DOI)_           |
+| Load measurement | Allostatic Load as Accumulated Regulatory Debt (v2.1) | _(pending DOI)_           |
+| Complete specification | Central Reference (v1.8.2) | _(pending DOI)_           |
+| **Routing and the interrupt** | **The Salience Interrupt (v1.2)** | **_(pending DOI)_** |
 
 ---
 
 ## Document Status
 
-**Version:** 7.2
-**Date:** 2026-09-13
-**Status:** Converged with Central Reference v1.4, Precision v3.4, Allostatic Load v2.1, Geometry of Inference v1.0, and Loop Is the Intelligence v1.0
+**Version:** 7.3
+**Date:** 2026-10-09
+**Status:** Converged with Central Reference v1.8.2, and Salience Interrupt v1.2
+
+---
+
+### v7.3 Changelog — Convergence with Central Reference v1.8.2 and Salience Interrupt v1.2
+
+**§1f — The Routing Equation (new)**
+- Added the softmax routing equation. The third pillar — where the bandwidth goes.
+
+**§1g — The Interrupt Formula (new)**
+- Added the four-condition interrupt formula. Replaces the single-threshold `T_S` description.
+
+**§1h — The Closed Loop (new)**
+- Added the interrupt → investment → breath → self-amplification loop. Defines flow vs. trap.
+
+**§1i — Viscosity (new)**
+- Added viscosity as the felt metric. The aperiodic slope is the spectral readout.
+
+**§2b — Variable table**
+- Added `Θ_r` (routing concentration)
+- Added `Λ_lock` (lock capacity)
+
+**§2f — The Readout Architecture (new)**
+- Registered the six readout classes: spectral, hemispheric, somatic, acoustic, behavioral, phenomenological
+
+**§2g — Routing Concentration as the State Variable (new)**
+- Named `Θ_r` and `$\vec{g}$` as the two degrees of freedom of routing
+
+**§3 — The Causal Chain**
+- Added the routing equation as the fourth mechanism
+- Extended the chain to include `W(t)` and Interrupt
+
+**§4 — The Radial Structure**
+- Added the routing concentration across the radial structure
+
+**§5a.16 — Viscosity (new)**
+- Added the CO₂ → viscosity chain. The felt sense of the metric's resistance to routing.
+
+**§7 — The Felt Geometry**
+- Added the viscosity column
+- Added the flow state and trap state descriptions
+
+**§8 — Empirical Anchors**
+- Added anchors 61–66: CLA, aperiodic slope, frontal alpha asymmetry, ND/gender co-occurrence, ayahuasca, anesthesia
+
+**§9 — Perceptual Confirmation**
+- Added Subramani et al. (2026) as a high-precision confirmation
+
+**§10 — Falsifiable Predictions**
+- Added PREDICT-ROUTE-01 through PREDICT-ROUTE-04
+- Added PREDICT-VISC-01
+- Added PREDICT-Θr-01 through PREDICT-Θr-04
+
+**§12 — Clinical States**
+- Added the `Θ_r` column
+
+**§12c — Autism**
+- Named `Θ_r` as the routing variable
+
+**§15 — Social Projection**
+- Added `Θ_r` and `Λ_lock` to the variable mapping
+- Extended the social causal chain to include routing
+- Added the collective `Θ_r` prediction
+
+**§16 — Topology Is Complete**
+- Added rows for routing equation, interrupt formula, routing weight conservation, investment, closed loop, viscosity, and `Θ_r`
+
+**§17 — Domain Projections**
+- Added Salience Interrupt v1.2
+- Updated Central Reference to v1.8.2
 
 ---
 
