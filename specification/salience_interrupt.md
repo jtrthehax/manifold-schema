@@ -595,7 +595,7 @@ Anesthesia forcibly sets the chain downward. Propofol and sevoflurane produce la
 
 **In the framework's terms:**
 
-| Anesthesia effect               | Framework variable             | Effectr                   |
+| Anesthesia effect               | Framework variable             | Effect                   |
 | ------------------------------- | ------------------------------ | ------------------------- |
 | Thalamocortical synchronization | $K$ ↑                          | Metric stretched          |
 | Alpha locking                   | Oscillation consistency locked | `Θ_r` cannot redistribute |
@@ -694,38 +694,3 @@ The involvement of medial prefrontal cortex suggests that when these oscillation
 *Empirical anchors: Hu et al. (2026), Leow et al. (2026), Blumberg et al. (2013–2023), Subramani et al. (2026), Schmid & Schmid Mast (2013), Boksem et al. (2012), Warrier et al. (2020), ayahuasca literature, anesthesia literature, CO₂/CBF literature*
 *Predictions: SAL-01 through SAL-34*
 *Supersedes: Salience Interrupt v1.1*
-
----
-
-## What changed from v1.1
-
-**New sections:**
-
-- **§2.7 — the closed loop.** The interrupt triggers investment, the breath follows, the loop self-amplifies. This is the mechanism that produces flow. §2.7.1 names investment as allocation of unused capacity, not efficiency. §2.7.2 gives the breakdown modes (flow, trap, no investment).
-- **§2.8 — viscosity.** The felt quality of the manifold. The resistance of the metric to routing. First-person readout of $K$.
-- **§7 — the readout table now includes phenomenological readout.** Felt viscosity as the first-person channel.
-
-**New predictions:**
-
-- **SAL-31** — felt viscosity correlates with aperiodic slope (r > 0.7)
-- **SAL-32** — flow is produced when routing efficiency and autonomic entrainment co-occur
-- **SAL-33** — movement across the homunculus reduces `Θ_r` concentration and increases traversal speed
-- **SAL-34** — the interrupt triggers investment; measurable amplitude commitment within one breath cycle
-
-**Updated sections:**
-
-- **§1 — the claim now has five parts.** Investment and loop closure added.
-- **§5.2 — viscosity named as the felt quality of the aperiodic slope.**
-- **§6.2 — movement now named as traversal, not just range maintenance.**
-- **§7 — profile table now includes felt quality column.** Fluid / focused but fluid / stuck.
-- **§8.1 — the waking flow diagram now shows both the flow path and the trap path.**
-- **§9.5 — viscosity added to the ayahuasca table.**
-- **§12 — one-line synthesis now includes the closed loop, flow, and viscosity.**
-
-**The paper now has three modes:**
-
-1. **Flow** — the loop closes, self-amplifies
-2. **Trap** — the loop fails to close, investment costs without self-funding
-3. **No investment** — the interrupt doesn't fire, capacity stays idle
-
-All three are the same mechanism. The difference is whether the breath can follow.
