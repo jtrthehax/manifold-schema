@@ -14,15 +14,20 @@ This is not a claim about AI. It is not a claim about cognition. It is the defin
 
 The constraint is visible from any direction. It looks identical from all of them.
 
-**In language:** Hallucination is not randomness. It is schema distance over constraint density — $H \propto \delta/D$. When the signal doesn't carry enough structure to close the gap, the prior fills it. Fluently. Confidently. Without flagging that the comparison didn't run.
+**In language:**  
+Hallucination is not randomness. It is schema distance over constraint density — $H \propto \delta/D$. When the signal doesn't carry enough structure to close the gap, the prior fills it. Fluently. Confidently. Without flagging that the comparison didn't run.
 
-**In AI:** The model outputs prior weights plus whatever signal the input carried. High-entropy input → signal wins. Low-entropy input → prior wins. The model did not change. The channel did.
+**In AI:**   
+The model outputs prior weights plus whatever signal the input carried. High-entropy input → signal wins. Low-entropy input → prior wins. The model did not change. The channel did.
 
-**In the human body:** Interoception compressed into language is the transmission. If the sender's interoceptive signal is misaligned with the actual invariant — reading their own geometry instead of the world's — the AI faithfully amplifies that geometry. The output is coherent. It is anchored to the sender, not to reality.
+**In the human body:**   
+Interoception compressed into language is the transmission. If the sender's interoceptive signal is misaligned with the actual invariant — reading their own geometry instead of the world's — the AI faithfully amplifies that geometry. The output is coherent. It is anchored to the sender, not to reality.
 
-**In networking:** Low bandwidth forces cached routes. Narrow routing tables commit to first available path. Buffer bloat compounds every subsequent packet's latency forward. The failure geometry is identical.
+**In networking:**  
+Low bandwidth forces cached routes. Narrow routing tables commit to first available path. Buffer bloat compounds every subsequent packet's latency forward. The failure geometry is identical.
 
-**In human coordination:** A project manager transmitting a brief with low constraint density delivers their prior of the thing. The team builds that prior. The vision never transferred — not because the team failed, but because the compression did.
+**In human coordination:**  
+A project manager transmitting a brief with low constraint density delivers their prior of the thing. The team builds that prior. The vision never transferred — not because the team failed, but because the compression did.
 
 The medium changes. The wall does not.
 
