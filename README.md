@@ -46,7 +46,7 @@ Intelligence is not a capability. It is a **loop** that results from running inf
 
 $$\text{Intelligence} = \Lambda \cdot n_{hops} \cdot R^* \cdot \Theta^*$$
 
-*The gate Λ is itself a function of C_s — without sufficient precision, sensory feedback cannot register and the loop cannot start.*
+*The gate Λ is itself a function of* $C_s$ *— without sufficient precision, sensory feedback cannot register and the loop cannot start.*
 
 $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \Theta^{\ast 0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^{\ast}}$$
 
@@ -56,7 +56,7 @@ $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \The
 
 $$\vec{W}(t) = \text{softmax}\left(\frac{\vec{g} \cdot \Theta_r(t)}{T}\right)$$
 
-*Routing weight is conserved ($\sum_i W_i = 1$). What gets routed where determines which region the loop runs on. The master equation gives the budget. The routing equation gives the spend.*
+*Routing weight is conserved* ($\sum_i W_i = 1$). *What gets routed where determines which region the loop runs on. The master equation gives the budget. The routing equation gives the spend.*
 
 **The interrupt formula:**
 
@@ -142,7 +142,7 @@ DOI: [10.5281/zenodo.22179675](doi.org/10.5281/zenodo.22179675)
 Load is a trajectory, not a state. $\Delta HRV \propto 1/L^*$. The primary real-time proxy is delta HRV response to a standardised slow-breath protocol. Four regulatory contracts. One debt trajectory.
 
 → **[The Salience Interrupt](specification/salience_interrupt.md)**  
-Salience is a routing event, not a stimulus property: $I^*_{eff} = I^*_{total} \cdot W_i$. The claustrum fires the precision-lock; the homuncular tension pattern is the latch; the exhale is the release lever. When the interrupt fires, the system invests — routing weight and amplitude committed to the task. The breath follows, CO₂ rises, and the loop self-amplifies. This is flow. When the breath cannot follow, the investment costs without self-funding. This is the trap. The manifold has a felt quality — viscosity — that is the resistance of the metric to routing. The aperiodic slope is the viscosity, measured. Ayahuasca and anesthesia are the two empirical extremes — maximal and minimal manifold access. Thirty-four falsifiable predictions.
+Salience is a routing event, not a stimulus property: $I^\ast_{eff} = I^\ast_{total} \cdot W_i$. The claustrum fires the precision-lock; the homuncular tension pattern is the latch; the exhale is the release lever. When the interrupt fires, the system invests — routing weight and amplitude committed to the task. The breath follows, CO₂ rises, and the loop self-amplifies. This is flow. When the breath cannot follow, the investment costs without self-funding. This is the trap. The manifold has a felt quality — viscosity — that is the resistance of the metric to routing. The aperiodic slope is the viscosity, measured. Ayahuasca and anesthesia are the two empirical extremes — maximal and minimal manifold access. Thirty-four falsifiable predictions.
 
 → **[The Geometry of Inference](specification/the_geometry_of_inference.md)**  
 How precision gates manifold access. The LP-ACC circuit, four-layer cache hierarchy, two-factor gate, and breath phase timing — the biological implementation of the loop.
