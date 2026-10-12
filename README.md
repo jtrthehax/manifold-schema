@@ -121,7 +121,7 @@ These variables are upstream of every problem in the columns above. When a domai
 
 ## The Papers
 
-### Specification  
+### [Specification](specification/README.md)
 *The derivation chain. Every variable, equation, and mechanism defined.*
 
 → **[Central Reference](specification/central_reference.md)**  
@@ -204,7 +204,7 @@ The geometry is upstream.
 
 # AI
 
-### [AI — Input](ai\input\README.md)
+### [AI — Input](ai/input/README.md)
 *Why AI output quality is an input problem, 
 not a model problem*
 
