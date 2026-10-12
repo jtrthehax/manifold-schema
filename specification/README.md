@@ -134,7 +134,7 @@ The loop is the intelligence. These diagrams show the four possible states befor
 
 ## The Variables
 
-These variables govern the loop. Full derivations in the papers below.
+*These variables govern the loop. Full derivations in the papers below.*
 
 **State variables — what the system is:**
 
@@ -160,7 +160,7 @@ $$P = \frac{R}{D_T}$$
 
 $$W^* = f(K, L^*)$$
 
-**What it measures:** How much of the manifold is reachable. Low $K$ → high $W^*$ (flat metric, wide access). High $K$ → low $W^*$ (stretched metric, narrow access). High `L^*` compresses `W^*` further.
+**What it measures:** How much of the manifold is reachable. Low $K$ → high $W^\ast$ (flat metric, wide access). High $K$ → low $W^\ast$ (stretched metric, narrow access). High $L^\ast$ compresses $W^\ast$ further.
 
 **What it controls:** Integration depth. Cross-domain synthesis. The hops available for inference:
 
@@ -179,7 +179,7 @@ $$A_s^* = f(\text{breath mechanics}, \text{CO}_2\text{ tolerance}, \text{HRV})$$
 
 **What it measures:** Oscillatory depth available for inference. The raw energy budget the system can deploy.
 
-**What it controls:** The ceiling on everything downstream. $W^*$, $R^*$, and $Θ^*$ are all bounded by $A*$. A system with low amplitude cannot sustain the loop regardless of other variables.
+**What it controls:** The ceiling on everything downstream. $W^\ast$, $R^\ast$, and $Θ^\ast$ are all bounded by $A\ast$. A system with low amplitude cannot sustain the loop regardless of other variables.
 
 **What happens when it fails:** The system shifts from exploration to conservation. Window narrows. Precision drops. The loop runs shorter cycles. Collapse modes become default.
 
@@ -196,9 +196,9 @@ $$L^{\ast} = w_1 L^{\ast}_{HRV} + w_2 L^{\ast}_{RHR} + w_3 L^{\ast}_{temp} + w_4
 
 **What it measures:** Accumulated regulatory debt. Not a state — a trajectory. Load is what happens when reinvestment falls below the threshold required to maintain the loop.
 
-**What it controls:** The constraint on all other variables. `L*` is the denominator. As it rises, everything else compresses. It also drains `Capacity_free`, the manifold's ability to hold uncommitted prediction errors.
+**What it controls:** The constraint on all other variables. $L\ast$ is the denominator. As it rises, everything else compresses. It also drains `Capacity_free`, the manifold's ability to hold uncommitted prediction errors.
 
-**What happens when it fails:** The system calcifies. Prediction windows close. Collapse modes become permanent rather than transient. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions of high `L*`.
+**What happens when it fails:** The system calcifies. Prediction windows close. Collapse modes become permanent rather than transient. FND, chronic fatigue, depression, and cognitive narrowing are geometric predictions of high $L\ast$.
 
 **Derived in:** [Allostatic Load as Accumulated Regulatory Debt](allostatic_load.md)
 
@@ -284,7 +284,7 @@ How much room the manifold has to hold uncommitted prediction errors. Every lock
 
 $$\delta_{min} = f(K, L^*)$$
 
-The minimum deviation required to interpret a signal. Rises with curvature `K` and load `L*`. High `δ_min` means interrupts cannot form — the signal exists but the manifold cannot hold it long enough to interpret it.
+The minimum deviation required to interpret a signal. Rises with curvature $K$ and load $L\ast$. High `δ_min` means interrupts cannot form — the signal exists but the manifold cannot hold it long enough to interpret it.
 
 ---
 
