@@ -1,6 +1,10 @@
 # `/specification/` — The Mechanism
 
-This folder contains the mechanism itself. Every variable, every equation, and every derivation originates here. Other folders apply the mechanism; this one defines it.
+This folder contains the mechanism itself. Every variable, every equation, and 
+every derivation originates here. Other folders apply the mechanism; this one 
+defines it.
+
+**Start with Finite Resources.** It states the substrate order — the sequence every other paper is a readout of. Central Reference then names the variables that order produces. The remaining papers derive each variable physically. Other folders apply the mechanism; this one defines it.
 
 The papers in other folders apply these variables to specific domains. This folder is where the variables come from.
 
@@ -129,6 +133,10 @@ The loop is the intelligence. These diagrams show the four possible states befor
 **The difference between the running loop and the flowing loop:** the running loop completes the cycle. The flowing loop *self-amplifies*. Each interrupt funds the next. The interrupt triggers investment, the breath follows, CO₂ rises, and the next interrupt fires more easily.
 
 **The difference between the flowing loop and the collapsed loop:** the flowing loop has substrate to follow. The collapsed loop exits at first resistance because the breath cannot fund the investment. Same interrupt, same investment, opposite outcomes. The difference is one exhale.
+
+> The order that produces the flowing loop is formalized in 
+> [Finite Resources](finite_resources.md). The four diagrams above 
+> are the four possible states of $dE/dt$.
 
 ---
 
@@ -264,6 +272,38 @@ $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \The
 
 ---
 
+### dE/dt — Substrate Generation Rate
+*Whether the loop is producing energy or consuming it.*
+
+$$\frac{dE}{dt} = \Lambda_{\text{loop}}(t) \cdot \left[A_{s}^{\ast}(t) - \epsilon \cdot L^{\ast}(t)\right]$$
+
+**What it measures:** Whether the loop is generating energy or drawing down reserves. 
+When $\Lambda_{loop} = 1$, the loop runs and energy accumulates. When $\Lambda_{loop} = 0$, 
+generation stops and load continues to accumulate.
+
+**What it controls:** The trajectory of every other variable. Positive $dE/dt$ means 
+the next cycle has more substrate than the current one. Negative $dE/dt$ means the 
+system is debt-funding its own operation — each cycle costs more than the last.
+
+**The critical distinction:** The system does not run out of energy. It fails to 
+produce it. The energy is not a stock. It is what the loop generates when the 
+substrate order runs correctly:
+
+```
+Pressure → Oscillation → Lock → Routing → Investment
+→ Breath deepens → CO₂ rises → Loop closes
+```
+
+
+**What happens when it fails:** $dE/dt$ goes negative silently. The system can 
+still act — but every action costs more than the last cycle. Rest helps less. 
+Performance degrades along a trajectory, not a cliff. The signature is a system 
+that is present, functional, and slowly losing ground.
+
+**Derived in:** [Finite Resources and the Order That Generates Them](finite_resources.md)
+
+---
+
 ### $C_s$ — Usable Bandwidth
 
 $$C_s = \left(A_s^{\ast 0.15} \cdot R^{\ast 0.30} \cdot W^{\ast 0.25} \cdot \Theta^{\ast 0.15}\right)^{\frac{1}{0.85}} \cdot \frac{1}{1 + L^{\ast}}$$
@@ -312,41 +352,46 @@ $$\text{Interrupt}_i \iff \left[I^*_{total} \cdot W_i(t) > I^*_{threshold}\right
 ## The Derivation Chain
 
 ```
-CENTRAL REFERENCE v1.8.2
+FINITE RESOURCES
+│ The substrate order. Energy as loop output, not stock.
+│ dE/dt registered. Five break points. Four substrates.
+│ Every other paper is a readout of the order this states.
+│
+CENTRAL REFERENCE
 │  Every variable. Every equation. Every mechanism.
 │  The single citation anchor for the full framework.
 │
-├── MANIFOLD SCHEMA v7.2
+├── MANIFOLD SCHEMA
 │   │  The neural manifold as energy budget system.
 │   │  A*, W*, Λ, C_s derived.
 │   │  DOI: 10.5281/zenodo.21939440
 │   │
-│   ├── PRECISION v3.5
+│   ├── PRECISION
 │   │   │  R* = R/D_T — first substrate derivation.
 │   │   │  P_eff = P · O_pathway · U_C
 │   │   │  DOI: 10.5281/zenodo.22179675
 │   │   │
-│   │   └── GEOMETRY OF INFERENCE v1.0
+│   │   └── GEOMETRY OF INFERENCE
 │   │       Two-factor gate. LP-ACC circuit.
 │   │       Four-layer cache hierarchy.
 │   │       Breath phase timing.
 │   │
-│   ├── ALLOSTATIC LOAD v2.1
+│   ├── ALLOSTATIC LOAD
 │   │   L* as trajectory. Four contracts.
 │   │   ΔHRV as primary real-time proxy.
 │   │
-│   └── SALIENCE INTERRUPT v1.2
+│   └── SALIENCE INTERRUPT
 │       Salience as routing event.
 │       Routing equation. Interrupt formula.
 │       Closed loop — flow and trap.
 │       Viscosity as felt readout.
 │       Θ_r, Λ_lock registered.
 │
-├── LOOP IS THE INTELLIGENCE v1.0
+├── LOOP IS THE INTELLIGENCE
 │   Intelligence = Λ · n_hops · R* · Θ*
 │   Substrate-agnostic. Falsifiable.
 │
-└── PHYSICS AS THE MISSING COMPONENT
+└── PHYSICS AS THE MISSING COMPONENT 
     Five physical variables.
     Substrate variables outperform construct variables
     as diagnostic predictors.
@@ -358,6 +403,7 @@ CENTRAL REFERENCE v1.8.2
 
 | If you want | Start here |
 | --- | --- |
+| Why the variables exist | [Finite Resources and the Order That Generates Them](finite_resources.md) |
 | The full specification | [Central Reference](central_reference.md) |
 | The manifold foundation | [Manifold Schema](manifold_schema.md) |
 | The precision derivation | [Precision](precision.md) |
