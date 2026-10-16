@@ -4,13 +4,40 @@
 
 *Technical Report — Manifold Schema Series*
 
-**Version:** 2.1
-**Date:** 2026-09-13
-**Status:** Integrated with Central Reference v1.4; all residual fixes applied; P-AL-011 elevated to central prediction
-**Framework:** Manifold Schema v7.2 (DOI: 10.5281/zenodo.21939440)
+**Version:** 2.2
+**Date:** 2026-10-14
+**Status:** Integrated with Central Reference v1.8.3 and Salience Interrupt v1.3; inherits salience accumulation, perseveration, release-triggered, encoding, and somatic load; P-AL-011 remains central prediction
+**Framework:** Manifold Schema v7.2 (DOI: 10.5281/zenodo.21939439)
 **Precision formalism:** Precision, Timing, and the Oscillatory Source v3.4 (DOI: 10.5281/zenodo.22179675)
 **Biological implementation:** The Geometry of Inference v1.0 (Robinson, 2026d)
-**Complete specification:** Central Reference v1.4 (Robinson, 2026e)
+**Salience implementation:** The Salience Interrupt v1.3 (Robinson, 2026g)
+**Complete specification:** Central Reference v1.8.3 (Robinson, 2026h)
+
+---
+
+## Changelog — v2.1 → v2.2
+
+This changelog tracks the Salience Interrupt v1.3 inheritance. All changes are additive at the mechanism level. The measurement protocol from v2.1 survives; the composite load equation is extended; the profile table and treatment targeting table are extended.
+
+| Step | Change | Location | Reason |
+|---|---|---|---|
+| 1 | Version bumped to 2.2 | Header | Salience inheritance |
+| 2 | Added Schumann origin paragraph | §1a | Names the origin of the framework |
+| 3 | Added §2g — Perseveration load | New section | Inherit SAL-35–37 |
+| 4 | Added §2h — Release-triggered load | New section | Inherit SAL-38–41 |
+| 5 | Added §2i — Encoding load | New section | Inherit SAL-42–45 |
+| 6 | Added §2j — Somatic load path | New section | Inherit SAL-46–47 and SAL §2.5.3 |
+| 7 | Extended composite load equation to 10 components | §6c | Add salience-derived components |
+| 8 | Added measurement burden note and tier table | §6c | Distinguish consumer/clinical/research tiers |
+| 9 | Extended load profile table to 9 profiles | §7a | Add salience-derived profiles |
+| 10 | Extended treatment targeting to 10 targets | §7b | Add salience-derived targets |
+| 11 | Restored P-AL-013 and P-AL-014; added P-AL-015 through P-AL-020 | §9 | P-AL-013/014 restored from archived prediction file; P-AL-015 through P-AL-020 inherit from Salience v1.3 |
+| 12 | Updated summary count and equation reference | §11a | 10-component equation, 18 predictions |
+| 13 | Added core insight sentence | §11b | Salience mechanism is upstream source |
+| 14 | Added Robinson 2026g reference | References | Salience v1.3 citation |
+| 15 | Added v2.2 row to version history | Version History | Versioning track |
+
+**What did not change:** Every mechanism from v2.1, every measurement protocol, the delta HRV protocol, the within-person baseline method, the CO₂ tolerance threshold, the exhale completeness ratio, the four regulatory contracts, the glymphatic clearance architecture, and the debt trajectory zones. v2.2 is inheritance, not revision.
 
 ---
 
@@ -73,6 +100,8 @@ The central argument is that allostatic load is not a state but a trajectory —
 
 The framework explains why single-reading studies consistently fail to find correlations that within-subject repeated measurement reliably produces, and why ND populations represent the highest-signal cohort for mechanism research rather than a pathological outlier class. The complete measurement architecture includes a composite load equation with five weighted components: HRV baseline drift, sleep RHR elevation, sleep temperature elevation, chronic inflammatory tone, and respiratory inefficiency.
 
+The salience mechanism provides the upstream explanation for why HRV is a load proxy. Each unresolved precision-lock — each salience interrupt that fired but never committed — is a unit of allostatic load. The latch holds by ATP-brace, which compresses vagal tone. The compressed vagal tone is what the wearable measures. The HRV trajectory is the latch-load trajectory. The perseveration loop, the release-triggered re-salience, and the encoding load are three additional failure modes that extend the load beyond simple latch accumulation. The somatic load path — the cost of *not* redistributing routing through movement — is the fourth. Together, these mechanisms explain where the load comes from, not just how to measure it.
+
 **Central falsifiable prediction (P-AL-011):** The variance of daily HRV measurements — the dispersion across days — predicts allostatic load outcomes better than any single reading. This is the signal the field has been treating as noise. If this prediction fails, the framework's core claim fails, regardless of the other predictions.
 
 ---
@@ -88,6 +117,8 @@ Allostatic load is not a fixed property. It accumulates across a session, a day,
 The consequence is visible in the literature. Studies find no correlation between HRV and inflammatory markers, between CO₂ tolerance and cognitive performance, between resting autonomic state and immune activation — not because these correlations do not exist, but because the design systematically eliminates them before analysis begins.
 
 Schumann et al. (2026) concluded that "associations between physiological and interoceptive changes were modest" following an 8-week HRV biofeedback intervention. The study design was appropriate for its primary question: did HRV biofeedback training produce autonomic and interoceptive changes? Both pre- and post-intervention measurements were taken at similar times of day, which correctly controls for time-of-day confounds when measuring training effects. But Schumann also asked a second question — does the autonomic change predict the interoceptive change? — and found "modest coupling." The framework predicts exactly this result. When allostatic load is unmeasured, the coupling between any two physiological signals is attenuated by uncontrolled variance in load state across participants. The "modest coupling" is not a failure of Schumann's design for its primary question. It is a prediction of this framework for the secondary question: coupling will be modest until load is measured and held constant.
+
+**The salience mechanism explains why the coupling was modest.** Schumann et al. measured HRV before and after an 8-week intervention. The training effect was real — the autonomic change was measurable. What the design could not control was the load state each participant brought to the measurement. Allostatic load is not a trait. It is a trajectory. And the trajectory is shaped by unresolved salience interrupts — precision-locks that fired but never committed. Each held latch compresses vagal tone. Each participant arrived with a different number of held latches. The HRV reading reflected the latch load, not the training effect. The "modest coupling" is not a failure of HRV. It is the prediction of this framework: coupling will be modest until load is measured and held constant. The Salience Interrupt paper (Robinson, 2026g) specifies the mechanism. This paper specifies the measurement. Together they close the loop.
 
 ### 1b. The Core Statement
 
@@ -298,6 +329,191 @@ The full accumulation-inflammation loop can be expressed as:
 $$\frac{dL^*}{dt} = \lambda_{\text{met}} + \lambda_{\text{inflam}} - \lambda_{\text{clear}} \cdot \text{SWS\%}(L^*)$$
 
 where $\lambda_{\text{met}}$ is metabolic accumulation rate, $\lambda_{\text{inflam}}$ is inflammation-driven accumulation, and $\lambda_{\text{clear}}$ is the clearance rate per unit SWS. This loop is formalized in Central Reference §4 (glymphatic recovery loop).
+
+### 2g. SALIENCE↔AL — The Perseveration Load
+
+The trap accumulates load when the latch holds. The perseveration loop accumulates load when the latch releases and re-forms on the same region.
+
+**The mechanism:**
+
+```
+Latch releases → PE commits → region clears
+    ↓
+Salience still hits → interrupt re-fires on same region
+    ↓
+New latch forms → new tension
+    ↓
+ATP-brace cost accumulates across cycles
+    ↓
+Vagal tone compressed across cycles
+    ↓
+CAP function impaired across cycles
+    ↓
+L*_perseveration: the load component from repeated latch cycles
+```
+
+**The key difference from the trap:**
+
+| | Trap | Perseveration loop |
+|---|---|---|
+| Latch holds | Continuously | Cyclically |
+| PE commits | Never | Each cycle |
+| ATP cost | Continuous | Repeated |
+| Vagal compression | Sustained | Repeated |
+| Load accumulation | Monotonic | Stepwise |
+
+**The perseveration loop is more costly than the trap in one way and less costly in another.** More costly because each cycle burns ATP for the release *and* the re-formation. Less costly because the PE does commit each cycle — the system is processing, not just holding.
+
+**But over time, the perseveration loop accumulates load faster than the trap** because the cycle rate is higher. Each re-fire is a new interrupt, a new investment, a new latch.
+
+**The load component:**
+
+$$L^*_{perseveration} = \frac{\text{cycle rate} \times \text{ATP cost per cycle}}{\text{baseline}}$$
+
+**Measurement protocol:**
+
+1. **Interrupt re-fire rate** — ERP by region
+2. **Routing weight persistence** — frontal alpha asymmetry after latch release
+3. **ATP-brace cost per cycle** — surface EMG by region
+4. **Vagal recovery time** — HRV recovery between cycles
+
+**The protocol:** Measure the re-fire rate. Measure the routing weight persistence. Measure the ATP cost per cycle. The perseveration load is the product.
+
+**Clinical signature:** Rumination, intrusive thoughts, chronic worry, "can't stop thinking about it."
+
+**Source:** Salience Interrupt v1.3 §2.11, SAL-35–37.
+
+### 2h. SALIENCE↔AL — The Release-Triggered Load
+
+The trap accumulates load when the latch holds. The perseveration loop accumulates load when the latch releases and re-forms. The release-triggered re-salience accumulates load when the release *itself* surfaces the PE.
+
+**The mechanism:**
+
+```
+Latch holds → PE suppressed → no load from processing
+    ↓
+Release begins → PE surfaces → processing begins
+    ↓
+Surfaced PE fires new interrupt → new latch forms
+    ↓
+Failed release → the hold continues
+    ↓
+Each failed release attempt costs ATP without committing the PE
+    ↓
+L*_release-triggered: the load component from failed release attempts
+```
+
+**The key difference:**
+
+| | Trap | Perseveration loop | Release-triggered |
+|---|---|---|---|
+| Latch holds | Continuously | Cyclically | Continuously |
+| PE commits | Never | Each cycle | Never |
+| ATP cost | Continuous | Repeated | Repeated + failed releases |
+| Vagal compression | Sustained | Repeated | Sustained + spike at release |
+| Load accumulation | Monotonic | Stepwise | Stepwise + failed release cost |
+
+**The release-triggered load is the most insidious** because each release attempt costs ATP without committing the PE. The system is paying for the release *and* paying for the re-lock. The net effect is more load than if the release had never been attempted.
+
+**This is why "just relax" fails.** The relaxation attempt triggers the re-fire. The re-fire costs more than the original hold.
+
+**The load component:**
+
+$$L^*_{release-triggered} = \frac{\text{release attempts} \times \text{ATP cost per failed release}}{\text{baseline}}$$
+
+**Measurement protocol:**
+
+1. **Release attempt count** — conscious attempts to release
+2. **Failed release rate** — re-fire at release
+3. **ATP-brace cost per failed release** — surface EMG by region
+4. **Vagal recovery time** — HRV recovery after failed release
+
+**Clinical signature:** "It comes back when I relax," trauma re-experiencing during rest, "I was fine until I stopped."
+
+**Source:** Salience Interrupt v1.3 §2.12, SAL-38–41.
+
+### 2i. SALIENCE↔AL — The Encoding Load
+
+The trap accumulates load when the latch holds. The perseveration loop accumulates load when the latch releases and re-forms. The release-triggered re-salience accumulates load when the release surfaces the PE. The encoding window determines whether the load is committed or released.
+
+**The mechanism:**
+
+```
+Latch holds → PE suppressed → no load from processing
+    ↓
+Exhale begins → PE surfaces → processing begins
+    ↓
+    ├── Context unchanged → PE re-encodes with same gain → RE-LOCK → load accumulates
+    │
+    └── Context changed → PE re-encodes with less gain → RELEASE → no load
+```
+
+**The key difference:**
+
+| | Trap | Perseveration | Release-triggered | Encoding window |
+|---|---|---|---|---|
+| Latch holds | Continuously | Cyclically | Continuously | Continuously |
+| PE commits | Never | Each cycle | Never | At release |
+| Encoding gain | N/A | Same | N/A | Reduced |
+| Load accumulation | Monotonic | Stepwise | Stepwise + failed releases | None (if context changes) |
+
+**The encoding window is the exit from all three failure modes.** The trap exits through the exhale. The perseveration loop exits through routing redistribution. The release-triggered re-salience exits through capacity. The encoding window is the mechanism that makes the exit *stick* — the PE commits with less gain, so the latch doesn't re-form.
+
+**This is why the encoding window is the master exit.** It is the mechanism that determines whether the load is released or re-committed.
+
+**The load component:**
+
+$$L^*_{encoding} = \frac{\text{release attempts} \times \text{re-encoding gain}}{\text{baseline}}$$
+
+**Measurement protocol:**
+
+1. **Release attempt count** — conscious release attempts
+2. **Re-encoding gain** — EMG in locked region after release
+3. **Context change** — self-report of recontextualization during exhale
+4. **Vagal recovery time** — HRV recovery after release
+
+**Clinical signature:** "It keeps coming back," insight resistance, rumination that doesn't resolve despite awareness.
+
+**Source:** Salience Interrupt v1.3 §2.13, SAL-42–45.
+
+### 2j. SALIENCE↔AL — The Somatic Load Path
+
+Movement is a routing lever. It redistributes Θ_r(t) across the homunculus, breaking both the perseveration loop and the release-triggered re-salience. The somatic load path is the allostatic cost of *not* using the movement lever when the routing is concentrated.
+
+**The mechanism:**
+
+```
+Latch holds → routing concentrated on region i
+    ↓
+Movement available → Θ_r redistributes → latch releases
+    ↓
+OR
+    ↓
+Movement unavailable → routing stays concentrated
+    ↓
+Latch holds → ATP-brace cost accumulates → L*_somatic
+```
+
+**The load component:**
+
+$$L^*_{somatic} = \frac{\text{concentrated routing time} \times \text{ATP-brace cost}}{\text{baseline}}$$
+
+**Measurement protocol:**
+
+1. **Movement availability** — time spent in static posture vs. movement
+2. **Routing concentration** — frontal alpha asymmetry during static periods
+3. **ATP-brace cost** — surface EMG by region during static periods
+4. **Vagal recovery time** — HRV recovery after movement vs. rest
+
+**The clinical signature:** The compulsion to do physical tasks when upset. Folding laundry, doing dishes, sweeping. The movement is the routing redistribution mechanism. The system is trying to distribute the manifold. It doesn't know why. It just knows the task helps.
+
+**Why movement failure predicts load:**
+
+Static posture holds the diaphragm's mechanical range compressed. The breath cannot build CO₂. The routing concentrates. The latch holds. The load accumulates.
+
+**This is why movement is not supplementary to breathing.** Movement restores the diaphragm's mechanical range *and* redistributes routing. Without it, the breath pattern alone does not prevent concentration.
+
+**Source:** Salience Interrupt v1.3 §2.5.2, §2.11.2, §6.2, SAL-33, SAL-35, SAL-46, SAL-47.
 
 ---
 
@@ -589,21 +805,26 @@ Where $DEI_{floor}$ is the lowest observed DEI during known load (stress, anxiet
 
 ### 6c. The Composite Load Equation
 
-$$L^* = w_1 L^*_{HRV} + w_2 L^*_{RHR} + w_3 L^*_{temp} + w_4 L^*_{inflam} + w_5 L^*_{resp}$$
+$$L^* = w_1 L^*_{HRV} + w_2 L^*_{RHR} + w_3 L^*_{temp} + w_4 L^*_{inflam} + w_5 L^*_{resp} + w_6 L^*_{salience} + w_7 L^*_{perseveration} + w_8 L^*_{release-triggered} + w_9 L^*_{encoding} + w_{10} L^*_{somatic}$$
 
 With weights:
 
-$$w_1 + w_2 + w_3 + w_4 + w_5 = 1$$
+$$w_1 + w_2 + w_3 + w_4 + w_5 + w_6 + w_7 + w_8 + w_9 + w_{10} = 1$$
 
-**Default weights (proposed — to be calibrated on a training cohort and validated on a held-out cohort before evaluating P-AL-008):**
+**Revised default weights (proposed — to be calibrated on a training cohort and validated on a held-out cohort before evaluating P-AL-008):**
 
 | Component | Weight | Rationale |
 |---|---|---|
-| $L^*_{HRV}$ | 0.30 | HRV baseline drift is the earliest indicator of cumulative debt |
-| $L^*_{RHR}$ | 0.25 | Sleep RHR elevation reflects persistent background demand |
-| $L^*_{temp}$ | 0.15 | Temperature elevation reflects inflammatory load |
-| $L^*_{inflam}$ | 0.20 | Chronic inflammation reflects long-term regulatory debt |
-| $L^*_{resp}$ | 0.10 | Respiratory inefficiency reflects bracing and diaphragm lock |
+| $L^*_{HRV}$ | 0.20 | HRV baseline drift — earliest indicator of cumulative debt |
+| $L^*_{RHR}$ | 0.15 | Sleep RHR elevation — persistent background demand |
+| $L^*_{temp}$ | 0.10 | Temperature elevation — inflammatory load |
+| $L^*_{inflam}$ | 0.15 | Chronic inflammation — long-term regulatory debt |
+| $L^*_{resp}$ | 0.10 | Respiratory inefficiency — bracing and diaphragm lock |
+| $L^*_{salience}$ | 0.10 | Unresolved latch load — the raw unit of debt |
+| $L^*_{perseveration}$ | 0.08 | Repeated-latch load — cycle rate matters |
+| $L^*_{release-triggered}$ | 0.05 | Failed-release load — the cost of trying |
+| $L^*_{encoding}$ | 0.04 | Failed-encoding load — the cost of not changing context |
+| $L^*_{somatic}$ | 0.03 | Somatic load — the cost of not moving |
 
 Weights are not free parameters. They are estimated on a training set and frozen before the P-AL-008 test. Any post-hoc adjustment invalidates the prediction.
 
@@ -622,6 +843,22 @@ A system passes REQT only if both total load is manageable AND no single compone
 The component critical load $L^*_{critical,i}$ is an individual calibration parameter — not a population constant. Calibration protocol: measure $L^*_i$ for each component across a range of load states, identify the point at which the corresponding functional domain (cognitive performance, autonomic regulation, inflammatory response) shows measurable degradation, and fit the threshold per individual. See Central Reference §2.9 for the specification.
 
 The weights are adjustable based on individual presentation. A person with normal inflammatory markers but severe HRV drift gets a higher $L^*$ from the HRV component. A person with elevated CRP but stable HRV gets a higher $L^*$ from the inflammatory component.
+
+**Note on measurement burden:**
+
+The ten-component equation requires laboratory equipment. The minimum viable measurement (§6d) requires only a wearable. Both measure $L^*$. The difference is resolution.
+
+| Tier | Instruments | Components | What it identifies |
+|---|---|---|---|
+| **Consumer-grade** | Wearable (Oura, WHOOP, Garmin, Apple) | $L^*_{HRV}$, $L^*_{RHR}$, $L^*_{temp}$, $L^*_{resp}$ (partial via respiratory rate) | That load is present. Trajectory direction. Zone position. |
+| **Clinical-grade** | Wearable + Control Pause + exhale assessment | The above + $L^*_{salience}$ (partial via exhale completeness) | Where the load is concentrated. Which contract is failing. |
+| **Research-grade** | Full lab: wearable + blood draw + spirometry + surface EMG + ERP | All ten components | Full profile. Component resolution. Mechanism identification. |
+
+The consumer-grade tier gives most people exactly the data they need. The wearable already measures HRV drift, sleep RHR, temperature, and respiratory rate. The Control Pause is free. The exhale completeness assessment is free. That is six of the ten components with no lab equipment.
+
+The research-grade tier is for mechanism research. It identifies which failure mode is dominant — perseveration vs. release-triggered vs. encoding vs. somatic — so the intervention can be targeted. This is the tier for clinical trials, for Schumann-style follow-ups, for the P-AL predictions that require component resolution.
+
+Both tiers measure the same variable. The research-grade tier does not measure a different thing. It measures the same $L^*$ with higher resolution. The consumer-grade tier is not a "proxy for the real measurement." It is the same measurement at lower resolution.
 
 ### 6d. The Minimum Viable Measurement
 
@@ -649,13 +886,17 @@ $$L^* \approx \frac{1}{2} \left( \frac{HRV_{morning} - HRV_{evening}}{HRV_{morni
 
 $L^*$ is not a single number. It is a profile across components:
 
-| Profile Type | $L^*_{HRV}$ | $L^*_{RHR}$ | $L^*_{temp}$ | $L^*_{inflam}$ | $L^*_{resp}$ | Signature |
-|---|---|---|---|---|---|---|
-| High HRV load | High | Low | Low | Low | Low | Autonomic debt only — "burned out" |
-| High inflammatory load | Low | Low | High | High | Low | Immune debt — "chronic illness" |
-| High bracing load | Low | Low | Low | Low | High | Respiratory debt — "anxious" |
-| High total load | High | High | High | High | High | Full debt — "broken" |
-| Mixed load | Moderate | Low | High | Moderate | Low | Inflammatory plus autonomic — "long COVID" |
+| Profile Type | $L^*_{HRV}$ | $L^*_{RHR}$ | $L^*_{temp}$ | $L^*_{inflam}$ | $L^*_{resp}$ | $L^*_{sal}$ | $L^*_{pers}$ | $L^*_{rel}$ | $L^*_{enc}$ | $L^*_{som}$ | Signature |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| High HRV load | High | Low | Low | Low | Low | Mod | Mod | Low | Low | Low | Autonomic debt from chronic trap cycles |
+| High inflammatory load | Low | Low | High | High | Low | Mod | Low | Low | Low | Low | Immune debt from unresolved latches |
+| High bracing load | Low | Low | Low | Low | High | High | Low | Low | Low | Low | Respiratory debt from ATP-brace holds |
+| High total load | High | High | High | High | High | High | High | High | High | High | Full debt — trap compounds |
+| Salience-dominant | Mod | Low | Low | Low | Mod | High | High | Low | Low | Low | Unresolved latch debt + perseveration |
+| Perseveration-dominant | Mod | Low | Low | Low | Mod | Mod | High | Low | Low | Low | Rumination debt — "can't stop thinking" |
+| Release-triggered-dominant | Mod | Low | Low | Low | Mod | Mod | Low | High | Low | Low | Failed-release debt — "I can't relax" |
+| Encoding-dominant | Mod | Low | Low | Low | Mod | Mod | Low | Mod | High | Low | Failed-encoding debt — "it keeps coming back" |
+| Somatic-dominant | Mod | Low | Low | Low | High | Mod | Mod | Low | Low | High | Static-posture debt — "I can't move right now" |
 
 **Interpretation:** The profile tells you where the debt is concentrated. Treatment targets the component with the highest load first.
 
@@ -668,6 +909,11 @@ $L^*$ is not a single number. It is a profile across components:
 | $L^*_{temp}$ | Anti-inflammatory protocols, stress reduction | Reduce inflammatory tone |
 | $L^*_{inflam}$ | Anti-inflammatory protocols, lifestyle change | Clear chronic inflammation |
 | $L^*_{resp}$ | Breathing training, posture correction, diaphragm training | Restore respiratory efficiency |
+| $L^*_{salience}$ | Complete exhale training, pre-sleep clearance | Release unresolved latches |
+| $L^*_{perseveration}$ | Movement, task-switching, gain-change interventions | Redistribute routing; break the re-fire cycle |
+| $L^*_{release-triggered}$ | Capacity training, gain-change interventions, titration | Raise Λ_lock; reduce salience of surfaced PE |
+| $L^*_{encoding}$ | Recontextualization during exhale, insight-oriented therapy | Change the gain vector before commit |
+| $L^*_{somatic}$ | Movement (any), posture variation, standing desk | Restore routing distribution; raise diaphragm range |
 
 **The protocol:**
 
@@ -730,7 +976,7 @@ A system whose morning baseline is stable across consecutive days is recovering 
 
 **The central prediction of this framework is P-AL-011: the variance of daily HRV measurements predicts allostatic load outcomes better than any single reading. The remaining predictions are supporting and mechanistic. If P-AL-011 fails, the framework's core claim fails, regardless of the other predictions.**
 
-### 9a. P-AL-011 — The Central Prediction: HRV Dispersion Is the Signal, Not Noise
+#### 9a. P-AL-011 — The Central Prediction: HRV Dispersion Is the Signal, Not Noise
 
 The variance of daily HRV measurements over 30 days will predict allostatic load outcomes (cognitive performance, inflammatory markers, self-reported stress) better than any single HRV reading. This is the direct test of the framework's central claim: the field has been treating the trajectory as noise.
 
@@ -881,6 +1127,110 @@ The delta HRV response to the standardized slow-breath protocol is the operation
 | **Disconfirmed if** | Delta response is uncorrelated with zone or is dominated by baseline HRV |
 | **Status** | Untested — this is PREDICT-GATE-01 in Central Reference §16 |
 
+#### P-AL-013 — Xue et al. Paradigm in ND Populations
+
+The Xue et al. (2026) feature interference paradigm, run in ND populations, will show larger interference metrics ($IM$) at equivalent task uncertainty compared to NT controls. This reflects the higher baseline load and compressed CO₂ tolerance window in ND populations.
+
+| Field | Content |
+|---|---|
+| **IV** | ND vs. NT status |
+| **DV** | Interference metric $IM$, dimensionality drop |
+| **Control** | Task uncertainty level |
+| **Operationalization** | Run Xue et al. paradigm with ND and NT cohorts matched for age and education. Compare $IM$ trajectories. |
+| **Falsification** | If ND and NT show equivalent $IM$ at equivalent uncertainty, P-AL-013 is disconfirmed. |
+| **Status** | Untested |
+
+#### P-AL-014 — Salience-Triggered Loop Access Is CO₂-Dependent
+
+Individuals in Zone 2 (compressed but not collapsed CO₂ tolerance) will show measurable cognitive improvement after a salience trigger that forces a breath interruption, while individuals in Zone 1 (wide CO₂ tolerance) will show no difference. The improvement in Zone 2 will correlate with the size of the CO₂ rise the trigger produces.
+
+| Field | Content |
+|---|---|
+| **IV** | Zone (1 vs. 2) and trigger condition (with vs. without) |
+| **DV** | Performance on novel error-detection tasks |
+| **Mediator** | CO₂ rise magnitude (capnometry) |
+| **Operationalization** | Measure baseline CO₂ tolerance. Present novel tasks with and without preceding salience trigger. Measure performance difference and CO₂ rise. |
+| **Falsification** | If Zone 2 does not show improvement after trigger, or if improvement does not correlate with CO₂ rise, P-AL-014 is disconfirmed. |
+| **Status** | Untested |
+
+#### P-AL-015 — Re-Fire Rate Predicts Load
+
+The interrupt re-fire rate (ERP by region) will predict next-morning HRV baseline and next-day cognitive performance better than the total interrupt count.
+
+| Field | Content |
+|---|---|
+| **IV** | Re-fire rate vs. total interrupt count |
+| **DV** | Next-morning HRV baseline, next-day cognitive performance |
+| **Operationalization** | Daytime ERP + overnight EMG + morning HRV |
+| **Confirmed if** | Re-fire rate predicts better than total count |
+| **Disconfirmed if** | Total count predicts as well or better |
+| **Status** | Untested |
+
+#### P-AL-016 — Movement Breaks Perseveration Load
+
+Movement across the homunculus will reduce $L^*_{perseveration}$ by reducing the re-fire rate.
+
+| Field | Content |
+|---|---|
+| **IV** | Movement vs. rest during perseveration |
+| **DV** | $L^*_{perseveration}$ (re-fire rate, EMG by region) |
+| **Operationalization** | Within-subject protocol with movement manipulation |
+| **Confirmed if** | Movement reduces re-fire rate and EMG |
+| **Disconfirmed if** | Movement does not reduce re-fire rate |
+| **Status** | Untested |
+
+#### P-AL-017 — Failed Release Attempts Predict Load
+
+The number of failed release attempts (release attempts that re-fire) will predict next-morning HRV baseline and next-day cognitive performance better than the total release attempts.
+
+| Field | Content |
+|---|---|
+| **IV** | Failed release attempts vs. total release attempts |
+| **DV** | Next-morning HRV baseline, next-day cognitive performance |
+| **Operationalization** | Daytime release-attempt log + morning HRV |
+| **Confirmed if** | Failed release attempts predict better than total attempts |
+| **Disconfirmed if** | Total attempts predict as well or better |
+| **Status** | Untested |
+
+#### P-AL-018 — Capacity Training Reduces Release-Triggered Load
+
+Capacity training (breath range, CO₂ tolerance, Λ_lock training) will reduce $L^*_{release-triggered}$ by increasing the capacity to hold the surfaced PE without locking.
+
+| Field | Content |
+|---|---|
+| **IV** | Capacity training vs. control |
+| **DV** | $L^*_{release-triggered}$ (failed release rate, EMG by region) |
+| **Operationalization** | Longitudinal within-subject protocol |
+| **Confirmed if** | Capacity training reduces failed release rate |
+| **Disconfirmed if** | Capacity training does not reduce failed release rate |
+| **Status** | Untested |
+
+#### P-AL-019 — Recontextualization Reduces Load
+
+Recontextualization during the exhale will reduce $L^*_{encoding}$ by reducing the re-encoding gain of the surfaced PE.
+
+| Field | Content |
+|---|---|
+| **IV** | Recontextualization during exhale vs. no recontextualization |
+| **DV** | $L^*_{encoding}$ (EMG, re-fire rate, next-morning HRV) |
+| **Operationalization** | Within-subject protocol with recontextualization manipulation |
+| **Confirmed if** | Recontextualization reduces EMG and re-fire rate |
+| **Disconfirmed if** | Recontextualization does not reduce EMG or re-fire |
+| **Status** | Untested |
+
+#### P-AL-020 — Insight Reduces Load
+
+Insight experiences (sudden resolution with recontextualization) will reduce $L^*_{encoding}$ more than non-insight releases.
+
+| Field | Content |
+|---|---|
+| **IV** | Insight vs. non-insight release |
+| **DV** | $L^*_{encoding}$ (EMG, re-fire rate, next-morning HRV) |
+| **Operationalization** | Within-subject protocol with insight identification |
+| **Confirmed if** | Insight reduces load more than non-insight |
+| **Disconfirmed if** | Insight does not reduce load more |
+| **Status** | Untested |
+
 ### 9c. Confounds and Limitations
 
 The delta HRV proxy is a composite signal. Several confounds must be acknowledged:
@@ -941,18 +1291,23 @@ The complete allostatic load measurement framework integrates:
 
 1. **Four regulatory contracts** (MET↔AUTO, IMMUNE↔AUTO, MET↔IMMUNE, AUTO↔MOD) as the mechanism chain
 2. **Glymphatic clearance** (GLYMPH↔AUTO) as the recovery mechanism
-3. **Precision geometry** ($P = R/D_T$) as the formal quantification of system capacity
-4. **Effective precision** ($P_{eff} = P \cdot O_{pathway} \cdot U_C$) as the gate condition — this paper measures $P$ and $U_C$, with $O_{pathway}$ as the substrate constraint specified in Central Reference §2.8
-5. **Two-factor pressure** (mechanical beneficial, cognitive harmful) as the load accumulation driver
-6. **Seven measurement components** (HRV baseline, delta HRV, CO₂ tolerance, exhale completeness, sleep architecture, sleep RHR, inflammatory biomarkers)
-7. **Composite load equation** with five weighted components and individual baselines
-8. **Three debt trajectory zones** (recovery, accumulating, ceiling)
-9. **Individual load profiles** for treatment targeting
-10. **Twelve falsifiable predictions** for clinical validation, with P-AL-011 (HRV dispersion is the signal) as the central prediction
+3. **Salience accumulation** (SALIENCE↔AL) as the primary load source
+4. **Perseveration load** ($L^*_{perseveration}$) as a load component
+5. **Release-triggered load** ($L^*_{release-triggered}$) as a load component
+6. **Encoding load** ($L^*_{encoding}$) as a load component
+7. **Somatic load** ($L^*_{somatic}$) as a load component
+8. **Precision geometry** ($P = R/D_T$) as the formal quantification of system capacity
+9. **Effective precision** ($P_{eff} = P \cdot O_{pathway} \cdot U_C$) as the gate condition
+10. **Two-factor pressure** (mechanical beneficial, cognitive harmful) as the load accumulation driver
+11. **Seven measurement components** (HRV baseline, delta HRV, CO₂ tolerance, exhale completeness, sleep architecture, sleep RHR, inflammatory biomarkers)
+12. **Composite load equation** with ten weighted components and individual baselines
+13. **Three debt trajectory zones** (recovery, accumulating, ceiling)
+14. **Individual load profiles** for treatment targeting
+15. **Twenty falsifiable predictions** for clinical validation, with P-AL-011 (HRV dispersion is the signal) as the central prediction
 
 ### 11b. The Core Insight
 
-**The core insight remains unchanged:** Allostatic load is cumulative regulatory debt — the portion of total demand that persists across recovery windows and is visible in standard physiological markers. The measurement framework makes it quantifiable. The predictions make it testable. The clinical applications make it actionable.
+**The core insight remains unchanged:** Allostatic load is cumulative regulatory debt — the portion of total demand that persists across recovery windows and is visible in standard physiological markers. The measurement framework makes it quantifiable. The predictions make it testable. The clinical applications make it actionable. **The salience mechanism is the upstream source of much of the load.** Each unresolved precision-lock is a unit of debt. Each re-fire is a unit of debt. Each failed release is a unit of debt. Each failed encoding is a unit of debt. Each static posture is a unit of debt. The AL paper measures the debt. The Salience paper explains where it comes from. The composition is the mechanism.
 
 **The field already has the data. The Oura ring already shows the pattern. The only missing piece is the framework that makes the data readable.**
 
@@ -982,7 +1337,7 @@ Okawara, H., Shiraishi, Y., Sato, K., Nakamura, M., & Katsumata, Y. (2024). Visu
 
 Reed, A. E., Sayre-Carstairs, R., & Lindberg, M. (2020). Suppressing emotion depletes cognitive resources even when heart rate variability is stable. *Collabra: Psychology*, *6*(1), 28. https://doi.org/10.1525/collabra.273
 
-Robinson, J. (2026a). *The Manifold Schema: A Unified Framework for Consciousness, Cognition, and Collapse* (v7.2). Zenodo. https://doi.org/10.5281/zenodo.21939440
+Robinson, J. (2026a). *The Manifold Schema: A Unified Framework for Consciousness, Cognition, and Collapse* (v7.2). Zenodo. https://doi.org/10.5281/zenodo.21939439
 
 Robinson, J. (2026b). *Physics as the Missing Component in Medical Science*. Zenodo. https://doi.org/10.5281/zenodo.21512678
 
@@ -993,6 +1348,10 @@ Robinson, J. (2026d). *The Geometry of Inference* (v1.0). Manifold Schema Techni
 Robinson, J. (2026e). *Central Reference: A Unified System Specification for the Loop Framework* (v1.4). Manifold Schema Technical Report Series.
 
 Robinson, J. (2026f). *The Loop Is the Intelligence* (v1.0). Manifold Schema Technical Report Series.
+
+Robinson, J. (2026g). *The Salience Interrupt: Routing, the Closed Loop, the Control Plane, and the Encoding Window* (v1.3). Manifold Schema Technical Report Series.
+
+Robinson, J. (2026h). *Central Reference: A Unified System Specification for the Loop Framework* (v1.8.3). Manifold Schema Technical Report Series.
 
 Sakakibara, M., Takeuchi, S., & Hayano, J. (1994). Effect of relaxation training on cardiac parasympathetic tone. *Psychophysiology*, *31*(3), 223–228. https://doi.org/10.1111/j.1469-8986.1994.tb02210.x
 
@@ -1023,22 +1382,23 @@ Iliff, J. J., Wang, M., Liao, Y., Plogg, B. A., Peng, W., Gundersen, G. A., & Ne
 *Allostatic Load as Accumulated Regulatory Debt: A Comprehensive Measurement Framework*
 *Robinson, J. (2026)*
 *Manifold Schema Technical Report Series*
-*Suggested citation: Robinson, J. (2026). Allostatic Load as Accumulated Regulatory Debt: A Comprehensive Measurement Framework with Delta HRV, CO₂ Tolerance, Sleep Architecture, Glymphatic Clearance, and Composite Load Quantification. Manifold Schema Technical Report Series.*
+*Version: 2.2*
+*Suggested citation: Robinson, J. (2026). Allostatic Load as Accumulated Regulatory Debt: A Comprehensive Measurement Framework with Delta HRV, CO₂ Tolerance, Sleep Architecture, Glymphatic Clearance, Salience Inheritance, and Composite Load Quantification. Manifold Schema Technical Report Series.*
 
 ---
 
 ## Version History
 
-| Version | Date           | Changes |
-| ------- | -------------- | ------- |
+| Version | Date           | Changes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **2.2** | **2026-10-14** | **Integrated with Salience Interrupt v1.3 and Central Reference v1.8.3. Inherits salience accumulation, perseveration, release-triggered, encoding, and somatic load from Salience v1.3. Adds §2g–§2j (four new mechanism sections). Adds five new load components ($L^*_{perseveration}$, $L^*_{release-triggered}$, $L^*_{encoding}$, $L^*_{somatic}$, and explicit $L^*_{salience}$). Adds P-AL-015 through P-AL-020. Revised load profile table (nine profiles). Revised treatment targeting (ten targets). Updated composite load equation (ten components). Added Schumann origin paragraph to §1a. Added measurement burden note and tier table to §6c.**                                                                                                                                                                                                                                                                                        |
 | **2.1** | **2026-09-13** | **Integrated with Central Reference v1.4. Versioning and cross-reference updates only: header updated; note added on $O_{pathway}$ and motor gain variables not being absorbed (gate-condition and motor-substrate variables, documented in Central Reference §2.8/§2.11 and GoI v1.0); stack list added *The Loop Is the Intelligence* v1.0 and version numbers for Precision v3.4, GoI v1.0, MS v7.2; inline Central Reference cross-references stripped of version numbers; note added pinning all cross-references to v1.4; references updated (Robinson 2026e → Central Reference v1.4, Robinson 2026f added for Loop v1.0); §2d precision integration updated with $P_{eff} = P \cdot O_{pathway} \cdot U_C$; §6c added $L^*_{critical,i}$ calibration note; §9b added P-AL-012 (delta HRV tracks $\Lambda$, cross-reference to PREDICT-GATE-01); §11a updated to include $P_{eff}$ and the substrate/uniformity split; changelog added at top.** |
-| 2.0 | 2026-09-12 | Integrated with Central Reference v1.3. All residual fixes from integration memo applied: Control Pause thresholds reconciled (Zone 3 <15, severe <10); delta HRV ∝ 1/L* labeled as heuristic with cross-reference to §2d; weight calibration procedure replaced with held-out validation; 30-day baseline window flagged as provisional; wearable-market epistemic framing cleaned; P-AL-011 elevated to Central Prediction; RHR thresholds reconciled; L*_inflam unit-free normalization note added. Cross-references to Central Reference v1.3 added. |
-| 1.8 | 2026-09-02 | Applied Gemini/Claude critique: formula fixes, composite vs diagnostic clarification, Okawara citation year corrected, Schumann framing softened, field-blindness reframed as reinterpretation, wearable evidence framed as access not validation, circadian vs pathological debt distinction, confounds section added, P-AL-005 broken into 5a-5e, self-citation note strengthened |
-| 1.7 | 2026-09-01 | Added core statement to abstract, Section 1b, Section 11b; restructured section numbering; integrated wearable market data |
-| 1.6 | 2026-09-01 | Added wearable-market contradiction section; expanded Section 8 with wearable market evidence |
-| 1.5 | 2026-09-01 | Added ND Precision-Collapse Paradox; expanded predictions to 11; integrated Vitale, Okawara, Li, MiSBIE references |
-| 1.4 | 2026-08-30 | Added individual load profiles, treatment targeting, nine falsifiable predictions |
-| 1.3 | 2026-08-30 | Added complete composite load equation with five components and individual baselines |
-| 1.2 | 2026-08-30 | Added glymphatic clearance architecture with accumulation-inflammation loop |
-| 1.1 | 2026-08-30 | Added precision-geometry integration, CO₂ tolerance compression, two-factor pressure |
-| 1.0 | 2026-08-30 | Initial integration of allostatic load measurement framework |
+| 2.0     | 2026-09-12     | Integrated with Central Reference v1.3. All residual fixes from integration memo applied: Control Pause thresholds reconciled (Zone 3 <15, severe <10); delta HRV ∝ 1/L* labeled as heuristic with cross-reference to §2d; weight calibration procedure replaced with held-out validation; 30-day baseline window flagged as provisional; wearable-market epistemic framing cleaned; P-AL-011 elevated to Central Prediction; RHR thresholds reconciled; L*_inflam unit-free normalization note added. Cross-references to Central Reference v1.3 added.                                                                                                                                                                                                                                                                                                                                                                                                |
+| 1.8     | 2026-09-02     | Applied Gemini/Claude critique: formula fixes, composite vs diagnostic clarification, Okawara citation year corrected, Schumann framing softened, field-blindness reframed as reinterpretation, wearable evidence framed as access not validation, circadian vs pathological debt distinction, confounds section added, P-AL-005 broken into 5a-5e, self-citation note strengthened                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| 1.7     | 2026-09-01     | Added core statement to abstract, Section 1b, Section 11b; restructured section numbering; integrated wearable market data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 1.6     | 2026-09-01     | Added wearable-market contradiction section; expanded Section 8 with wearable market evidence                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| 1.5     | 2026-09-01     | Added ND Precision-Collapse Paradox; expanded predictions to 11; integrated Vitale, Okawara, Li, MiSBIE references                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 1.4     | 2026-08-30     | Added individual load profiles, treatment targeting, nine falsifiable predictions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| 1.3     | 2026-08-30     | Added complete composite load equation with five components and individual baselines                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| 1.2     | 2026-08-30     | Added glymphatic clearance architecture with accumulation-inflammation loop                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| 1.1     | 2026-08-30     | Added precision-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
