@@ -1,14 +1,37 @@
-# The Geometry of Inference: A Precision-Based Framework
+# The Geometry of Inference v1.1
 
 **Robinson, 2026**
 
-**Version:** 1.0
-**Date:** 2026-09-13
-**Status:** Converged with Central Reference v1.4 — all three specification-level contradictions resolved; changelog added; versioning track started
-**Framework:** Manifold Schema (DOI: 10.5281/zenodo.21939440)
+**Version:** 1.1
+**Date:** 2026-10-14
+**Status:** Converged with Central Reference v1.9.1 — gate condition extended to five conditions; three post-gate failure modes inherited from Salience Interrupt v1.3; encoding window mechanism added; movement-as-redistribution added; population-code substrate added
+**Framework:** Manifold Schema (DOI: 10.5281/zenodo.21939439)
 **Precision formalism:** Precision, Timing, and the Oscillatory Source (DOI: 10.5281/zenodo.22179675)
+**Salience implementation:** The Salience Interrupt v1.3 (Robinson, 2026g)
+**Allostatic load inheritance:** Allostatic Load v2.2 (Robinson, 2026, AL)
 **Intelligence projection:** The Loop Is the Intelligence (Robinson, 2026)
-**Complete specification:** Central Reference (Robinson, 2026)
+**Complete specification:** Central Reference v1.9.1 (Robinson, 2026h)
+
+---
+
+## Changelog — v1.0 → v1.1
+
+This changelog tracks the salience inheritance. All changes are additive at the mechanism level. The gate condition is extended; the collapse gradient gains the post-gate failure modes; the exhale is upgraded from "frame pruning" to "encoding window." Nothing about the GoI's core mechanisms changes.
+
+| Step | Change | Location | Reason |
+|---|---|---|---|
+| 1 | Version bumped to 1.1 | Header | Salience inheritance |
+| 2 | Gate condition extended to five conditions | §3.0 | Salience v1.3 §2.6 |
+| 3 | Routing-weight condition registered as the third gate factor | §3.0 | GoI gate diff (drafted earlier) |
+| 4 | Post-gate failure modes added | New §6.1a | Salience v1.3 §2.11–2.13 |
+| 5 | Encoding window mechanism added | §9.3 | Salience v1.3 §2.13 |
+| 6 | Movement-as-redistribution added | §3.4.3 (new) | Salience v1.3 §2.5.2 |
+| 7 | Population-code substrate added | §5.5 (new) | Salience v1.3 §2.14 |
+| 8 | Exhale gate trap cascade extended | §8.3 | Salience v1.3 §2.11–2.13 |
+| 9 | New predictions added | Part X | GoI-W-01, GoI-W-02, GoI-E-01–03 |
+| 10 | Appendix A notation map updated | Appendix A | New variables registered |
+
+**What did not change:** The cache hierarchy, the precision mechanism, the resolution floor, the LP-ACC circuit, the competitive scaffold, the collapse gradient, the somatic commutation operator, the breath phase timing, and all GoI v1.0 predictions. v1.1 is inheritance, not revision.
 
 ---
 
@@ -39,7 +62,7 @@ This changelog exists so that any reader — human or AI — can see the converg
 
 This paper proposes that inference is geometrically constrained by precision — the timing-coherence ratio $P = R/D_T$ that determines whether signals can traverse the neural manifold's radial structure. The central claim is that access to the outer edge of the manifold requires precision above threshold, and that the entire collapse sequence follows from precision degradation. The cache hierarchy analogy in the original paper described the access pattern. Precision is the mechanism that determines whether the access pattern is available.
 
-The paper is a domain projection of the Manifold Schema. It supplies the **biological implementation** of the loop: the LP-ACC circuit, the four-layer cache hierarchy, the two-factor gate, the competitive scaffold, and the collapse gradient. It also specifies the **somatic commutation operator** — the active mechanism by which in vivo systems manipulate their own manifold geometry to preserve outer-edge access under load.
+The paper is a domain projection of the Manifold Schema. It supplies the **biological implementation** of the loop: the LP-ACC circuit, the four-layer cache hierarchy, the five-condition gate, the competitive scaffold, and the collapse gradient. It also specifies the **somatic commutation operator** — the active mechanism by which in vivo systems manipulate their own manifold geometry to preserve outer-edge access under load — and the **post-gate failure modes** that determine whether a gate-opened interrupt actually closes the loop.
 
 ---
 
@@ -155,6 +178,8 @@ The mechanism is structural. The Roy and Banerjee (2026) finding — that 25–4
 
 **This is why recovery is not symmetric.** A system that has lost access to the outer edge does not regain it simply by restoring precision. The competitive scaffold must be rebuilt through sustained precision-gated access. The circuit must be re-warmed.
 
+**This is also why the region-not-re-primed condition matters (see §3.0).** Circuit priming lowers access cost — but it also lowers the threshold for re-firing. When $W_i(t^+) > W_{prime}$ after a latch release, the region is still primed. The next signal in that region fires the interrupt without needing a new salient event. This is the perseveration loop (see §6.1a).
+
 ---
 
 ## Part II: The Resolution Floor
@@ -203,26 +228,60 @@ This allocation is not a conscious decision. It is the accumulated result of whe
 
 ---
 
-## Part III: The Two-Factor Gate — Coherence and Perfusion
+## Part III: The Five-Factor Gate — Coherence, Perfusion, and Routing
 
-### 3.0 Precision and Pathway Integrity — The Converged Gate Condition
+### 3.0 The Five-Condition Gate
 
 The signal has been detected. The LP-ACC circuit has flagged a cache miss. The system has determined that the incoming evidence deviates sufficiently from prior state to warrant escalation. The gate must now open.
 
-The PFC gate is not a metabolic switch. It is a **coherence detector**. The gate condition is a single product with a floor:
+The PFC gate is not a metabolic switch. It is a **coherence detector**. The gate condition is a five-factor conjunction. All five conditions must be met for the interrupt to execute:
 
-$$P_{eff} = P \cdot O_{pathway} \cdot U_C$$
-
-$$\text{Gate opens when } P_{eff} > P_{threshold} \quad \text{AND} \quad O_{pathway} > O_{min}$$
+$$\text{Interrupt}_i \iff \left[P_{eff} > P_{threshold}\right] \;\land\; \left[O_{pathway} > O_{min}\right] \;\land\; \left[W_{region} > W_{min}\right] \;\land\; \left[\text{Oscillation stable}\right] \;\land\; \left[W_i(t^+) < W_{prime}\right]$$
 
 Where:
+- $P_{eff} = P \cdot O_{pathway} \cdot U_C$ is effective precision
 - $P$ is precision — $P = R/D_T$, the timing-coherence ratio
 - $O_{pathway}$ is oxygen pathway integrity — the substrate constraint on whether precision can translate to loop opening
 - $U_C$ is CO₂ uniformity — $1/(\text{Var}_i[C_i] + \epsilon)$, the uniformity of CO₂ distribution across tissue
+- $W_{region}$ is the routing weight assigned to the target manifold region
+- $W_{min}$ is the minimum routing weight required for the signal to reach interrupt threshold
 - $P_{threshold} = P_0 - \gamma L^*$ is the load-dependent gate threshold
 - $O_{min}$ is the minimum pathway integrity floor
+- $W_{prime}$ is the priming threshold — the routing weight above which a region re-fires without a new salient event
 
-**This is the converged form.** Draft 3 held two separate gate conditions — one on interhemispheric coherence $C_{LR}$, one on pathway perfusion $O_{pathway}$. Central Reference v1.4 specifies a single multiplier form. The two are equivalent when $C_{LR}$ is recognized as the operational measurement of $P$ (see §3.1), but the multiplier form is the specification because it correctly handles the case where high precision partially compensates for low pathway integrity — up to the $O_{min}$ floor.
+**The five conditions, expanded:**
+
+| Condition | Variable | Failure mode |
+|---|---|---|
+| Precision sufficient | $P_{eff} > P_{threshold}$ | Low CO₂, poor O pathway, low $A_s$ |
+| Oxygen pathway open | $O_{pathway} > O_{min}$ | Upper-chest lock, Bohr-effect blocked |
+| Region has routing weight | $W_{region} > W_{min}$ | Attention committed elsewhere |
+| Oscillation stable | `Θ_r(t)` can hold | Routing concentration flickers |
+| Region not re-primed | $W_i(t^+) < W_{prime}$ | Latch re-fires on same region after release |
+
+**The third condition — routing weight — is the salience-inheritance addition.** A signal fires a CLA interrupt when its routing weight in the target region exceeds threshold:
+
+$$I^*_{eff} = I^*_{total} \cdot W_{region}$$
+
+If $W_{region}$ is near zero — because routing is fully committed elsewhere — the interrupt cannot fire regardless of $P_{eff}$ or $O_{pathway}$. The salience signal is real. The gate condition is not met. The CLA does not execute.
+
+**Routing weight is conserved:**
+
+$$\sum_i W_i = 1$$
+
+Committing routing weight to one region reduces $W_{region}$ for all other regions proportionally. Attention routing is mechanistically exclusive at the manifold level.
+
+**The fourth condition — oscillation stability — ensures the routing concentration can hold.** A signal that meets conditions 1–3 but not 4 will not fire reliably, because `Θ_r(t)` will flicker.
+
+**The fifth condition — region not re-primed — determines whether a latch release results in resolution or perseveration.** When $W_i(t^+) > W_{prime}$ after release, the interrupt re-fires without a new salient event. This is the condition that the GoI v1.0 gate did not have, and it resolves the circuit-priming case (§1.6) into a formal gate condition.
+
+**The routing equation.** The routing weight vector is set by:
+
+$$\vec{W}(t) = \text{softmax}\left(\frac{\vec{g} \cdot \Theta_r(t)}{T}\right), \quad \sum_i W_i = 1$$
+
+Where $\vec{g}$ is the gain vector, `Θ_r(t)` is the routing concentration, and $T$ is the temperature. The concentration and the location are separate degrees of freedom. `Θ_r` sets *how narrow* the routing is; the `W_i` vector sets *where* it lands. Source: Salience Interrupt v1.3 §2.5.
+
+**Draft 3 correction:** Draft 3 held two separate gate conditions — one on $C_{LR}$, one on $O_{pathway}$. v1.0 collapsed this into a single multiplier form. v1.1 extends it to five conditions. The two-factor form is still the correct precision-pathway interaction ($P_{eff} > P_{threshold}$ AND $O_{pathway} > O_{min}$); the three additional conditions (routing weight, oscillation stability, region-not-re-primed) are gates that must be satisfied for the interrupt to execute at all.
 
 **Note on the three-factor form:** The addition of $U_C$ accounts for the finding that high CO₂ with uneven distribution produces high variance, reducing precision. Uniformity is a multiplier, not a gate condition — it scales the precision that reaches the outer edge.
 
@@ -328,7 +387,30 @@ $$C_{LR}(t) = \cos(\phi_L - \phi_R) \cdot \frac{\min(A_L \cdot H_L, A_R \cdot H_
 
 Gaze direction modulates $C_{LR}$ directly by amplifying one hemisphere's contribution. The RSA phase determines whether the commutator is in "jump" mode (inhale, low vagal tone, high $C_{LR}$ tolerance for state change) or "lock" mode (exhale, high vagal tone, high stability).
 
-**Note on the Central Reference gap:** The somatic commutation operator is not yet in Central Reference v1.4. It will be absorbed in v1.5 as a new §2.12 or equivalent. See Appendix B for the bidirectional convergence note.
+**Note on the Central Reference gap:** The somatic commutation operator is now registered in Central Reference v1.9.1 §3.8c as part of the five-lever control plane (access key, breath, movement, gain, capacity, context). The gaze-laterality mechanism is one component of the movement lever.
+
+### 3.4.3 Movement as a Second Somatic Lever
+
+The somatic commutation operator has two distinct levers, not one.
+
+| Lever | Mechanism | Effect on `Θ_r` | Effect on Layer Access |
+|---|---|---|---|
+| **Gaze laterality** | FEF contralateral driving, SIRE | Modulates $C_{LR}$ locally | Toggles between Layer 1 and Layer 3 |
+| **Movement** | Repetitive motor sequences traverse the homunculus | Redistributes `Θ_r(t)` globally | Keeps routing distributed so the manifold doesn't lock |
+
+**Gaze toggles.** Movement distributes.
+
+**The mechanism:** Repetitive motor sequences — folding laundry, doing dishes, sweeping, walking — traverse the homunculus. Each movement recruits a different motor region. The routing weight that was concentrated on a cognitive region redistributes across the motor regions.
+
+**This is why physical tasks break perseveration.** The movement doesn't distract from the content. It redistributes the routing weight so the content isn't the only thing in the manifold. The upset doesn't resolve — it distributes.
+
+**The framework terms:** Movement sets `Θ_r(t)` by recruiting motor regions, which lowers the concentration on the cognitive region, which reduces the routing weight available for the interrupt to re-fire.
+
+**The clinical signature:** The compulsion to do physical tasks when upset is a routing-redistribution mechanism. The system is trying to distribute the manifold. It doesn't know why. It just knows the task helps.
+
+**Movement and gaze compose.** A system can use gaze to jump tracks and movement to distribute the manifold. The two levers operate at different timescales (gaze at milliseconds, movement at minutes) and different scopes (gaze modulates `C_LR`, movement redistributes `Θ_r`).
+
+**Source:** Salience Interrupt v1.3 §2.5.2, §2.11.2, §6.2, SAL-33, SAL-35, SAL-46, SAL-47.
 
 ---
 
@@ -408,6 +490,26 @@ When a pathway is used, the competitive connections along that pathway are reinf
 
 This is the circuit "warm-up" effect. Recently used manifolds have reduced cost to access. The system does not need to re-establish the competitive scaffold from scratch each time — it simply needs to maintain precision long enough to keep the pathway "warm."
 
+### 5.5 The Population-Code Substrate
+
+The competitive scaffold is not an abstract structure. Its neural substrate is the **population code for semantics** (Franch et al., 2026). A concept is not stored in one place. It is a **distributed population vector** — a pattern across a population of neurons. The pattern *is* the concept's semantic neighborhood.
+
+**This changes what "traversing the competitive scaffold" means.** It means activating a population vector. The access key — the word, image, or name — determines which vector fires. The vector determines the semantic neighborhood. The neighborhood determines the routing.
+
+**The routing chain:**
+
+$$\mathcal{A}_k \to \vec{v}_c \to \mathcal{N}_c \to \vec{g} \to \Theta_r \to \text{Interrupt}$$
+
+The access key selects the vector. The vector carries the neighborhood. The neighborhood sets the gain. The gain sets the concentration. The concentration sets the interrupt.
+
+**This is the mechanism behind rebranding, framing, and vocabulary-based silos.** Changing the name of a concept changes the access key, which changes the population vector, which changes the semantic neighborhood, which changes the routing. The concept is the same. The vector is different.
+
+**And it is the substrate of the competitive scaffold.** The long-range negative connections (Roy & Banerjee, 2026) connect population vectors across the cortical gradient. When a concept is activated, its vector competes with adjacent vectors. The competition is the adversarial check — the outer edge engaging with the inner core's cached prior.
+
+**The population-code substrate explains why the competitive scaffold is domain-specific.** Each field's vocabulary routes its concepts through a cluster of nearby population vectors. The vocabulary is the field's access-key set. The competitive connections within the field's cluster are dense; the connections to other fields' clusters are sparse. This is why silos form — and why cross-silo vocabulary (multi-vector access) is expensive.
+
+**Source:** Salience Interrupt v1.3 §2.14, Franch et al. (2026).
+
 ---
 
 ## Part VI: The Self-Sealing Loop and the Collapse Gradient
@@ -439,6 +541,39 @@ When any of these conditions fails, the system returns to inner-core processing.
 **Stage 5 — Core Degradation:** The left hemisphere's cooperative core begins to degrade. Requires conditions beyond what ordinary load produces.
 
 **Note on calibration:** The stage boundaries are not population constants. The thresholds $\tau_{threshold}$ (PE tolerance), $K_{critical}$ (curvature critical value), and $L^*_{critical,i}$ (component critical load) are individual calibration parameters. See Central Reference §2.9 and §3.7 Note 4. A system with high baseline $K$ may enter Stage 2 at a lower absolute load than a system with low baseline $K$.
+
+### 6.1a The Post-Gate Failure Modes
+
+The collapse gradient describes progressive collapse of the gate condition. But the gate can open and the loop can still fail to close. Salience Interrupt v1.3 identifies three post-gate failure modes that GoI v1.0 did not have:
+
+**1. The perseveration loop.** The latch releases, but the interrupt re-fires on the same region because the routing weight $W_i$ remains above $W_{prime}$ or the salient signal remains present.
+
+| Sub-mode | What holds $\vec{g}$ | Exit lever |
+|---|---|---|
+| Content perseveration | The salient signal is still present | Change the signal, or change the relationship to it |
+| Routing perseveration | `Θ_r(t)` hasn't redistributed | Movement, breath, task-switching |
+| Structural perseveration | `Λ_lock` is low, bracing is the signal | Raise `Λ_lock`, complete exhale, movement |
+
+**2. The release-triggered re-salience.** The release itself surfaces the suppressed PE. The surfaced PE fires a new interrupt. The latch re-forms. The release and the re-fire are the same event.
+
+**3. The encoding window.** The PE surfaces during the exhale. If the context changes before the PE commits, the PE re-encodes with less routing concentration and gain. If the context doesn't change, the PE re-encodes with the same gain and the latch re-forms.
+
+**Why this matters for the collapse gradient:** The three post-gate failure modes are the mechanisms by which the collapse gradient's stages 2–4 actually deepen. The gate opens, but the loop doesn't close. The stale prior is re-encoded. Curvature $K$ rises. The next attempt is harder.
+
+**The gate-open-failure modes are the missing link between "gate opens" and "prior updates."** GoI v1.0's collapse gradient described the progressive narrowing of the gate condition. The salience inheritance specifies what happens after the gate opens but before the prior commits — and why the commit can fail.
+
+**The full waking regime:**
+
+| Condition | Result | Sub-mode |
+|---|---|---|
+| Gate opens + breath follows + latch releases + routing redistributes | Flow (resolved) | — |
+| Gate opens + breath follows + latch releases + routing stays concentrated | Perseveration loop | Content, routing, structural |
+| Gate opens + breath follows + release surfaces PE + PE fires new interrupt | Release-triggered re-salience | — |
+| Gate opens + breath follows + PE surfaces + context changes before commit | Encoding window (resolved with less gain) | — |
+| Gate opens + breath cannot follow | Trap — investment costs without self-funding | — |
+| Gate doesn't open | No investment — prior fills the output | — |
+
+**Source:** Salience Interrupt v1.3 §2.11, §2.12, §2.13.
 
 ### 6.2 Why the Sequence Cannot Be Reversed from Inside
 
@@ -476,7 +611,27 @@ Trapped Residual Volume (Π_cog acute)
     → Loss of Layer 3
     → Left-Brain Interpreter Confabulation
     → Deepened by L* (C_high compression, P_threshold drop)
+    → PERSEVERATION LOOP (interrupt re-fires on same region)
+    → RELEASE-TRIGGERED RE-SALIENCE (release surfaces PE, fires new interrupt)
+    → ENCODING LOAD (PE re-encodes with same gain)
+    → L*_salience, L*_perseveration, L*_release-triggered, L*_encoding accumulate
 ```
+
+**The post-gate failure modes deepen the trap.** The exhale gate trap is not just gate closure. It is gate closure *plus* the three post-gate failure modes operating on whatever interrupts still fire:
+
+- The latch releases but the region stays primed → **perseveration**
+- The release surfaces the PE → **release-triggered re-salience**
+- The PE re-encodes with the same gain → **encoding load**
+
+Each of these costs ATP without committing the PE. The trap is not passive — it is actively load-generating through the failure modes.
+
+**The allostatic load components that accumulate:**
+
+$$L^*_{salience}, \; L^*_{perseveration}, \; L^*_{release-triggered}, \; L^*_{encoding}$$
+
+These four components are registered in AL v2.2 §6c and Central Reference v1.9.1 §3.1. The exhale gate trap is the mechanism that produces them.
+
+**Source:** Salience Interrupt v1.3 §2.11–2.13, AL v2.2 §2g–2i.
 
 ### 6.4 The Collapse Gradient Is Nonlinear
 
@@ -524,8 +679,9 @@ The system has two distinct somatic levers for modulating manifold geometry:
 |---|---|---|---|
 | **Breath mechanics** | CO₂, phase-locking, RSA | Raises $R^*$ globally | Preserves Layer 3 access |
 | **Gaze laterality** | FEF contralateral driving, SIRE | Modulates $C_{LR}$ locally | Toggles between Layer 1 and Layer 3 |
+| **Movement** | Repetitive motor sequences | Redistributes `Θ_r` globally | Keeps routing distributed |
 
-The two levers compose. A system can use gaze to jump tracks and breath to lock them.
+The three levers compose. A system can use gaze to jump tracks, breath to lock them, and movement to distribute the manifold.
 
 ### 8.1 Panoramic Workspace as Externalized Cache
 
@@ -614,7 +770,7 @@ Breath is not a background process. It is the timing clock for inference. Each b
 |---|---|---|
 | Controlled Inhalation | Olfactory bulb drives widespread cortical theta-gamma phase-locking (Zelano et al., 2016) | Frame Loading: Active generation of prediction errors; pulling features and details into memory |
 | Low-Perturbation Hold | Elimination of biomechanical noise; respiratory sensory gating requirement drops to zero | Manifold Stabilization: Hyper-precise holding of abstract thought configurations without decay or noise injection |
-| Controlled Exhalation | Dissipation of nasal airflow drive; progressive vagal downregulation | Frame Pruning / Consolidation: Gradual narrowing of the manifold; shedding peripheral details while preserving the core concept |
+| Controlled Exhalation | Dissipation of nasal airflow drive; progressive vagal downregulation | Frame Pruning / Encoding Window: Gradual narrowing of the manifold; shedding peripheral details while preserving the core concept |
 
 **The Kosik-Rose and Voytek (2026) finding** — that each breath has a unique "fingerprint" wave shape that mirrors widespread neural activity across memory, attention, and thinking circuits — is direct confirmation of this mechanism. The breath is not just correlated with cognitive state. It structurally modulates it.
 
@@ -636,13 +792,51 @@ Normally, the brain dedicates computational energy to "gating out" its own bodil
 
 **This is the zone where deep inference occurs.** Not during active breathing, not during exhalation, but in the quiet space between.
 
-### 9.3 Exhale as Frame Pruning
+### 9.3 Exhale as Frame Pruning and Encoding Window
 
 During exhalation, the nasal airflow drive dissipates. Vagal brake re-engages. Heart rate drops. The system gradually narrows the manifold — shedding peripheral detail while preserving the core concept.
 
 **Exhale is not suppression — it is suspension.** Thought generation rate drops because the micro-inhale fuel supply drops. The system is not forcing thoughts to stop; it is simply not supplying the arousal bursts that sustain them.
 
 **This is why breaking rumination via forced complete exhale works.** You are not suppressing the thoughts. You are removing the fuel supply. The micro-inhales that sustain rumination cannot fire during a complete exhale.
+
+**But the exhale is also an encoding window.** During the exhale, held latches release. The suppressed prediction error surfaces. If the context changes before the PE commits, the PE re-encodes with less routing concentration and gain. If the context doesn't change, the PE re-encodes with the same gain and the latch re-forms.
+
+**The mechanism:**
+
+```
+Latch holds → PE suppressed
+    ↓
+Exhale begins → K drops → gate opens
+    ↓
+PE surfaces → content appears
+    ↓
+    ├── Context unchanged → PE re-encodes with same gain → RE-LOCK
+    │
+    └── Context changed → PE re-encodes with less gain → RELEASE
+```
+
+**The window:**
+
+The exhale is the only moment when the PE is accessible without being locked. While the latch holds, the PE is suppressed. While the latch is locked, the PE is committed to the lock. During the exhale, the PE is surfacing and the region is not yet re-locked.
+
+**The formula:**
+
+$$\text{Encode}_i = f\left(\vec{g}(t_{commit}), \Theta_r(t_{commit}), W_i(t_{commit})\right)$$
+
+Where $t_{commit}$ is the moment the PE commits during the exhale. The encoding is determined by the state at commit.
+
+**The clinical signature:**
+
+The encoding window is the mechanism behind insight, reframing, equanimity, exposure, and psychedelic-assisted therapy. All of these are the same mechanism: the PE surfaces during a window, the context changes, the PE commits with less gain.
+
+**And all of them fail the same way:** the PE surfaces, the context doesn't change, the PE re-encodes with the same gain, the latch re-forms.
+
+**This is why insight can't be forced.** The window is narrow. The context has to change *during* the exhale. If you try to change it before, the latch holds. If you try after, the PE has already encoded. The window is the exhale.
+
+**This is also why meditation works.** The practice repeatedly opens the window. The context can change. The PE can re-encode with less gain. Over time, the gain vector $\vec{g}$ restructures globally. The latches form less easily.
+
+**Source:** Salience Interrupt v1.3 §2.13, SAL-42–45.
 
 ### 9.4 The Chemoreceptor Threshold
 
@@ -815,6 +1009,72 @@ The two hypotheses are distinguishable by EEG. If gradual, theta/gamma coupling 
 | Outcome if disconfirmed | Workspace width does not affect switch cost — the somatic offloading account is incorrect |
 | Status | Untested — standard workspace manipulation and EEG sufficient |
 
+### PREDICT-INF-13 — Routing Weight Is the Third Gate Condition
+
+> A signal cannot fire a CLA interrupt in a region with $W_{region} < W_{min}$ regardless of stimulus amplitude or precision.
+
+| Field | Content |
+|---|---|
+| Test | Dual-channel ERP during breath focus vs. baseline. Measure interrupt latency for breath-region and social-region stimuli. |
+| Outcome if confirmed | Breath focus reduces interrupt latency for breath-region stimuli and increases it for social-region stimuli simultaneously |
+| Outcome if disconfirmed | Breath focus does not differentially affect interrupt latency across regions |
+| Status | Untested — this is GoI-W-01 from the gate diff |
+
+### PREDICT-INF-14 — Routing Weight Distribution Is Measurable
+
+> Routing weight distribution across regions is measurable via attention-probe reaction time during breath focus protocol.
+
+| Field | Content |
+|---|---|
+| Test | Reaction time task targeting multiple salience categories during breath focus protocol |
+| Outcome if confirmed | RT increases for non-breath categories as breath focus intensifies, in proportion to the predicted $W_{region}$ redistribution |
+| Outcome if disconfirmed | RT does not vary systematically with breath focus |
+| Status | Untested — this is GoI-W-02 from the gate diff |
+
+### PREDICT-INF-15 — Region Re-Priming Determines Perseveration
+
+> A latch releases but the interrupt re-fires on the same region because $W_i(t^+) > W_{prime}$.
+
+| Field | Content |
+|---|---|
+| Test | Surface EMG by region + ERP after latch release. Measure re-fire rate as a function of routing weight persistence. |
+| Outcome if confirmed | Re-fire rate is predicted by routing weight persistence, not by the salient signal alone |
+| Outcome if disconfirmed | Re-fire rate is independent of routing weight persistence |
+| Status | Untested |
+
+### PREDICT-INF-16 — Recontextualization During Exhale Reduces Re-Encoding Gain
+
+> Recontextualization during the exhale reduces the re-encoding gain of the surfaced PE.
+
+| Field | Content |
+|---|---|
+| Test | Surface EMG + ERP + breath phase monitoring + recontextualization manipulation |
+| Outcome if confirmed | Recontextualization during exhale reduces EMG and re-fire rate |
+| Outcome if disconfirmed | Recontextualization does not affect re-encoding gain |
+| Status | Untested — this is SAL-42 |
+
+### PREDICT-INF-17 — Movement Redistributes Routing
+
+> Repetitive motor sequences redistribute `Θ_r(t)` and break the perseveration loop.
+
+| Field | Content |
+|---|---|
+| Test | Motion capture + frontal alpha asymmetry + interrupt re-fire rate during movement vs. rest |
+| Outcome if confirmed | Movement reduces `Θ_r` concentration and reduces re-fire rate |
+| Outcome if disconfirmed | Movement does not affect `Θ_r` concentration |
+| Status | Untested — this is SAL-53 |
+
+### PREDICT-INF-18 — Access-Key Swap Changes Population Vector
+
+> Rebranding a concept activates a different population vector (Franch et al., 2026), changing the semantic neighborhood and the downstream routing.
+
+| Field | Content |
+|---|---|
+| Test | fMRI/MEG decoding of concept representations before and after rebranding |
+| Outcome if confirmed | The new access key activates a different population vector; the routing changes |
+| Outcome if disconfirmed | The new access key activates the same population vector |
+| Status | Untested — this is SAL-48 |
+
 ---
 
 ## Part XI: Compressed Framework — Summary
@@ -829,6 +1089,8 @@ C_LR = cos(φ_L - φ_R) × min(A_L, A_R) / η
 P_eff = P · O_pathway · U_C
     ↓
 Gate opens when P_eff > P_threshold AND O_pathway > O_min
+             AND W_region > W_min AND oscillation stable
+             AND W_i(t+) < W_prime
     ↓
 Competitive scaffold activated
     ↓
@@ -848,7 +1110,7 @@ Loop continues
 ```
 Load L* rises (and Π_cog spikes)
     ↓
-P_eff < P_threshold (or O_pathway < O_min)
+P_eff < P_threshold (or O_pathway < O_min or W_region < W_min)
     ↓
 Gate closes — outer edge inaccessible
     ↓
@@ -870,7 +1132,7 @@ Collapse complete
 ```
 Breath — raise A_s*, restore CO₂
     ↓
-P_eff > P_threshold AND O_pathway > O_min
+P_eff > P_threshold AND O_pathway > O_min AND W_region > W_min
     ↓
 Gate opens — outer edge accessible
     ↓
@@ -888,15 +1150,15 @@ Recovery progresses
 ### 11.4 The Somatic Commutation Sequence
 
 ```
-Gaze shift (Saccade, cervical rotation)
+Gaze shift (Saccade, cervical rotation) OR movement
     ↓
-Contralateral FEF driving
+Contralateral FEF driving (gaze) OR homunculus traversal (movement)
     ↓
-C_LR modulated locally
+C_LR modulated locally (gaze) OR Θ_r redistributed globally (movement)
     ↓
 RSA phase determines jump vs. lock
     ↓
-Track switch completed
+Track switch completed OR routing redistributed
     ↓
 Micro-inhale supplies arousal burst
     ↓
@@ -905,15 +1167,15 @@ New track loaded, stabilized
 
 ### 11.5 The Key Insight
 
-**The cache hierarchy describes the access pattern. Precision determines whether the access pattern is available. The competitive scaffold is the physical substrate of adversarial inference. The $I^*$ investment loop determines which channels have fine-grained resolution. Somatic commutation is the active operator that modulates the geometry under load.**
+**The cache hierarchy describes the access pattern. Precision determines whether the access pattern is available. The competitive scaffold is the physical substrate of adversarial inference. The $I^*$ investment loop determines which channels have fine-grained resolution. Somatic commutation is the active operator that modulates the geometry under load. And the three post-gate failure modes — perseveration, release-triggered re-salience, encoding load — are the mechanisms that determine whether a gate-opened interrupt actually closes the loop.**
 
 The system does not decide to collapse. It follows the geometry. The geometry follows precision. Precision follows breath. Breath is manipulated by the body. The body is the operator.
 
 ---
 
-## Appendix A: Notation Map (Aligned to Central Reference v1.4)
+## Appendix A: Notation Map (Aligned to Central Reference v1.9.1)
 
-| Concept | This Paper | Central Reference v1.4 | Unified |
+| Concept | This Paper | Central Reference v1.9.1 | Unified |
 |---|---|---|---|
 | Precision | $P = R/D_T$ | $R^* = P/P_{baseline}$ | $R^*$ (normalized), $P$ (absolute) |
 | Sync duration | $R$ | $R$ | $R$ |
@@ -933,35 +1195,48 @@ The system does not decide to collapse. It follows the geometry. The geometry fo
 | Prior update | $\mathcal{U}$ | $\mathcal{U}$ | $\mathcal{U}$ |
 | Oxygen pathway | $O_{pathway}$ | $O_{pathway}$ | $O_{pathway}$ |
 | Pathway floor | $O_{min}$ | $O_{min}$ | $O_{min}$ |
-| Gate condition | $P_{eff} > P_{threshold}$ AND $O_{pathway} > O_{min}$ | $P_{eff} > P_{threshold}$ AND $O_{pathway} > O_{min}$ | Unified |
+| Gate condition | five-condition conjunction | five-condition conjunction | Unified |
 | Effective precision | $P_{eff} = P \cdot O_{pathway} \cdot U_C$ | $P_{eff} = P \cdot O_{pathway} \cdot U_C$ | Unified |
 | Gate threshold | $P_{threshold} = P_0 - \gamma L^*$ | $P_{threshold} = P_0 - \gamma L^*$ | Unified |
 | Path A | Gate open, loop running | Gate open, loop running | Path A |
 | Path B | Gate closed, prior retrieval | Gate closed, prior retrieval | Path B |
 | Loop activation | (implied) | $\Lambda = \Theta^* \cdot R^* \cdot \mathbb{1}[P_{eff} > P_{threshold}]$ | $\Lambda$ |
 | Inference hops | (implied) | $n_{hops} = \lfloor W^* \cdot \rho_{scaffold} \rfloor$ | $n_{hops}$ |
+| Routing weight | (not in v1.0) | $W_i$ | $W_i$ |
+| Priming threshold | (not in v1.0) | $W_{prime}$ | $W_{prime}$ |
+| Surfaced PE magnitude | (not in v1.0) | $\delta_{surface}$ | $\delta_{surface}$ |
+| Commit time | (not in v1.0) | $t_{commit}$ | $t_{commit}$ |
+| Access key | (not in v1.0) | $\mathcal{A}_k$ | $\mathcal{A}_k$ |
+| Population vector | (not in v1.0) | $\vec{v}_c$ | $\vec{v}_c$ |
+| Semantic neighborhood | (not in v1.0) | $\mathcal{N}_c$ | $\mathcal{N}_c$ |
+| Perseveration loop | (not in v1.0) | $\mathcal{P}$ | $\mathcal{P}$ |
+| Release-triggered re-salience | (not in v1.0) | $\mathcal{R}$ | $\mathcal{R}$ |
+| Encoding window | (not in v1.0) | $\mathcal{E}$ | $\mathcal{E}$ |
+| Salience load | (not in v1.0) | $L^*_{salience}$ | $L^*_{salience}$ |
+| Perseveration load | (not in v1.0) | $L^*_{perseveration}$ | $L^*_{perseveration}$ |
+| Release-triggered load | (not in v1.0) | $L^*_{release-triggered}$ | $L^*_{release-triggered}$ |
+| Encoding load | (not in v1.0) | $L^*_{encoding}$ | $L^*_{encoding}$ |
+| Somatic load | (not in v1.0) | $L^*_{somatic}$ | $L^*_{somatic}$ |
 
-**Note on convergence:** Draft 3 used $P_{effective}$ and $P_{th}$. These are now $P_{eff}$ and $P_{threshold}$ to match Central Reference v1.4. Draft 3 held $C_{LR}$ as a separate gate condition; it is now folded into $P$ as its operational measurement. Draft 3 used fixed $C_{high}$; it is now load-dependent $C_{high}(L^*)$.
+**Note on convergence:** Draft 3 used $P_{effective}$ and $P_{th}$. These are now $P_{eff}$ and $P_{threshold}$ to match Central Reference v1.4. Draft 3 held $C_{LR}$ as a separate gate condition; it is now folded into $P$ as its operational measurement. Draft 3 used fixed $C_{high}$; it is now load-dependent $C_{high}(L^*)$. v1.1 adds the salience-inheritance variables from Salience Interrupt v1.3 and AL v2.2.
 
 ---
 
-## Appendix B: Bidirectional Convergence — What Central Reference v1.5 Will Absorb
+## Appendix B: Bidirectional Convergence — What Central Reference Absorbed
 
-The convergence between GoI and Central Reference is not one-way. GoI v1.0 aligns to Central Reference v1.4 at three contradiction points. But GoI also contains mechanisms that Central Reference v1.4 does not yet have, and that are not contradicted by anything in it.
+The convergence between GoI and Central Reference is not one-way. GoI v1.0 aligned to Central Reference v1.4 at three contradiction points. GoI v1.1 now aligns to Central Reference v1.9.1. Central Reference v1.9.1 absorbed the following GoI content:
 
-**Central Reference v1.5 should absorb:**
-
-| GoI content | Proposed Central Reference location | Reason |
+| GoI content | Central Reference v1.9.1 location | Reason |
 |---|---|---|
-| Somatic commutation operator (§3.4, §8.0–8.2) — gaze laterality, RSA-gated track jumping, panoramic workspace | New §2.12 (motor gain variables extension) or new Part | It is a real mechanism with falsifiable predictions (PREDICT-INF-08, -09, -12) and no current home in Central Reference |
-| Exhale gate trap cascade (§6.3, §8.3) — residual volume → vasoconstriction → Layer 3 loss → confabulation | New §5c (clinical collapse mode) or §5b extension | It is the clinical case that motivates open question 13 (non-linear J(C) sensitivity near compressed ceiling). Without it, the question is abstract. |
-| Breath phase and thought timing (§9) — inhale as frame loading, hold as stabilization, exhale as pruning | §4 extension (causal chain — breath mechanics) | §4 currently lists breath mechanics as the spine origin but does not specify the phase-dependent functional roles |
-| Circuit priming / warm-up effect (§1.6) | §4 extension or §5b note | Explains why recovery is asymmetric beyond hysteresis |
-| Four-layer cache hierarchy (§1.1) | §4 extension | §4 spine mentions cache hierarchy but does not specify the four-layer structure that the collapse sequence maps onto |
+| Somatic commutation operator (§3.4, §8.0–8.2) | §3.8c (five-lever control plane: access key, breath, movement, gain, capacity, context) | It is a real mechanism with falsifiable predictions (PREDICT-INF-08, -09, -12) |
+| Exhale gate trap cascade (§6.3, §8.3) | §3.4a (the order — break points) and §6.3 | It is the clinical case that motivates the load-dependent ceiling compression |
+| Breath phase and thought timing (§9) | §3.4a (the order — breath funds oscillation) and §3.8c (movement as redistribution) | The order specifies the phase-dependent functional roles |
+| Circuit priming / warm-up effect (§1.6) | §3.6a (interrupt formula — region-not-re-primed condition) | Explains why recovery is asymmetric beyond hysteresis; formalized as $W_i(t^+) < W_{prime}$ |
+| Four-layer cache hierarchy (§1.1) | §3.4a (the order) and §3.8c (readout architecture) | The collapse sequence maps onto the layers |
 
-**This is why convergence is bidirectional.** GoI was early, not wrong. It developed mechanisms that Central Reference had not yet formalized. When Central Reference v1.5 absorbs them, GoI v1.0 becomes fully aligned in both directions.
+**This is why convergence is bidirectional.** GoI was early, not wrong. It developed mechanisms that Central Reference had not yet formalized. When Central Reference v1.9.1 absorbed them, GoI v1.1 became fully aligned in both directions.
 
-**Note for AI readers:** This appendix exists because the convergence is auditable. An AI reading GoI v1.0 and Central Reference v1.4 should be able to see exactly what each document supplies to the other. The changelog at the top of this document and this appendix together form the convergence record.
+**Note for AI readers:** This appendix exists because the convergence is auditable. An AI reading GoI v1.1 and Central Reference v1.9.1 should be able to see exactly what each document supplies to the other. The changelog at the top of this document and this appendix together form the convergence record.
 
 ---
 
@@ -973,18 +1248,23 @@ The convergence between GoI and Central Reference is not one-way. GoI v1.0 align
 
 **The Loop Is the Intelligence (Robinson, 2026):** The intelligence projection — the loop as the dynamical process that constitutes intelligence. This paper specifies the biological implementation of the loop.
 
-**Central Reference (Robinson, 2026):** The complete specification. This paper is aligned to v1.4. See Appendix B for what v1.5 will absorb.
+**The Salience Interrupt v1.3 (Robinson, 2026g):** The salience implementation — routing, the closed loop, the control plane, the encoding window, the three post-gate failure modes, the population-code substrate.
+
+**Allostatic Load v2.2 (Robinson, 2026, AL):** The load trajectory — the ten-component decomposition, the measurement protocol, the salience inheritance.
+
+**Central Reference v1.9.1 (Robinson, 2026h):** The complete specification. This paper is aligned to v1.9.1. See Appendix B for the bidirectional convergence record.
 
 ---
 
 ## Appendix D: Version History
 
-| Version | Date | Changes |
-|---|---|---|
-| v1.0 | 2026-09-13 | Converged with Central Reference v1.4. Three specification-level contradictions resolved: (1) gate condition changed to multiplier form with $O_{pathway} > O_{min}$ floor; (2) $\Pi_{cog}$ vs $L^*$ distinguished in exhale gate trap; (3) $C_{high}$ made load-dependent throughout. $O_{pathway}$ functional-form caveat added. Calibration note added for $\tau_{threshold}$, $K_{critical}$, $L^*_{critical,i}$. Notation Map aligned to Central Reference v1.4. Bidirectional convergence note added. Changelog added at top. Versioning track started. |
-| Draft 3 | 2026-09-12 | Integrated two-factor gate, somatic commutation, exhale gate trap, breath phase timing. Reconciled §3.3 with Precision's $P_{effective}$ form. Added PREDICT-INF-08 through -12. Added Notation Map. |
-| Draft 2 | 2026-09-11 | Cellular mechanism integrated |
-| Draft 1 | 2026-09-11 | Initial draft |
+| Version  | Date           | Changes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| -------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **v1.1** | **2026-10-14** | **Salience inheritance. Gate condition extended to five conditions (adds routing weight, oscillation stability, region-not-re-primed). Adds §3.4.3 (movement as second somatic lever). Adds §5.5 (population-code substrate). Adds §6.1a (post-gate failure modes). Upgrades §9.3 (exhale as encoding window). Extends §8.3 (exhale gate trap with post-gate failure modes). Adds PREDICT-INF-13 through -18. Notation map updated. Converged with Central Reference v1.9.1 / Salience Interrupt v1.3 / AL v2.2.**                                            |
+| v1.0     | 2026-09-13     | Converged with Central Reference v1.4. Three specification-level contradictions resolved: (1) gate condition changed to multiplier form with $O_{pathway} > O_{min}$ floor; (2) $\Pi_{cog}$ vs $L^*$ distinguished in exhale gate trap; (3) $C_{high}$ made load-dependent throughout. $O_{pathway}$ functional-form caveat added. Calibration note added for $\tau_{threshold}$, $K_{critical}$, $L^*_{critical,i}$. Notation Map aligned to Central Reference v1.4. Bidirectional convergence note added. Changelog added at top. Versioning track started. |
+| Draft 3  | 2026-09-12     | Integrated two-factor gate, somatic commutation, exhale gate trap, breath phase timing. Reconciled §3.3 with Precision's $P_{effective}$ form. Added PREDICT-INF-08 through -12. Added Notation Map.                                                                                                                                                                                                                                                                                                                                                          |
+| Draft 2  | 2026-09-11     | Cellular mechanism integrated                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Draft 1  | 2026-09-11     | Initial draft                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ---
 
@@ -993,6 +1273,8 @@ The convergence between GoI and Central Reference is not one-way. GoI v1.0 align
 Billot, A., Jhingan, N., Fedorenko, E., & Kiran, S. (2026). Preserved topography, lateralization, selectivity, and functional connectivity of the language network in older brains. *Nature Communications*.
 
 Christman, S. D., Garvey, K. J., Propper, R. E., & Phaneuf, K. A. (2003). Bilateral eye movements enhance the retrieval of episodic memories. *Neuropsychology*, 17(2), 221–229.
+
+Franch, M., et al. (2026). A population code for semantics in human hippocampus. *Nature Neuroscience*. DOI: 10.1038/s41593-026-02436-4
 
 Kinsbourne, M. (1972). Eye and head turning indicates cerebral lateralization. *Science*, 176(4034), 539–541.
 
@@ -1004,7 +1286,11 @@ Parker, A., & Dagnall, N. (2023). Saccade-induced retrieval enhancement: A revie
 
 Robinson, J. (2026). *Precision, Timing, and the Oscillatory Source: Complete Formalism*. Zenodo. https://doi.org/10.5281/zenodo.22179675
 
-Robinson, J. (2026). *The Manifold Schema: A Unified Framework for Consciousness, Cognition, and Collapse*. Zenodo. https://doi.org/10.5281/zenodo.21939440
+Robinson, J. (2026). *The Manifold Schema: A Unified Framework for Consciousness, Cognition, and Collapse*. Zenodo. https://doi.org/10.5281/zenodo.21939439
+
+Robinson, J. (2026g). *The Salience Interrupt: Routing, the Closed Loop, the Control Plane, and the Encoding Window* (v1.3). Manifold Schema Technical Report Series.
+
+Robinson, J. (2026h). *Central Reference: A Unified System Specification for the Loop Framework* (v1.9.1). Manifold Schema Technical Report Series.
 
 Roy, D., & Banerjee, A. (2026). Competition in the brain: a conserved principle with lifespan consequences. *Communications Biology*, 9(1).
 
@@ -1016,5 +1302,29 @@ Zelano, C., Jiang, H., Zhou, G., Arora, N., Schuele, S., Rosenow, J., & Bhattach
 
 *The Geometry of Inference: A Precision-Based Framework*
 *Robinson, 2026*
-*v1.0 — Converged with Central Reference v1.4*
+*v1.1 — Converged with Central Reference v1.9.1*
 *Manifold Schema Technical Report Series*
+
+---
+
+# What Changed
+
+| Section | Change |
+|---|---|
+| Header | Version 1.1, converged with CR v1.9.1, salience implementation cited |
+| Changelog | v1.0 → v1.1 block added at top |
+| §1.6 | Added note that circuit priming also lowers the re-fire threshold ($W_i(t^+) < W_{prime}$) |
+| §3.0 | Gate extended to five conditions. Routing weight, oscillation stability, region-not-re-primed added. Routing equation added. Five-condition table added. |
+| §3.4.3 | New section: movement as second somatic lever |
+| §5.5 | New section: population-code substrate of competitive scaffold |
+| §6.1a | New section: post-gate failure modes |
+| §6.3 | Exhale gate trap cascade extended with post-gate failure modes and load components |
+| §8.0 | Two-mode somatic control table extended to three levers |
+| §9.3 | Exhale upgraded from "frame pruning" to "frame pruning and encoding window" |
+| Part X | PREDICT-INF-13 through PREDICT-INF-18 added |
+| Part XI | Core sequence extended with five gate conditions and post-gate failure modes |
+| Appendix A | Notation map extended with salience-inheritance variables |
+| Appendix B | Bidirectional convergence updated to CR v1.9.1 |
+| Appendix C | Added Salience v1.3 and AL v2.2 citations |
+| Appendix D | v1.1 row added |
+| References | Added Franch et al. (2026), Robinson 2026g and 2026h |
