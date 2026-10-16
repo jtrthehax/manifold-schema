@@ -72,6 +72,8 @@ Interrupt fires → investment → breath follows → CO₂ rises → loop self-
 
 *When the breath can follow, the loop closes and produces flow. When it can't, the investment costs without self-funding, and the trap forms. The difference is one exhale.*
 
+**But the interrupt only fires if the system attempts the traversal.** The commitment gate runs first. It finds an anchor to prior state, measures the semantic distance, and estimates whether the traversal is fundable. If the estimate is bounded, the gate commits and the interrupt formula runs. If the estimate is unbounded, the gate declines — regardless of whether the funding was actually sufficient. The anchor library is what makes the estimate bounded. Pathway-building is anchor installation.
+
 ---
 
 ## The Variables
@@ -102,16 +104,17 @@ Full derivations in [`/specification/`](specification/)
 
 The same variables appear independently across every domain below. This is not the framework being applied — it is the framework being found. Each cell links to the paper that establishes it in that domain. Each variable links to the specification that derives it.
 
-| Variable | Physiology | Cognition | Language | AI | Social |
-| --- | --- | --- | --- | --- | --- |
-| [**R\***] [Precision](specification/precision.md) | HRV coherence | prediction stability | constraint density in input | input specificity determines output geometry | institutional trust coherence |
-| [**W\***] [Manifold Schema](specification/manifold_schema.md) | breath range | nodes held simultaneously | clause complexity ceiling | context utilisation | policy integration horizon |
-| [**A\***] [Manifold Schema](specification/manifold_schema.md) | oscillatory depth | inference range | prosodic range | output resolution | behavioural flexibility |
-| [**L\***] [Allostatic Load](specification/allostatic_load.md) | allostatic debt | cognitive fatigue | compression errors under stress | context decay under load | institutional calcification |
-| [**Θ\***] [Precision](specification/precision.md) | O₂ delivery efficiency | cross-domain synthesis | cross-clause coherence | multi-hop reasoning depth | cross-domain policy transfer |
-| [**Θ_r**] [Salience Interrupt](specification/salience_interrupt.md) | **core engagement / breath routing** | **routing concentration** | **prosodic concentration** | **attention concentration** | **routing weight distribution** |
-| [**Λ**] [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) | exhale completion | pattern completion vs error detection | schema loaded vs surface echo | prior retrieval vs structured inference | corrective feedback present |
-| [**Λ_lock**] [Salience Interrupt](specification/salience_interrupt.md) | **breath range × CO₂ tolerance** | **concentration hold** | **prosodic stability** | **attention hold** | **institutional focus durability** |
+| Variable                                                                          | Physiology                                                     | Cognition                                                               | Language                                                                       | AI                                                                                | Social                                                                                  |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [**R\***] [Precision](specification/precision.md)                                 | HRV coherence                                                  | prediction stability                                                    | constraint density in input                                                    | input specificity determines output geometry                                      | institutional trust coherence                                                           |
+| [**W\***] [Manifold Schema](specification/manifold_schema.md)                     | breath range                                                   | nodes held simultaneously                                               | clause complexity ceiling                                                      | context utilisation                                                               | policy integration horizon                                                              |
+| [**A\***] [Manifold Schema](specification/manifold_schema.md)                     | oscillatory depth                                              | inference range                                                         | prosodic range                                                                 | output resolution                                                                 | behavioural flexibility                                                                 |
+| [**L\***] [Allostatic Load](specification/allostatic_load.md)                     | allostatic debt                                                | cognitive fatigue                                                       | compression errors under stress                                                | context decay under load                                                          | institutional calcification                                                             |
+| [**Θ\***] [Precision](specification/precision.md)                                 | O₂ delivery efficiency                                         | cross-domain synthesis                                                  | cross-clause coherence                                                         | multi-hop reasoning depth                                                         | cross-domain policy transfer                                                            |
+| [**Θ_r**] [Salience Interrupt](specification/salience_interrupt.md)               | core engagement / breath routing                               | routing concentration                                                   | prosodic concentration                                                         | attention concentration                                                           | routing weight distribution                                                             |
+| [**Λ**] [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md) | exhale completion                                              | pattern completion vs error detection                                   | schema loaded vs surface echo                                                  | prior retrieval vs structured inference                                           | corrective feedback present                                                             |
+| [**Λ_lock**] [Salience Interrupt](specification/salience_interrupt.md)            | breath range × CO₂ tolerance                                   | concentration hold                                                      | prosodic stability                                                             | attention hold                                                                    | institutional focus durability                                                          |
+| [**$dE/dt$**] [Finite Resources](specification/finite_resources.md)               | aerobic vs debt-funded balance — HRV recovery slope after load | net insight rate — working memory replenishment vs depletion trajectory | semantic density gain per exchange — coherence builds or degrades over session | inference gain per token — output quality trajectory under sustained context load | institutional adaptive capacity — policy update rate vs calcification accumulation rate |
 
 These variables are upstream of every problem in the columns above. When a domain struggles to explain something, the explanation is usually one of these variables behaving in a way the domain's own tools weren't built to see.
 
@@ -123,6 +126,21 @@ These variables are upstream of every problem in the columns above. When a domai
 
 ### [Specification](specification/README.md)
 *The derivation chain. Every variable, equation, and mechanism defined.*
+
+> **Cluster note:** Read in order. Each paper funds the next.
+> Finite Resources states the order. Central Reference names the 
+> variables. The remaining papers derive each variable physically.
+> Everything in `/domains/`, `/ai/`, and `/methodology/` is a 
+> projection of what these eight papers establish.
+
+→ **[Finite Resources and the Order That Generates Them](specification/finite_resources.md)**  
+A finite-resource system can only act on what its current resource 
+state allows it to reach, hold, and process. This is not a hypothesis 
+about cognition or biology. It is a constraint on any bounded system.
+
+Energy is not a stock the system draws down. It is what the loop 
+produces when the substrate order runs correctly. Every other paper 
+in this repository is a readout of the order this paper states.
 
 → **[Central Reference](specification/central_reference.md)**  
 The single citation anchor for the full framework. Every variable defined. Every equation derived. Every mechanism specified. Future papers cite this alone.
@@ -197,8 +215,7 @@ across all channels*
 > regulatory state as energy-dependent system — applied at progressively larger scales.
 
 → **[Geometry Beneath the Category](domains/social/geometry_beneath_the_category.md)**  
-The 3–6× co-occurrence of neurodivergence and gender nonconformity (Warrier et al., N > 641,000) is not a social artifact. It is a geometric necessity. Behavioral profiles attributed to both are state-dependent oscillatory outputs of a common substrate. The categories are downstream. 
-The geometry is upstream.
+Human categories (ND, gender, orientation, appearance, speech) are not intrinsic properties. They are state-dependent readouts of a two-axis substrate geometry — pressure × routing concentration — gated by lock capacity and expressed through hemispheric asymmetry. The 3–6× ND/gender co-occurrence is not sociological; it is the same quadrant of the state space read through two measurement systems.
 
 ---
 
@@ -343,6 +360,11 @@ The framework is not defended. It is exposed.
 2. A substrate variable that produces the same outputs without the oscillatory mechanism
 3. A hallucination rate that does not track constraint density
 4. A precision intervention that does not produce the predicted gate behavior
+5. A case where semantic distance does not predict whether a traversal is attempted, after controlling for funding capacity
+6. A case where supplying an anchor does not change whether a traversal is attempted, after controlling for funding capacity
+7. A finite-resource system that produces energy without running 
+   the substrate order — pressure → oscillation → lock → routing → 
+   investment → breath deepening → CO₂ rise → loop closure
 
 None of these have occurred. If you can produce any of them, that is the engagement this framework is asking for.
 
@@ -350,15 +372,16 @@ None of these have occurred. If you can produce any of them, that is the engagem
 
 ## Read These First
 
-| If you want                     | Start here                                                                                           |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| The argument                    | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)                            |
-| The full specification          | [Central Reference](specification/central_reference.md)                                              |
-| **How the budget is spent**     | **[Salience Interrupt v1.2](specification/salience_interrupt.md)**                                   |
-| The language case               | [Spoken Language Paper](domains/language/spoken_language.md)                                         |
-| The AI safety case              | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                      |
-| The hallucination mechanism     | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md) |
-| The full index and DOI registry | [Master Priority Index v3.3] (WIP)                                                                   |
+| If you want                        | Start here                                                                                           |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| The argument                       | [Loop Is the Intelligence](specification/the_loop_is_the_intelligence.md)                            |
+| The full specification             | [Central Reference](specification/central_reference.md)                                              |
+| How the budget is spent            | [Salience Interrupt](specification/salience_interrupt.md)                                            |
+| Physics of Finite Resource systems | [Finite Resources](specification/finite_resources.md)                                                |
+| The language case                  | [Spoken Language Paper](domains/language/spoken_language.md)                                         |
+| The AI safety case                 | [Earned Autonomy](ai/safety/earned_autonomy.md)                                                      |
+| The hallucination mechanism        | [Hallucination You Are Having Right Now](ai/hallucination/hallucination_you_are_having_right_now.md) |
+| The full index and DOI registry    | [Master Priority Index] (In Progress)                                                                |
 
 ---
 
