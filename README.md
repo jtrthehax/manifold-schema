@@ -1,5 +1,5 @@
 > **⚡ Core Infrastructure Notice:** During discovery with manifold, I have abstracted invariants that describe manifold physics that drive shared understanding.  
-Please review at [Invariant Index](https://github.com/jtrthehax/manifold-schema/blob/main/invariants/INVARIANT_INDEX.md) for the complete Tier-1 rules, reduction proofs, and domain projections.  
+Please review at [Invariant Index](https://github.com/jtrthehax/invariant-engine/blob/main/README.md) for the complete Tier-1 rules, reduction proofs, and domain projections.  
   
 # The Unified Regulatory Framework
 
